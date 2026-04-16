@@ -8,13 +8,18 @@ a{
 }
 
 
-nav{
+#mainNav{
+    // border: 1px solid red;
+    width: 100%;
+
     ul{
         @include helpers.lg{
             display: flex;
             justify-content: flex-end;
+            width: 100%;
         }
         li{
+            text-align: right;
             a:link, a:visited{
                 display: inline-block;
                 padding: 24px;

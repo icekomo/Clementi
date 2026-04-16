@@ -389,13 +389,20 @@ a {
   text-decoration: none;
 }
 
+#mainNav {
+  width: 100%;
+}
 @media (min-width: 992px) {
-  nav ul {
+  #mainNav ul {
     display: flex;
     justify-content: flex-end;
+    width: 100%;
   }
 }
-nav ul li a:link, nav ul li a:visited {
+#mainNav ul li {
+  text-align: right;
+}
+#mainNav ul li a:link, #mainNav ul li a:visited {
   display: inline-block;
   padding: 24px;
   color: var(--black);
@@ -422,46 +429,67 @@ header #header-container {
   grid-area: header;
   display: grid;
   grid-template-columns: 50% auto;
+  grid-template-areas: "logo burger" "nav nav";
 }
 @media (min-width: 992px) {
   header #header-container {
     grid-template-columns: 20% auto;
+    grid-template-areas: "logo nav";
   }
+}
+header #header-container #logo {
+  grid-area: logo;
 }
 header #header-container #logo img {
   width: 150px;
 }
 header #header-container #burger-container {
+  grid-area: burger;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-header #header-container #burger-container #burger {
+header #header-container #burger-container #burgerBtn {
   height: 25px;
   width: 30px;
   position: relative;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  cursor: pointer;
 }
-header #header-container #burger-container #burger .line {
+header #header-container #burger-container #burgerBtn .line {
   border-radius: 2px;
   height: 3px;
   width: 100%;
   background-color: var(--black);
 }
-header #header-container #burger-container #burger #top {
-  position: absolute;
-  top: 0;
+header #header-container #burger-container #burgerBtn .line-container {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  width: 100%;
 }
-header #header-container #burger-container #burger #bottom {
-  position: absolute;
-  bottom: 0;
+header #header-container #burger-container #burgerBtn #top {
+  background-color: var(--black);
+  align-self: flex-start;
+}
+header #header-container #burger-container #burgerBtn #middle {
+  background-color: var(--black);
+  align-items: center;
+}
+header #header-container #burger-container #burgerBtn #bottom {
+  background-color: var(--black);
 }
 @media (min-width: 992px) {
   header #header-container #burger-container {
     display: none;
   }
 }
+header #header-container #mainNav {
+  grid-area: nav;
+}
+
 /* =============
     Footer
 ============= */

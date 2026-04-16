@@ -1,0 +1,29 @@
+/* =============
+    Navigation
+============= */
+@use "../helpers";
+
+a{
+    text-decoration: none;
+}
+
+
+nav{
+    ul{
+        @include helpers.lg{
+            display: flex;
+            justify-content: flex-end;
+        }
+        li{
+            a:link, a:visited{
+                display: inline-block;
+                padding: 24px;
+                color: var(--black);
+
+                &:hover, &:active{
+
+                }
+            }
+        }
+    }
+}

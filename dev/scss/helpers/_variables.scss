@@ -1,0 +1,43 @@
+/* =============
+    Variables
+============= */
+
+// Define the breakpoints
+// Small tablets and large smartphones
+$screen-sm-min: 576px;
+
+// Small tablets
+$screen-md-min: 768px;
+
+// Large tablets and small desktops
+$screen-lg-min: 992px;
+
+// Extra desktops
+$screen-xl-min: 1200px;
+
+// Extra Extra Large desktops
+$screen-xxl-min: 1440px;
+
+
+// Colors vars
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    // --gunmetal: #253237;
+    // --dark-gunmetal: #1E2A2E;
+    // --outer-space: #2A393F;
+    // --charcoal: #3D525B;
+    // --gray: #526E7A;
+    // --sky-blue: #9BC4CB;
+    // --mint: #CDF7F6;
+    // --borrow-Text: #641218;
+    // --borrow: #DF1C41;
+    // --borrow-dark: #841F32;
+    // --lend: #A8DADC;
+    // --lend-dark: #526E7A;
+    // --total: #F1FAEE;
+    // --total-dark: #646A62;
+    // --canary: #FFE900;
+    // --light-gray: ##F2F4F5;
+
+  }

@@ -1,0 +1,84 @@
+/* =============
+    Header
+============= */
+@use "../helpers";
+
+
+header{
+    
+    padding: 24px;
+
+        @include helpers.lg{
+            display: grid;
+            grid-template-columns: auto 80vw auto;
+            grid-template-areas: ". header .";
+        }
+
+        @include helpers.xl{
+            grid-template-columns: auto 70vw auto;
+        }
+
+    
+    #header-container{
+
+        grid-area: header;
+
+        display: grid;
+        grid-template-columns: 50% auto;
+
+         @include helpers.lg{
+           grid-template-columns: 20% auto;
+        }
+        
+        #logo{
+            img{
+                width: 150px;
+            }
+        }
+
+
+
+        #burger-container{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                #burger{
+                    height: 25px;
+                    width: 30px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+
+                    .line{
+                        border-radius: 2px;
+                        height: 3px;
+                        width: 100%;
+                        background-color: var(--black);
+                        
+                    }
+
+                    #top{
+                        position: absolute;
+                        top: 0;
+                    }
+
+                    #middle{
+
+                    }
+
+                    #bottom{
+                        position: absolute;
+                        bottom: 0;
+                    }
+                }
+
+                @include helpers.lg{
+                    display: none;
+                }
+            }
+
+            nav{
+
+            }
+        }
+}

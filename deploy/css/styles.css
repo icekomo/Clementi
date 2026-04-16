@@ -411,7 +411,14 @@ a {
     Header
 ============= */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
   padding: 24px;
+  box-sizing: border-box;
+  background-color: var(--white);
 }
 @media (min-width: 992px) {
   header {
@@ -488,8 +495,34 @@ header #header-container #burger-container #burgerBtn #bottom {
 }
 header #header-container #mainNav {
   grid-area: nav;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 99;
+  background-color: var(--white);
+  transform: translateX(100vw);
+}
+@media (min-width: 992px) {
+  header #header-container #mainNav {
+    position: static;
+    position: static;
+    height: auto;
+    width: auto;
+    transform: none;
+  }
 }
 
 /* =============
     Footer
 ============= */
+/* =============
+    Hero
+============= */
+#hero {
+  height: 100vh;
+  background-image: url("../img/hero/hero.jpg");
+  background-position: center;
+  background-size: cover;
+}

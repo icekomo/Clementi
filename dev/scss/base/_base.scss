@@ -3,6 +3,10 @@
 ============= */
 @use "../helpers";
 
+body {
+    // padding-top: 80px; // match your header's height
+}
+
 ul{
     li{
         list-style: none;

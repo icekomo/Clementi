@@ -5,8 +5,15 @@
 
 
 header{
-    
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
     padding: 24px;
+    box-sizing: border-box;
+    background-color: var(--white);
 
         @include helpers.lg{
             display: grid;
@@ -17,7 +24,6 @@ header{
         @include helpers.xl{
             grid-template-columns: auto 70vw auto;
         }
-
     
     #header-container{
 
@@ -93,7 +99,23 @@ header{
 
             #mainNav{
                 grid-area: nav;
+                // Off screen on mobile — fixed so it takes up no grid space
+                position: fixed;
+                top: 80px;
+                right: 0;
+                height: 100vh;
+                width: 100vw; // or whatever width you want the drawer to be
+                z-index: 99;
+                background-color: var(--white);
+                transform: translateX(100vw); // starting state in CSS matches GSAP's set
 
+                @include helpers.lg{
+                    position: static;
+                    position: static;
+                    height: auto;
+                    width: auto;
+                    transform: none;
+                }
             }
         }
 }

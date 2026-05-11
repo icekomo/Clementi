@@ -312,6 +312,11 @@ template {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --purple: #65265c;
+  --yellow: #febe4a;
+  --blue: #2b4158;
+  --gray: #8f9ca4;
+  --gray-light: #b1c0c9;
 }
 
 /* ---------------- Font Sizing ---------------- */
@@ -324,6 +329,26 @@ ul li {
   list-style: none;
 }
 
+.show-md {
+  display: none;
+}
+@media (min-width: 768px) {
+  .show-md {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-md {
+    display: none;
+  }
+}
+
+.content-padding {
+  padding: 10vh 0;
+  padding-left: 16px;
+  padding-right: 16px;
+}
 /* =============
     Typography
 ============= */
@@ -338,6 +363,12 @@ h1, h2, h3, h4, h5, p {
 ul {
   margin: 0;
   padding: 0;
+}
+
+.content-title {
+  font-size: 2.1875rem;
+  font-weight: 350;
+  margin-bottom: 24px;
 }
 
 /* =============
@@ -401,12 +432,34 @@ a {
 }
 #mainNav ul li {
   text-align: right;
+  padding-right: 16px;
 }
 #mainNav ul li a:link, #mainNav ul li a:visited {
   display: inline-block;
   padding: 24px;
   color: var(--black);
+  transition: 0.25s;
 }
+#mainNav ul li a:link:hover, #mainNav ul li a:link:active, #mainNav ul li a:visited:hover, #mainNav ul li a:visited:active {
+  background-color: var(--gray-light);
+  color: var(--white);
+  border: 8px;
+}
+#mainNav ul li #contact-btn {
+  background-color: var(--yellow);
+  color: var(--blue);
+  border: none;
+  border-radius: 8px;
+  padding: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+#mainNav ul li #contact-btn:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
 /* =============
     Header
 ============= */
@@ -423,13 +476,13 @@ header {
 @media (min-width: 992px) {
   header {
     display: grid;
-    grid-template-columns: auto 80vw auto;
+    grid-template-columns: auto 90vw auto;
     grid-template-areas: ". header .";
   }
 }
 @media (min-width: 1200px) {
   header {
-    grid-template-columns: auto 70vw auto;
+    grid-template-columns: auto 80vw auto;
   }
 }
 header #header-container {
@@ -446,6 +499,8 @@ header #header-container {
 }
 header #header-container #logo {
   grid-area: logo;
+  display: flex;
+  align-items: center;
 }
 header #header-container #logo img {
   width: 150px;
@@ -455,6 +510,7 @@ header #header-container #burger-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  height: 100%;
 }
 header #header-container #burger-container #burgerBtn {
   height: 25px;
@@ -518,11 +574,108 @@ header #header-container #mainNav {
     Footer
 ============= */
 /* =============
-    Hero
+    Home
 ============= */
-#hero {
+#home {
   height: 100vh;
-  background-image: url("../img/hero/hero.jpg");
+  background-image: url("../img/home/hero.jpg");
   background-position: center;
   background-size: cover;
+  margin-top: 80px;
 }
+@media (min-width: 768px) {
+  #home {
+    background-position: 35% center;
+    display: flex;
+    justify-content: right;
+    align-items: top;
+    height: 90vh;
+  }
+}
+#home > div {
+  padding: 16px;
+  color: var(--white);
+}
+@media (min-width: 768px) {
+  #home > div {
+    width: 50vh;
+  }
+}
+@media (min-width: 992px) {
+  #home > div {
+    width: 60vw;
+  }
+}
+#home > div h1 {
+  font-size: 2.1875rem;
+  font-weight: 350;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  #home > div h1 {
+    font-size: 2.8125rem;
+    padding-top: 5vh;
+  }
+}
+@media (min-width: 992px) {
+  #home > div h1 {
+    font-size: 3.125rem;
+    padding-top: 5vh;
+  }
+}
+#home > div p {
+  line-height: 1.5625rem;
+}
+
+/* =============
+    Overview
+============= */
+@media (min-width: 1440px) {
+  #overview {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". overview-top ." ". overview-bottom .";
+  }
+}
+#overview #overview-top {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "title" "svg" "content";
+}
+@media (min-width: 768px) {
+  #overview #overview-top {
+    grid-template-columns: 50% auto;
+    grid-template-areas: "content svg";
+  }
+}
+@media (min-width: 1440px) {
+  #overview #overview-top {
+    grid-area: overview-top;
+  }
+}
+#overview #overview-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mask: url(#blob-mask);
+}
+#overview #overview-title {
+  grid-area: title;
+}
+#overview #overview-content {
+  margin-top: 16px;
+  grid-area: content;
+}
+#overview #overview-content p {
+  margin-bottom: 16px;
+}
+@media (min-width: 1440px) {
+  #overview #overview-bottom {
+    grid-area: overview-bottom;
+  }
+}
+
+/* =============
+    What
+============= */

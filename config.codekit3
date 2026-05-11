@@ -68,6 +68,37 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/home\/hero.jpg" : {
+      "ft" : 16384,
+      "iS" : 796456,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/home\/hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/overview\/overview-mask.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/overview\/overview-mask.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/overview\/overview.mp4" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/overview\/overview.mp4",
+      "oF" : 0
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -87,12 +118,28 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/hero.kit" : {
+    "\/dev\/content\/home.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/hero.html",
+      "oAP" : "\/dev\/content\/home.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/overview.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/overview.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/what.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/what.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -281,7 +328,7 @@
       "oS" : 0,
       "pg" : 0
     },
-    "\/dev\/scss\/sections\/_hero.scss" : {
+    "\/dev\/scss\/sections\/_home.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -289,7 +336,33 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_hero.css",
+      "oAP" : "\/dev\/scss\/sections\/_home.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0
+    },
+    "\/dev\/scss\/sections\/_overview.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_overview.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0
+    },
+    "\/dev\/scss\/sections\/_what.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_what.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0

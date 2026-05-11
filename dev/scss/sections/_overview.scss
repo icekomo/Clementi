@@ -1,0 +1,64 @@
+/* =============
+    Overview
+============= */
+@use "../helpers";
+
+#overview {
+
+
+    @include helpers.xxl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". overview-top ."
+                            ". overview-bottom .";
+    }
+
+    #overview-top{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "title"
+        "svg"
+        "content";
+
+        @include helpers.md{
+             grid-template-columns: 50% auto;
+                     grid-template-areas: 
+                        "content svg";
+        }
+
+        @include helpers.xxl{
+            grid-area: overview-top;
+        }
+    }
+
+    #overview-video {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        mask: url(#blob-mask);
+    }
+
+    #overview-title{
+        // border: 1px solid red;
+         grid-area: title;
+         h2{
+            
+         }
+    }
+
+    #overview-content{
+        margin-top: 16px;
+        grid-area: content;
+        p{
+            margin-bottom: 16px;
+        }
+    }
+
+    #overview-bottom{
+        @include helpers.xxl{
+            grid-area: overview-bottom;
+        }
+    }   
+}

@@ -12,3 +12,38 @@ ul{
         list-style: none;
     }
 }
+
+.show-md{
+    display: none;
+    @include helpers.md{
+        display: block;
+    }
+}
+
+.hide-md{
+    @include helpers.md{
+        display: none;
+    }
+}
+
+.content-padding{
+    padding: 10vh 0;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @include helpers.md{
+        // padding: 15vh 0;
+    }
+
+    @include helpers.lg{
+        
+    }
+
+    @include helpers.xl{
+        
+    }
+
+    @include helpers.xxl{
+        
+    }
+}

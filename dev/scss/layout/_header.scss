@@ -17,12 +17,12 @@ header{
 
         @include helpers.lg{
             display: grid;
-            grid-template-columns: auto 80vw auto;
+            grid-template-columns: auto 90vw auto;
             grid-template-areas: ". header .";
         }
 
         @include helpers.xl{
-            grid-template-columns: auto 70vw auto;
+            grid-template-columns: auto 80vw auto;
         }
     
     #header-container{
@@ -41,6 +41,8 @@ header{
         
         #logo{
             grid-area: logo;
+            display: flex;
+            align-items: center;
             img{
                 width: 150px;
             }
@@ -50,72 +52,75 @@ header{
 
         #burger-container{
             grid-area: burger;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            // border: 1px solid green;
+            height: 100%;
+
+            #burgerBtn{
+                height: 25px;
+                width: 30px;
+                position: relative;
                 display: flex;
-                justify-content: flex-end;
-                align-items: center;
+                flex-wrap: wrap;
+                flex-direction: row;
+                cursor: pointer;
+                // border: 1px solid blue;
 
-                #burgerBtn{
-                    height: 25px;
-                    width: 30px;
-                    position: relative;
-                    display: flex;
-                    flex-wrap: wrap;
-                    flex-direction: row;
-                    cursor: pointer;
-
-                    .line{
-                        border-radius: 2px;
-                        height: 3px;
-                        width: 100%;
-                        background-color: var(--black);
-                    }
-
-                    .line-container{
-                        display: flex;
-                        flex: 1;
-                        height: 100%;
-                        width: 100%;
-                    }
-
-                    #top{
-                        background-color: var(--black);
-                        align-self: flex-start;
-                    }
-
-                    #middle{
-                       background-color: var(--black);
-                        align-items: center;
-                    }
-
-                    #bottom{
-                       background-color: var(--black);
-                    }
+                .line{
+                    border-radius: 2px;
+                    height: 3px;
+                    width: 100%;
+                    background-color: var(--black);
                 }
 
-                @include helpers.lg{
-                    display: none;
+                .line-container{
+                    display: flex;
+                    flex: 1;
+                    height: 100%;
+                    width: 100%;
+                }
+
+                #top{
+                    background-color: var(--black);
+                    align-self: flex-start;
+                }
+
+                #middle{
+                    background-color: var(--black);
+                    align-items: center;
+                }
+
+                #bottom{
+                    background-color: var(--black);
                 }
             }
 
-            #mainNav{
-                grid-area: nav;
-                // Off screen on mobile — fixed so it takes up no grid space
-                position: fixed;
-                top: 80px;
-                right: 0;
-                height: 100vh;
-                width: 100vw; // or whatever width you want the drawer to be
-                z-index: 99;
-                background-color: var(--white);
-                transform: translateX(100vw); // starting state in CSS matches GSAP's set
-
-                @include helpers.lg{
-                    position: static;
-                    position: static;
-                    height: auto;
-                    width: auto;
-                    transform: none;
-                }
+            @include helpers.lg{
+                display: none;
             }
         }
+
+        #mainNav{
+            grid-area: nav;
+            // Off screen on mobile — fixed so it takes up no grid space
+            position: fixed;
+            top: 80px;
+            right: 0;
+            height: 100vh;
+            width: 100vw; // or whatever width you want the drawer to be
+            z-index: 99;
+            background-color: var(--white);
+            transform: translateX(100vw); // starting state in CSS matches GSAP's set
+
+            @include helpers.lg{
+                position: static;
+                position: static;
+                height: auto;
+                width: auto;
+                transform: none;
+            }
+        }
+    }
 }

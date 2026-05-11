@@ -9,7 +9,6 @@ a{
 
 
 #mainNav{
-    // border: 1px solid red;
     width: 100%;
 
     ul{
@@ -20,13 +19,33 @@ a{
         }
         li{
             text-align: right;
+            padding-right: 16px;
             a:link, a:visited{
                 display: inline-block;
                 padding: 24px;
                 color: var(--black);
+                transition: 0.25s;
 
                 &:hover, &:active{
+                    background-color: var(--gray-light);
+                    color: var(--white);
+                    border: 8px;
+                }
+            }
 
+            #contact-btn{
+                background-color: var(--yellow);
+                color: var(--blue);
+                border: none;
+                border-radius: 8px;
+                padding: 24px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: 0.25s;
+
+                &:hover{
+                    background-color: var(--blue);
+                    color: var(--white);
                 }
             }
         }

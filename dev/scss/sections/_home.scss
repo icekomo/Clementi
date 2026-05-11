@@ -1,0 +1,62 @@
+/* =============
+    Home
+============= */
+@use "../helpers";
+
+#home{
+    height: 100vh;
+    background-image: url("../img/home/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 80px;
+
+    @include helpers.md{
+        background-position: 35% center;
+        display: flex;
+        justify-content: right;
+        align-items: top;
+        height: 90vh;
+    }
+
+
+    >div{
+        padding: 16px;
+        color: var(--white);
+
+        @include helpers.md{
+            width: 50vh;
+            // border: 1px solid yellow;
+        }
+
+        @include helpers.lg{
+            width: 60vw;
+            // border: 1px solid red;
+        }
+
+        @include helpers.xxl{
+            // width: 1200px;
+        }
+
+        
+
+        h1{
+            font-size: helpers.rem-calc(35);
+            font-weight: 350;
+            margin-bottom: 16px;
+
+            @include helpers.md{
+                font-size: helpers.rem-calc(45);
+                padding-top: 5vh;;
+            }
+
+            @include helpers.lg{
+                font-size: helpers.rem-calc(50);
+                padding-top: 5vh;
+            }
+        }
+
+        p{
+            line-height: helpers.rem-calc(25);
+        }
+    }
+}

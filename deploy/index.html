@@ -14,7 +14,6 @@
             <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
             <link rel="manifest" href="/site.webmanifest">
     
-    
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -41,22 +40,83 @@
     
             <nav id="mainNav">
                 <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 1</a></li>
-                    <li><button>Contact</button></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">What We Do</a></li>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><button id="contact-btn">Contact Us</button></li>
                 </ul>
             </nav>
         </div>
     
     </header>
     
-     <section id="hero">
-         
-         </section>
+    <section id="home">
+            <div>
+                <h1>EXPERT MEDICAL AND REGULATORY AFFAIRS CONSULTANTS</h1>
+                <p>Supporting Innovators From Early Development Through Approval With Deep Expertise in CDER and CBER</p>
+            </div>
+        </section>
+    <section id="overview" class="content-padding">
+            
+                <div id="overview-top">
+                    <section id="overview-svg">
+                        <!-- SVG clip path definition — hidden, just defines the diamond shape -->
+                      <svg width="0" height="0" style="position:absolute;">
+                        <defs>
+                            <mask id="blob-mask" 
+                                maskUnits="objectBoundingBox" 
+                                maskContentUnits="objectBoundingBox"
+                                x="0" y="0" width="1" height="1">
+                                <g transform="scale(0.001129, 0.001139)">
+                                    <circle cx="476" cy="438" r="316" fill="white"/>
+                                    <ellipse cx="228" cy="672" rx="228" ry="206" fill="white"/>
+                                    <ellipse cx="683" cy="672" rx="135" ry="122" fill="white"/>
+                                    <ellipse cx="227.5" cy="184" rx="203.5" ry="184" fill="white"/>
+                                    <ellipse cx="751" cy="184" rx="135" ry="122" fill="white"/>
+                                </g>
+                            </mask>
+                        </defs>
+                    </svg>
+                        <!-- <svg width="0" height="0" style="position:absolute;">
+                            <defs>
+                                <clipPath id="diamond-mask" clipPathUnits="objectBoundingBox">
+                                    <polygon points="0.5,0 1,0.5 0.5,1 0,0.5" />
+                                </clipPath>
+                            </defs>
+                        </svg> -->
+            
+                        <video autoplay muted loop playsinline id="overview-video">
+                            <source src="img/overview/overview.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </section>
+                      
+            
+                    <section id="overview-title" class="hide-md">
+                        <h2 class="content-title">Overview</h2>
+                    </section>
+            
+                    <article  id="overview-content">
+                        <h2 class="content-title show-md">Overview</h2>
+                        <p>We are a highly focused regulatory affairs consulting group dedicated to supporting pharmaceutical, and emerging biotechnology, companies advanced therapies by navigating complex regulatory pathways. With deep experience in Good Manufacturing Practice (GMP), Good Laboratory Practice (GLP), and Good Documentation Practice (GDP) with our in-house FDA submissions, we provide strategic and operational support across a product's life-cycle.</p>
+                        <p>Our team has extensive experience working with the FDA, including FDA meeting preparation and representation, development strategy, key submissions to CDER and tissue-based products, peptides, large molecules and novel biologics.</p>
+                        <p>Our document and submission management processes are governed by our own GDP SOPs. File exchange with clients is under current cybersecurity and document governance standards.</p>
+                    </article>
+            
+                </div>
+            
+                <div id="overview-bottom">
+                    <h2 class="content-title">Where Every Piece Has a Purpose</h2>
+                </div>
+            
+            </section>
+    <section id="what" class="content-padding">
+                    <div>
+                        <h2 class="content-title">What We Do</h2>
+                        <p>To accelerate the development and approval of innovative therapies by providing clear, strategic, and compliant medical and regulatory guidance compliant with all 3 phases of development. Early-stage guidance compliant manufacturing, pharm-tox and translation and FIH studies, supporting with full regulatory and GxP needs.</p>
+                    </div>
+                </section>
 
 
     <script src="js/scripts-min.js"></script>

@@ -9,6 +9,30 @@
   ],
   "creatorBuild" : "34903",
   "files" : {
+    "\/assets\/2026_04_20-Draft Text.zip" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/2026_04_20-Draft Text.zip",
+      "oF" : 0
+    },
+    "\/assets\/2026_04_20-Draft Text\/20260417-DRAFT-website-mock-roadmap-clementi-ltd.docx" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/2026_04_20-Draft Text\/20260417-DRAFT-website-mock-roadmap-clementi-ltd.docx",
+      "oF" : 0
+    },
+    "\/assets\/2026_04_20-Draft Text\/20260417-DRAFT-website-mock-up-clementi-ltd_al.pptx" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/2026_04_20-Draft Text\/20260417-DRAFT-website-mock-up-clementi-ltd_al.pptx",
+      "oF" : 0
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,

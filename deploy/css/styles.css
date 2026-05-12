@@ -317,6 +317,7 @@ template {
   --blue: #2b4158;
   --gray: #8f9ca4;
   --gray-light: #b1c0c9;
+  --white-smoke: #f5f6f6;
 }
 
 /* ---------------- Font Sizing ---------------- */
@@ -679,3 +680,39 @@ header #header-container #mainNav {
 /* =============
     What
 ============= */
+#what #what-top {
+  margin-bottom: 24px;
+}
+#what #what-cards #what-card-container {
+  display: grid;
+  gap: 16px;
+}
+#what #what-cards #what-card-container .what-card {
+  border: 1px solid var(--purple);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--white-smoke);
+}
+#what #what-cards #what-card-container .what-card .card-img {
+  height: 30vh;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+#what #what-cards #what-card-container .what-card .card-content {
+  padding: 16px;
+}
+#what #what-cards #what-card-container .what-card .card-content h3 {
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+#what #what-cards #what-card-container .what-card .card-content ul {
+  padding-left: 24px;
+}
+#what #what-cards #what-card-container .what-card .card-content ul li {
+  list-style: circle;
+  margin-bottom: 8px;
+}
+#what #what-cards #what-card-container #card-1 {
+  background-image: url("../img/what/card-1.jpg");
+}

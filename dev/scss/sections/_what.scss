@@ -5,4 +5,49 @@
 
 #what{
 
+    #what-top{
+
+        margin-bottom: 24px;
+    }
+
+    #what-cards{
+        #what-card-container{
+            display: grid;
+            gap: 16px;
+            .what-card{
+                border: 1px solid var(--purple);
+                border-radius: 8px;
+                overflow: hidden;
+                background-color: var(--white-smoke);
+                .card-img{
+                    height: 30vh;
+                    background-position: center;
+                    background-size: cover;
+                    overflow: hidden;
+                }
+
+                .card-content{
+                    padding: 16px;
+
+                    h3{
+                        margin-bottom: 16px;
+                        font-weight: 600;
+                    }
+
+                    ul{
+                        padding-left: 24px;
+                        li{
+                            list-style:circle;
+                            margin-bottom: 8px;
+                        }
+                    }
+                }
+            }
+
+            #card-1{
+                background-image: url("../img/what/card-1.jpg");
+            }
+        }
+    }
+
 }

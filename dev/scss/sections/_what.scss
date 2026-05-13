@@ -4,50 +4,93 @@
 @use "../helpers";
 
 #what{
+    background-color: var(--white-smoke);
 
-    #what-top{
-
-        margin-bottom: 24px;
+    @include helpers.lg{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". what .";
     }
 
-    #what-cards{
-        #what-card-container{
-            display: grid;
-            gap: 16px;
-            .what-card{
-                border: 1px solid var(--purple);
-                border-radius: 8px;
-                overflow: hidden;
-                background-color: var(--white-smoke);
-                .card-img{
-                    height: 30vh;
-                    background-position: center;
-                    background-size: cover;
-                    overflow: hidden;
+    >div{
+
+         @include helpers.lg{
+            grid-area: what;
+         }
+
+
+        #what-top{
+
+            margin-bottom: 24px;
+        }
+
+        #what-cards{
+            #what-card-container{
+                display: grid;
+                gap: 16px;
+
+                @include helpers.md{
+                    grid-template-columns: repeat(2, 1fr);
                 }
 
-                .card-content{
-                    padding: 16px;
+                @include helpers.lg{
+                    grid-template-columns: repeat(3, 1fr);
+                }
 
-                    h3{
-                        margin-bottom: 16px;
-                        font-weight: 600;
+
+                .what-card{
+                    border: 1px solid var(--purple);
+                    border-radius: 8px;
+                    overflow: hidden;
+                    background-color: var(--white);
+                    .card-img{
+                        height: 30vh;
+                        background-position: center;
+                        background-size: cover;
+                        overflow: hidden;
+
+                         @include helpers.md{
+                           height: 20vh;
+                        }
+
+                        @include helpers.lg{
+                            height: 15vh;
+                        }
                     }
 
-                    ul{
-                        padding-left: 24px;
-                        li{
-                            list-style:circle;
-                            margin-bottom: 8px;
+                    .card-content{
+                        padding: 16px;
+
+                        h3{
+                            margin-bottom: 16px;
+                            font-weight: 600;
+                        }
+
+                        p{
+                            margin-bottom: 16px;
+                        }
+
+                        ul{
+                            padding-left: 24px;
+                            li{
+                                list-style:circle;
+                                margin-bottom: 8px;
+                                font-size: helpers.rem-calc(14);
+                            }
                         }
                     }
                 }
-            }
 
-            #card-1{
-                background-image: url("../img/what/card-1.jpg");
+                #card-1{
+                    background-image: url("../img/what/card-1.jpg");
+                }
+                #card-2{
+                    background-image: url("../img/what/card-2.jpg");
+                }
+                #card-3{
+                    background-image: url("../img/what/card-3.jpg");
+                }
             }
         }
     }
-
 }

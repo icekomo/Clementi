@@ -680,39 +680,84 @@ header #header-container #mainNav {
 /* =============
     What
 ============= */
-#what #what-top {
+#what {
+  background-color: var(--white-smoke);
+}
+@media (min-width: 992px) {
+  #what {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". what .";
+  }
+}
+@media (min-width: 992px) {
+  #what > div {
+    grid-area: what;
+  }
+}
+#what > div #what-top {
   margin-bottom: 24px;
 }
-#what #what-cards #what-card-container {
+#what > div #what-cards #what-card-container {
   display: grid;
   gap: 16px;
 }
-#what #what-cards #what-card-container .what-card {
+@media (min-width: 768px) {
+  #what > div #what-cards #what-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  #what > div #what-cards #what-card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+#what > div #what-cards #what-card-container .what-card {
   border: 1px solid var(--purple);
   border-radius: 8px;
   overflow: hidden;
-  background-color: var(--white-smoke);
+  background-color: var(--white);
 }
-#what #what-cards #what-card-container .what-card .card-img {
+#what > div #what-cards #what-card-container .what-card .card-img {
   height: 30vh;
   background-position: center;
   background-size: cover;
   overflow: hidden;
 }
-#what #what-cards #what-card-container .what-card .card-content {
+@media (min-width: 768px) {
+  #what > div #what-cards #what-card-container .what-card .card-img {
+    height: 20vh;
+  }
+}
+@media (min-width: 992px) {
+  #what > div #what-cards #what-card-container .what-card .card-img {
+    height: 15vh;
+  }
+}
+#what > div #what-cards #what-card-container .what-card .card-content {
   padding: 16px;
 }
-#what #what-cards #what-card-container .what-card .card-content h3 {
+#what > div #what-cards #what-card-container .what-card .card-content h3 {
   margin-bottom: 16px;
   font-weight: 600;
 }
-#what #what-cards #what-card-container .what-card .card-content ul {
+#what > div #what-cards #what-card-container .what-card .card-content p {
+  margin-bottom: 16px;
+}
+#what > div #what-cards #what-card-container .what-card .card-content ul {
   padding-left: 24px;
 }
-#what #what-cards #what-card-container .what-card .card-content ul li {
+#what > div #what-cards #what-card-container .what-card .card-content ul li {
   list-style: circle;
   margin-bottom: 8px;
+  font-size: 0.875rem;
 }
-#what #what-cards #what-card-container #card-1 {
+#what > div #what-cards #what-card-container #card-1 {
   background-image: url("../img/what/card-1.jpg");
+}
+#what > div #what-cards #what-card-container #card-2 {
+  background-image: url("../img/what/card-2.jpg");
+}
+#what > div #what-cards #what-card-container #card-3 {
+  background-image: url("../img/what/card-3.jpg");
 }

@@ -112,6 +112,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/what\/card-2.jpg" : {
+      "ft" : 16384,
+      "iS" : 164875,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/what\/card-2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/what\/card-3.jpg" : {
+      "ft" : 16384,
+      "iS" : 156669,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/what\/card-3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,

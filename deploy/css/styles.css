@@ -318,6 +318,7 @@ template {
   --gray: #8f9ca4;
   --gray-light: #b1c0c9;
   --white-smoke: #F9FAFB;
+  --red: #DF1C41;
 }
 
 /* ---------------- Font Sizing ---------------- */
@@ -374,6 +375,12 @@ ul {
   font-size: 2.1875rem;
   font-weight: 350;
   margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 
 /* =============
@@ -437,18 +444,30 @@ a {
 }
 #mainNav ul li {
   text-align: right;
-  padding-right: 16px;
+}
+@media (min-width: 992px) {
+  #mainNav ul li {
+    padding-right: 16px;
+  }
 }
 #mainNav ul li a:link, #mainNav ul li a:visited {
+  font-weight: 550;
   display: inline-block;
-  padding: 24px;
-  color: var(--black);
+  padding: 24px 0;
+  color: var(--blue);
   transition: 0.25s;
 }
-#mainNav ul li a:link:hover, #mainNav ul li a:link:active, #mainNav ul li a:visited:hover, #mainNav ul li a:visited:active {
-  background-color: var(--gray-light);
-  color: var(--white);
-  border: 8px;
+@media (min-width: 992px) {
+  #mainNav ul li a:link, #mainNav ul li a:visited {
+    padding: 24px;
+  }
+}
+@media (min-width: 992px) {
+  #mainNav ul li a:link:hover, #mainNav ul li a:link:active, #mainNav ul li a:visited:hover, #mainNav ul li a:visited:active {
+    background-color: var(--gray-light);
+    color: var(--white);
+    border: 8px;
+  }
 }
 #mainNav ul li #contact-btn {
   background-color: var(--yellow);
@@ -476,9 +495,10 @@ header {
   z-index: 100;
   padding: 24px;
   box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: var(--white);
   border-radius: 16px;
   will-change: padding, background-color;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
   overflow: hidden;
 }
 @media (min-width: 992px) {
@@ -559,21 +579,29 @@ header #header-container #burger-container #burgerBtn #bottom {
 }
 header #header-container #mainNav {
   grid-area: nav;
-  position: fixed;
-  top: 80px;
-  right: 0;
-  height: 100vh;
-  width: 100vw;
-  z-index: 99;
-  transform: translateX(100vw);
+  overflow: hidden;
+  height: 0;
 }
 @media (min-width: 992px) {
   header #header-container #mainNav {
-    position: static;
-    position: static;
+    overflow: visible;
     height: auto;
-    width: auto;
-    transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+header #header-container #mainNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 16px 0 0 0;
+}
+@media (min-width: 992px) {
+  header #header-container #mainNav ul {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    padding: 0;
   }
 }
 
@@ -895,6 +923,9 @@ header #header-container #mainNav {
 /* =============
     Submission
 ============= */
+/* =============
+    Contact
+============= */
 #contact-overlay {
   display: none;
   position: fixed;
@@ -904,10 +935,161 @@ header #header-container #mainNav {
 }
 #contact-overlay #contact-panel {
   /* style your panel however you like */
-  background: #fff;
-  max-width: 640px;
+  background: var(--white);
   margin: 40px auto;
-  padding: 40px;
+  padding: 16px;
   overflow-y: auto;
   max-height: calc(100vh - 80px);
+  border-radius: 16px;
+  width: 90vw;
+}
+@media (min-width: 768px) {
+  #contact-overlay #contact-panel {
+    width: 90vw;
+  }
+}
+#contact-overlay #contact-panel #contact-close {
+  display: flex;
+  justify-content: flex-end;
+}
+#contact-overlay #contact-panel #contact-close button {
+  border: none;
+  background-color: var(--red);
+  color: var(--white);
+  padding: 16px;
+  border-radius: 16px;
+  font-weight: 550;
+}
+@media (min-width: 768px) {
+  #contact-overlay #contact-panel #contact-top {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+#contact-overlay #contact-panel #contact-top #contact-methods {
+  margin-top: 16px;
+}
+#contact-overlay #contact-panel #contact-top #contact-methods li {
+  margin-bottom: 8px;
+}
+#contact-overlay #contact-panel #contact-top #contact-methods li a:link,
+#contact-overlay #contact-panel #contact-top #contact-methods li a:visited {
+  background-color: var(--white-smoke);
+  display: flex;
+  color: var(--purple);
+  padding: 12px;
+  font-weight: 700;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+#contact-overlay #contact-panel #contact-top #contact-methods li a:link .contact-icon,
+#contact-overlay #contact-panel #contact-top #contact-methods li a:visited .contact-icon {
+  color: var(--purple);
+  margin-right: 8px;
+}
+#contact-overlay #contact-panel #contact-top #contact-methods li a:link,
+#contact-overlay #contact-panel #contact-top #contact-methods li a:visited {
+  color: var(--blue);
+}
+#contact-overlay #contact-panel #contact-bottom {
+  margin-top: 24px;
+}
+#contact-overlay #contact-panel #contact-bottom h2 {
+  font-size: 1.5625rem;
+  font-weight: 550;
+  margin-bottom: 8px;
+}
+#contact-overlay #contact-panel #contact-bottom p {
+  margin-bottom: 24px;
+}
+#contact-overlay #contact-panel #form-container {
+  background-color: #f8f8f8;
+  padding: 16px;
+  border-radius: 16px;
+}
+#contact-overlay #contact-panel #form-container form label {
+  margin-bottom: 8px;
+  display: inline-block;
+  font-weight: 600;
+}
+#contact-overlay #contact-panel #form-container form input {
+  border: none;
+  padding: 20px 8px;
+  box-sizing: border-box;
+  font-weight: 450;
+}
+#contact-overlay #contact-panel #form-container form #name-container input {
+  width: 100%;
+  margin-bottom: 8px;
+}
+@media (min-width: 768px) {
+  #contact-overlay #contact-panel #form-container form #name-container #name-input-container {
+    display: flex;
+    gap: 16px;
+  }
+}
+#contact-overlay #contact-panel #form-container form #company-container {
+  margin-top: 24px;
+}
+#contact-overlay #contact-panel #form-container form #company-container input {
+  width: 100%;
+}
+#contact-overlay #contact-panel #form-container form #email-container {
+  margin-top: 24px;
+}
+#contact-overlay #contact-panel #form-container form #email-container input {
+  width: 100%;
+  margin-bottom: 8px;
+}
+@media (min-width: 768px) {
+  #contact-overlay #contact-panel #form-container form #email-container #email-input-container {
+    display: flex;
+    gap: 16px;
+  }
+}
+#contact-overlay #contact-panel #form-container form #phone-container {
+  margin-top: 24px;
+}
+#contact-overlay #contact-panel #form-container form #phone-container input {
+  width: 100%;
+}
+#contact-overlay #contact-panel #form-container form #reason-container {
+  margin-top: 24px;
+}
+#contact-overlay #contact-panel #form-container form #reason-container .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#contact-overlay #contact-panel #form-container form #reason-container .checkbox label {
+  display: inline-block;
+}
+#contact-overlay #contact-panel #form-container form #comment-container {
+  margin-top: 24px;
+}
+#contact-overlay #contact-panel #form-container form #comment-container textarea {
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50vh;
+  display: inline-block;
+  padding: 8px;
+}
+@media (min-width: 768px) {
+  #contact-overlay #contact-panel #form-container form #comment-container textarea {
+    height: 25vh;
+  }
+}
+#contact-overlay #contact-panel #form-container form #submit-container {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+#contact-overlay #contact-panel #form-container form #submit-container button {
+  font-weight: 600;
+  border: none;
+  background-color: var(--yellow);
+  padding: 16px;
+  border-radius: 12px;
+  color: var(--blue);
 }

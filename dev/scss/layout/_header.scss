@@ -11,11 +11,12 @@ header{
     z-index: 100;
     padding: 24px;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: var(--white);
     border-radius: 16px;
     will-change: padding, background-color;
-
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
     overflow: hidden;
+
 
     @include helpers.lg{
         display: grid;
@@ -50,14 +51,11 @@ header{
             }
         }
 
-
-
         #burger-container{
             grid-area: burger;
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            // border: 1px solid green;
             height: 100%;
 
             #burgerBtn{
@@ -68,7 +66,6 @@ header{
                 flex-wrap: wrap;
                 flex-direction: row;
                 cursor: pointer;
-                // border: 1px solid blue;
 
                 .line{
                     border-radius: 2px;
@@ -106,22 +103,28 @@ header{
 
         #mainNav{
             grid-area: nav;
-            
-            // Off screen on mobile — fixed so it takes up no grid space
-            position: fixed;
-            top: 80px;
-            right: 0;
-            height: 100vh;
-            width: 100vw; // or whatever width you want the drawer to be
-            z-index: 99;
-            transform: translateX(100vw); // starting state in CSS matches GSAP's set
+            overflow: hidden; // clips the nav content during animation
+            height: 0;        // collapsed by default on mobile
 
             @include helpers.lg{
-                position: static;
-                position: static;
-                height: auto;
-                width: auto;
-                transform: none;
+                overflow: visible;
+                height: auto; // always open on desktop
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 16px 0 0 0; // breathing room at top when open
+
+                @include helpers.lg{
+                    display: flex;
+                    gap: 32px;
+                    align-items: center;
+                    padding: 0;
+                }
             }
         }
     }

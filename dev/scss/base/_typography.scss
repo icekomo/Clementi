@@ -22,20 +22,8 @@ ul{
     margin-bottom: 24px;
 }
 
-// <weight>: Use a value from 100 to 900
-// <uniquifier>: Use a unique and descriptive class name
-
-// .montserrat-<uniquifier> {
-//   font-family: "Montserrat", sans-serif;
-//   font-optical-sizing: auto;
-//   font-weight: <weight>;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: 'FAMILY_NAME';
-//   font-stretch: PERCENTAGE_RANGE_LOW_TO_HIGH; /* Note that font-stretch is a % of normal width */
-//   font-style: NORMAL_OR_ITALIC; /* See note below */
-//   font-weight: NUMERIC_RANGE_LOW_TO_HIGH;
-//   src: url(FONT_FILE_NAME.woff2) format('woff2');
-// }
+.section-title{
+    font-size: helpers.rem-calc(40);
+    font-weight: 500;
+    margin-bottom: 16px;
+}

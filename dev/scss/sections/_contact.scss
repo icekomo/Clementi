@@ -1,18 +1,214 @@
+/* =============
+    Contact
+============= */
+@use "../helpers";
+
 #contact-overlay {
     display: none;
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    
 
     #contact-panel {
-    /* style your panel however you like */
-    background: #fff;
-    max-width: 640px;
-    margin: 40px auto;
-    padding: 40px;
-    overflow-y: auto;
-    max-height: calc(100vh - 80px);
+        /* style your panel however you like */
+        background: var(--white);
+        margin: 40px auto;
+        padding: 16px;
+        overflow-y: auto;
+        max-height: calc(100vh - 80px);
+        border-radius: 16px;
+        width: 90vw;
+
+        @include helpers.md{
+            width: 90vw;
+        }
+
+        #contact-close {
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                border: none;
+                background-color: var(--red);
+                color: var(--white);
+                padding: 16px;
+                border-radius: 16px;
+                font-weight: 550;
+            }
+        }
+
+        #contact-top {
+            @include helpers.md {
+                display: grid;
+                grid-template-columns: 50% auto;
+            }
+
+            #contact-methods {
+                margin-top: 16px;
+
+                li {
+                    margin-bottom: 8px;
+
+                    a:link,
+                    a:visited {
+                        background-color: var(--white-smoke);
+                        display: flex;
+                        color: var(--purple);
+                        padding: 12px;
+                        font-weight: 700;
+                        border-radius: 12px;
+                        font-size: helpers.rem-calc(16);
+
+                        .contact-icon {
+                            color: var(--purple);
+                            margin-right: 8px;
+                            // height: 50px;
+                            // width: 50px;
+                            // display: flex;
+                            // border-radius: 100%;
+                            // justify-content: center;
+                            // align-items: center;
+                            // background-color: var(--purple);
+                            // i{
+                            //     color: var(--white);
+                            // }
+                        }
+
+                        color: var(--blue);
+
+                        &:hover,
+                        &:active {
+                        }
+                    }
+                }
+            }
+        }
+
+        #contact-bottom {
+            margin-top: 24px;
+
+            h2 {
+                font-size: helpers.rem-calc(25);
+                font-weight: 550;
+                margin-bottom: 8px;
+            }
+
+            p {
+                margin-bottom: 24px;
+            }
+        }
+
+        #form-container {
+            // background-color: var(--white-smoke);
+            background-color: #f8f8f8;
+            padding: 16px;
+            border-radius: 16px;
+
+            form {
+                label {
+                    margin-bottom: 8px;
+                    display: inline-block;
+                    font-weight: 600;
+                }
+
+                input {
+                    border: none;
+                    padding: 20px 8px;
+                    // width: 100%;
+                    box-sizing: border-box;
+                    font-weight: 450;
+                }
+
+                #name-container {
+                    input {
+                        width: 100%;
+                        margin-bottom: 8px;
+                    }
+
+                    #name-input-container{
+                        @include helpers.md{
+                            display: flex;
+                            gap: 16px;
+                        }
+                    }
+                }
+
+                #company-container {
+                    margin-top: 24px;
+                    input {
+                        width: 100%;
+                    }
+                }
+
+                #email-container {
+                    margin-top: 24px;
+
+                    input {
+                        width: 100%;
+                        margin-bottom: 8px;
+                    }
+
+                    #email-input-container{
+                        @include helpers.md{
+                            display: flex;
+                            gap: 16px;
+                        }
+                    }
+                }
+
+                #phone-container {
+                    margin-top: 24px;
+                    input {
+                        width: 100%;
+                    }
+                }
+
+                #reason-container {
+                    margin-top: 24px;
+
+                    .checkbox {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+
+                        label {
+                            display: inline-block;
+                        }
+                    }
+                }
+
+                #comment-container {
+                    margin-top: 24px;
+
+                    textarea {
+                        border: none;
+                        width: 100%;
+                        box-sizing: border-box;
+                        height: 50vh;
+                        display: inline-block;
+                        padding: 8px;
+
+                        @include helpers.md{
+                            height: 25vh;
+                        }
+                    }
+                }
+
+                #submit-container {
+                    margin-top: 24px;
+                    display: flex;
+                    justify-content: flex-end;
+                    button {
+                        font-weight: 600;
+                        border: none;
+                        background-color: var(--yellow);
+                        padding: 16px;
+                        border-radius: 12px;
+                        color: var(--blue);
+                    }
+                }
+            }
+        }
     }
 }

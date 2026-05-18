@@ -1,85 +1,73 @@
 import { gsap } from "../gsap-setup.js";
 
 export function initHeader() {
-    /* ============================================
-           Header
-    ============================================ */
-
-    const header = document.querySelector("#site-header");
     const burgerBtn = document.querySelector("#burgerBtn");
+    const mainNav = document.querySelector("#mainNav");
+    const navItems = mainNav.querySelectorAll("li");
 
-    // --- State ---
-    let isHovered = false;
+    // Match your lg breakpoint — adjust this value to match helpers.lg
+    const desktopMQ = window.matchMedia("(min-width: 1024px)");
+
     let isMenuOpen = false;
-    let lastScrollY = window.scrollY;
-    let scrollDirection = null; // 'down' | 'up'
 
-    // --- Helpers ---
-    function expandHeader() {
-        gsap.to(header, {
-            padding: "24px",
-            backgroundColor: "rgba(255, 255, 255, 1)",
-            duration: 0.4,
-            ease: "power2.out",
-        });
+    function setMobileState() {
+        // Only hide nav items on mobile
+        if (!desktopMQ.matches) {
+            gsap.set(navItems, { x: 40, opacity: 0 });
+        } else {
+            // Clear any inline GSAP styles on desktop so CSS takes over
+            gsap.set(navItems, { clearProps: "all" });
+        }
     }
 
-    function shrinkHeader() {
-        gsap.to(header, {
-            padding: "12px 24px",
-            backgroundColor: "rgba(255, 255, 255, 0.75)",
-            duration: 0.4,
-            ease: "power2.out",
-        });
-    }
+    setMobileState();
 
-    // --- Burger Toggle ---
+    // Re-evaluate if the window is resized across the breakpoint
+    desktopMQ.addEventListener("change", () => {
+        isMenuOpen = false;
+        burgerBtn.classList.remove("is-open");
+        setMobileState();
+    });
+
     burgerBtn.addEventListener("click", () => {
-        isMenuOpen = !isMenuOpen;
+        if (!isMenuOpen) {
+            isMenuOpen = true;
+            burgerBtn.classList.add("is-open");
 
-        if (isMenuOpen) {
-            gsap.to(header, {
-                height: "400px",
+            gsap.to(mainNav, {
+                height: "auto",
                 duration: 0.5,
                 ease: "power3.inOut",
             });
+
+            gsap.to(navItems, {
+                x: 0,
+                opacity: 1,
+                duration: 0.4,
+                ease: "power3.out",
+                stagger: 0.07,
+                delay: 0.2,
+            });
+
         } else {
-            gsap.to(header, {
-                height: "auto",
+            burgerBtn.classList.remove("is-open");
+
+            gsap.to(navItems, {
+                x: 40,
+                opacity: 0,
+                duration: 0.2,
+                ease: "power3.in",
+                stagger: 0.04,
+            });
+
+            gsap.to(mainNav, {
+                height: 0,
                 duration: 0.4,
                 ease: "power3.inOut",
+                onComplete: () => {
+                    isMenuOpen = false;
+                },
             });
-        }
-
-        burgerBtn.classList.toggle("is-open", isMenuOpen);
-    });
-
-    // --- Scroll ---
-    window.addEventListener("scroll", () => {
-        const currentScrollY = window.scrollY;
-        scrollDirection = currentScrollY > lastScrollY ? "down" : "up";
-        lastScrollY = currentScrollY;
-
-        if (isHovered || isMenuOpen) return; // don't fight hover or open menu state
-
-        if (scrollDirection === "down" && currentScrollY > 60) {
-            shrinkHeader();
-        } else {
-            expandHeader();
-        }
-    });
-
-    // --- Hover ---
-    header.addEventListener("mouseenter", () => {
-        isHovered = true;
-        expandHeader();
-    });
-
-    header.addEventListener("mouseleave", () => {
-        isHovered = false;
-        // Re-evaluate: if still scrolled down, go back to shrunk
-        if (!isMenuOpen && scrollDirection === "down" && lastScrollY > 60) {
-            shrinkHeader();
         }
     });
 }

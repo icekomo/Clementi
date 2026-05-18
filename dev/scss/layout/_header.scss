@@ -104,21 +104,26 @@ header{
 
         #mainNav{
             grid-area: nav;
+
+             overflow: hidden;   // clips the nav while height animates
+            height: 0;          // GSAP will animate this open/closed
+
+
             // Off screen on mobile — fixed so it takes up no grid space
-            position: fixed;
-            top: 80px;
-            right: 0;
-            height: 100vh;
-            width: 100vw; // or whatever width you want the drawer to be
-            z-index: 99;
-            // background-color: var(--white);
-            transform: translateX(100vw); // starting state in CSS matches GSAP's set
+           // position: fixed;
+            //top: 80px;
+            //right: 0;
+            //height: 100vh;
+            //width: 100vw; // or whatever width you want the drawer to be
+            //z-index: 99;
+            //transform: translateX(100vw); // starting state in CSS matches GSAP's set
 
             @include helpers.lg{
                 position: static;
                 position: static;
                 height: auto;
                 width: auto;
+                overflow: visible;
                 transform: none;
             }
         }

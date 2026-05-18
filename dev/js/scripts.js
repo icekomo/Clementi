@@ -7,8 +7,9 @@ import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
 gsap.registerPlugin(GSDevTools,ScrollTrigger,DrawSVGPlugin,MorphSVGPlugin);
 
-
-// burger button
+/* ============================================
+           Burger Button
+============================================ */
 
 document.addEventListener("DOMContentLoaded", function() {
     // Your code here
@@ -67,133 +68,96 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })
 
+/* ============================================
+           Who Card Filp
+============================================ */
 
-// who card flip
+  const isTouchDevice = window.matchMedia('(hover: none)').matches;
 
-const isTouchDevice = window.matchMedia('(hover: none)').matches;
+  document.querySelectorAll('.card-wrapper').forEach(wrapper => {
+    const inner = wrapper.querySelector('.card-inner');
+    let flipped = false;
 
-document.querySelectorAll('.card-wrapper').forEach(wrapper => {
-  const inner = wrapper.querySelector('.card-inner');
-  let flipped = false;
-
-  if (isTouchDevice) {
-    wrapper.addEventListener('click', () => {
-      flipped = !flipped;
-      gsap.to(inner, {
-        rotationY: flipped ? 180 : 0,
-        duration: 0.55,
-        ease: 'power2.inOut'
+    if (isTouchDevice) {
+      wrapper.addEventListener('click', () => {
+        flipped = !flipped;
+        gsap.to(inner, {
+          rotationY: flipped ? 180 : 0,
+          duration: 0.55,
+          ease: 'power2.inOut'
+        });
       });
-    });
-  } else {
-    wrapper.addEventListener('mouseenter', () => {
-      gsap.to(inner, { rotationY: 180, duration: 0.55, ease: 'power2.inOut' });
-    });
+    } else {
+      wrapper.addEventListener('mouseenter', () => {
+        gsap.to(inner, { rotationY: 180, duration: 0.55, ease: 'power2.inOut' });
+      });
 
-    wrapper.addEventListener('mouseleave', () => {
-      gsap.to(inner, { rotationY: 0, duration: 0.55, ease: 'power2.inOut' });
+      wrapper.addEventListener('mouseleave', () => {
+        gsap.to(inner, { rotationY: 0, duration: 0.55, ease: 'power2.inOut' });
+      });
+    }
+  });
+
+
+/* ============================================
+           Contact
+============================================ */
+
+  const overlay = document.getElementById('contact-overlay');
+  const openBtn = document.getElementById('contact-btn');
+  const closeBtn = document.getElementById('close-btn');
+
+  function openContact() {
+    gsap.set(overlay, { display: 'block' });
+    gsap.fromTo(overlay,
+      { opacity: 0 },
+      { opacity: 1, duration: 0.4, ease: 'power2.out' }
+    );
+  }
+
+  function closeContact() {
+    gsap.to(overlay, {
+      opacity: 0,
+      duration: 0.3,
+      ease: 'power2.in',
+      onComplete: () => gsap.set(overlay, { display: 'none' })
     });
   }
-});
 
+  openBtn.addEventListener('click', openContact);
+  closeBtn.addEventListener('click', closeContact);
 
-/* ============================================
-           contact
-============================================ */
-// gsap.registerPlugin();
-
-const overlay = document.getElementById('contact-overlay');
-const openBtn = document.getElementById('contact-btn');
-const closeBtn = document.getElementById('close-btn');
-
-function openContact() {
-  gsap.set(overlay, { display: 'block' });
-  gsap.fromTo(overlay,
-    { opacity: 0 },
-    { opacity: 1, duration: 0.4, ease: 'power2.out' }
-  );
-}
-
-function closeContact() {
-  gsap.to(overlay, {
-    opacity: 0,
-    duration: 0.3,
-    ease: 'power2.in',
-    onComplete: () => gsap.set(overlay, { display: 'none' })
+  // Close on backdrop click
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closeContact();
   });
-}
 
-openBtn.addEventListener('click', openContact);
-closeBtn.addEventListener('click', closeContact);
-
-// Close on backdrop click
-overlay.addEventListener('click', (e) => {
-  if (e.target === overlay) closeContact();
-});
-
-// Close on Escape key
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeContact();
-});
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeContact();
+  });
 
 /* ============================================
-           header
+           Header
 ============================================ */
 
-const header = document.querySelector('#site-header');
+  const header = document.querySelector('#site-header');
 
-// --- State ---
-let isHovered = false;
-let lastScrollY = window.scrollY;
-let scrollDirection = null; // 'down' | 'up'
+  header.addEventListener('mouseenter', () => {
+      gsap.to(header, {
+          backgroundColor: 'rgba(255, 255, 255, 1)',
+          duration: 0.3,
+          ease: 'power2.out'
+      });
+  });
 
-// --- Helpers ---
-function expandHeader() {
-    gsap.to(header, {
-        padding: '24px',
-        backgroundColor: 'rgba(255, 255, 255, 1)',
-        duration: 0.4,
-        ease: 'power2.out'
-    });
-}
-
-function shrinkHeader() {
-    gsap.to(header, {
-        padding: '12px 24px',
-        backgroundColor: 'rgba(255, 255, 255, 0.75)',
-        duration: 0.4,
-        ease: 'power2.out'
-    });
-}
-
-// --- Scroll ---
-window.addEventListener('scroll', () => {
-    const currentScrollY = window.scrollY;
-    scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
-    lastScrollY = currentScrollY;
-
-    if (isHovered) return; // don't fight the hover state
-
-    if (scrollDirection === 'down' && currentScrollY > 60) {
-        shrinkHeader();
-    } else {
-        expandHeader();
-    }
-});
-
-// --- Hover ---
-header.addEventListener('mouseenter', () => {
-    isHovered = true;
-    expandHeader();
-});
-
-header.addEventListener('mouseleave', () => {
-    isHovered = false;
-    // Re-evaluate: if still scrolled down, go back to shrunk
-    if (scrollDirection === 'down' && lastScrollY > 60) {
-        shrinkHeader();
-    }
-});
+  header.addEventListener('mouseleave', () => {
+      gsap.to(header, {
+          backgroundColor: 'rgba(255, 255, 255, 0.75)',
+          duration: 0.3,
+          ease: 'power2.out'
+      });
+  });
 
 
 

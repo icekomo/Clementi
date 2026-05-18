@@ -558,13 +558,8 @@ header #header-container #burger-container #burgerBtn #bottom {
 }
 header #header-container #mainNav {
   grid-area: nav;
-  position: fixed;
-  top: 80px;
-  right: 0;
-  height: 100vh;
-  width: 100vw;
-  z-index: 99;
-  transform: translateX(100vw);
+  overflow: hidden;
+  height: 0;
 }
 @media (min-width: 992px) {
   header #header-container #mainNav {
@@ -572,6 +567,7 @@ header #header-container #mainNav {
     position: static;
     height: auto;
     width: auto;
+    overflow: visible;
     transform: none;
   }
 }

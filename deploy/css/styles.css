@@ -479,6 +479,7 @@ header {
   background-color: rgba(255, 255, 255, 0.85);
   border-radius: 16px;
   will-change: padding, background-color;
+  overflow: hidden;
 }
 @media (min-width: 992px) {
   header {
@@ -558,8 +559,13 @@ header #header-container #burger-container #burgerBtn #bottom {
 }
 header #header-container #mainNav {
   grid-area: nav;
-  overflow: hidden;
-  height: 0;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 99;
+  transform: translateX(100vw);
 }
 @media (min-width: 992px) {
   header #header-container #mainNav {
@@ -567,7 +573,6 @@ header #header-container #mainNav {
     position: static;
     height: auto;
     width: auto;
-    overflow: visible;
     transform: none;
   }
 }

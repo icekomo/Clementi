@@ -3,27 +3,27 @@
 ============= */
 @use "../helpers";
 
-
 header{
-
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 16px;
+    left: 5%;
+    width: 90%;
     z-index: 100;
     padding: 24px;
     box-sizing: border-box;
-    background-color: var(--white);
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    will-change: padding, background-color;
 
-        @include helpers.lg{
-            display: grid;
-            grid-template-columns: auto 90vw auto;
-            grid-template-areas: ". header .";
-        }
+    @include helpers.lg{
+        display: grid;
+        grid-template-columns: auto 90vw auto;
+        grid-template-areas: ". header .";
+    }
 
-        @include helpers.xl{
-            grid-template-columns: auto 80vw auto;
-        }
+    @include helpers.xl{
+        grid-template-columns: auto 80vw auto;
+    }
     
     #header-container{
 
@@ -72,7 +72,7 @@ header{
                     border-radius: 2px;
                     height: 3px;
                     width: 100%;
-                    background-color: var(--black);
+                    background-color: var(--blue);
                 }
 
                 .line-container{
@@ -83,17 +83,17 @@ header{
                 }
 
                 #top{
-                    background-color: var(--black);
+                    background-color: var(--blue);
                     align-self: flex-start;
                 }
 
                 #middle{
-                    background-color: var(--black);
+                   background-color: var(--blue);
                     align-items: center;
                 }
 
                 #bottom{
-                    background-color: var(--black);
+                    background-color: var(--blue);
                 }
             }
 
@@ -111,7 +111,7 @@ header{
             height: 100vh;
             width: 100vw; // or whatever width you want the drawer to be
             z-index: 99;
-            background-color: var(--white);
+            // background-color: var(--white);
             transform: translateX(100vw); // starting state in CSS matches GSAP's set
 
             @include helpers.lg{

@@ -39,10 +39,12 @@
 
 
                 .what-card{
-                    border: 1px solid var(--purple);
+                    border: 1px solid #E5E7EB;
                     border-radius: 8px;
                     overflow: hidden;
                     background-color: var(--white);
+                    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+
                     .card-img{
                         height: 30vh;
                         background-position: center;

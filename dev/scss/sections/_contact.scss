@@ -1,0 +1,18 @@
+#contact-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    
+
+    #contact-panel {
+    /* style your panel however you like */
+    background: #fff;
+    max-width: 640px;
+    margin: 40px auto;
+    padding: 40px;
+    overflow-y: auto;
+    max-height: calc(100vh - 80px);
+    }
+}

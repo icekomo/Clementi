@@ -1,0 +1,141 @@
+/* =============
+    Who We Are
+============= */
+@use "../helpers";
+
+
+#who{
+    >div{
+
+        .card-wrapper {
+            width: 200px;
+            height: 260px;
+            perspective: 1000px;
+            cursor: pointer;
+
+            .card-inner {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                transform-style: preserve-3d;
+                will-change: transform;
+            }
+
+            .card-face {
+                position: absolute;
+                inset: 0;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                border-radius: 12px;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+            }
+
+            .card-front {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+
+                .photo-area {
+                position: absolute;
+                inset: 0;
+                bottom: 80px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                }
+                }
+
+                .name-area {
+                position: relative;
+                z-index: 1;
+                width: 100%;
+                padding: 0.75rem 1rem;
+                background: white;
+                border-top: 1px solid rgba(0, 0, 0, 0.08);
+                text-align: center;
+
+                .name {
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin: 0 0 2px;
+                }
+
+                .title {
+                    font-size: 12px;
+                    color: #666;
+                    margin: 0;
+                }
+                }
+            }
+
+            .card-back {
+                transform: rotateY(180deg);
+                display: flex;
+                flex-direction: column;
+                padding: 1.25rem;
+                background: white;
+
+                .initials {
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                background: #e6f1fb;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 500;
+                font-size: 14px;
+                color: #185fa5;
+                margin-bottom: 10px;
+                flex-shrink: 0;
+                }
+
+                .back-name {
+                font-size: 14px;
+                font-weight: 500;
+                margin: 0 0 2px;
+                }
+
+                .back-title {
+                font-size: 11px;
+                color: #666;
+                margin: 0 0 14px;
+                }
+
+                .divider {
+                height: 1px;
+                background: rgba(0, 0, 0, 0.08);
+                margin-bottom: 14px;
+                }
+
+                .contact-row {
+                display: flex;
+                align-items: flex-start;
+                gap: 8px;
+                margin-bottom: 10px;
+
+                i {
+                    font-size: 14px;
+                    color: #666;
+                    margin-top: 1px;
+                    flex-shrink: 0;
+                }
+
+                span {
+                    font-size: 11px;
+                    color: #555;
+                    line-height: 1.4;
+                    word-break: break-word;
+                }
+                }
+            }
+            }
+
+
+    }
+}

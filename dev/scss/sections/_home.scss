@@ -4,6 +4,11 @@
 @use "../helpers";
 
 #home{
+
+    // position: sticky;
+    // top:0;
+    // z-index: 0;
+
     height: 100vh;
     background-image: url("../img/home/hero.jpg");
      background-position: 40% 25%;
@@ -41,12 +46,12 @@
         
 
         h1{
-            font-size: helpers.rem-calc(35);
-            font-weight: 350;
+            font-size: helpers.rem-calc(30);
+            font-weight: 375;
             margin-bottom: 16px;
 
             @include helpers.md{
-                font-size: helpers.rem-calc(45);
+                font-size: helpers.rem-calc(40);
                 padding-top: 5vh;;
             }
 
@@ -58,6 +63,11 @@
 
         p{
             line-height: helpers.rem-calc(25);
+
+            span{
+                font-weight: 600;
+                color: var(--yellow)
+            }
         }
     }
 }

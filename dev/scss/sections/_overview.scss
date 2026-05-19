@@ -5,6 +5,11 @@
 
 #overview {
 
+    position: relative;
+    z-index: 1;
+    // transform: translateY(-60px); // pulls it up to overlap the hero slightly
+    // margin-bottom: -60px;     
+    background-color: var(--white);
 
     @include helpers.xxl{
         display: grid;

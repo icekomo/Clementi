@@ -434,16 +434,35 @@ a {
 
 #mainNav {
   width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 0;
+}
+@media (min-width: 992px) {
+  #mainNav {
+    overflow: visible;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+#mainNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 16px 0 0 0;
 }
 @media (min-width: 992px) {
   #mainNav ul {
     display: flex;
-    justify-content: flex-end;
-    width: 100%;
+    align-items: center;
+    padding: 0;
+    margin-left: auto;
   }
 }
 #mainNav ul li {
   text-align: right;
+  height: 100%;
 }
 @media (min-width: 992px) {
   #mainNav ul li {
@@ -456,10 +475,12 @@ a {
   padding: 24px 0;
   color: var(--blue);
   transition: 0.25s;
+  height: 100%;
 }
 @media (min-width: 992px) {
   #mainNav ul li a:link, #mainNav ul li a:visited {
     padding: 24px;
+    font-size: 1rem;
   }
 }
 @media (min-width: 992px) {
@@ -490,8 +511,8 @@ a {
 header {
   position: fixed;
   top: 16px;
-  left: 5%;
-  width: 90%;
+  left: 3%;
+  width: 95%;
   z-index: 100;
   padding: 24px;
   box-sizing: border-box;
@@ -501,27 +522,23 @@ header {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
   overflow: hidden;
 }
-@media (min-width: 992px) {
-  header {
-    display: grid;
-    grid-template-columns: auto 90vw auto;
-    grid-template-areas: ". header .";
-  }
-}
 @media (min-width: 1200px) {
   header {
-    grid-template-columns: auto 80vw auto;
+    max-width: 1440px;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 }
 header #header-container {
-  grid-area: header;
+  width: 100%;
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 50% auto;
   grid-template-areas: "logo burger" "nav nav";
 }
 @media (min-width: 992px) {
   header #header-container {
-    grid-template-columns: 20% auto;
+    grid-template-columns: 15% auto;
     grid-template-areas: "logo nav";
   }
 }
@@ -532,6 +549,11 @@ header #header-container #logo {
 }
 header #header-container #logo img {
   width: 150px;
+}
+@media (min-width: 992px) {
+  header #header-container #logo img {
+    width: 100%;
+  }
 }
 header #header-container #burger-container {
   grid-area: burger;
@@ -579,30 +601,6 @@ header #header-container #burger-container #burgerBtn #bottom {
 }
 header #header-container #mainNav {
   grid-area: nav;
-  overflow: hidden;
-  height: 0;
-}
-@media (min-width: 992px) {
-  header #header-container #mainNav {
-    overflow: visible;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-}
-header #header-container #mainNav ul {
-  list-style: none;
-  margin: 0;
-  padding: 16px 0 0 0;
-}
-@media (min-width: 992px) {
-  header #header-container #mainNav ul {
-    display: flex;
-    gap: 32px;
-    align-items: center;
-    padding: 0;
-  }
 }
 
 /* =============
@@ -643,13 +641,13 @@ header #header-container #mainNav ul {
   }
 }
 #home > div h1 {
-  font-size: 2.1875rem;
-  font-weight: 350;
+  font-size: 1.875rem;
+  font-weight: 375;
   margin-bottom: 16px;
 }
 @media (min-width: 768px) {
   #home > div h1 {
-    font-size: 2.8125rem;
+    font-size: 2.5rem;
     padding-top: 5vh;
   }
 }
@@ -662,10 +660,19 @@ header #header-container #mainNav ul {
 #home > div p {
   line-height: 1.5625rem;
 }
+#home > div p span {
+  font-weight: 600;
+  color: var(--yellow);
+}
 
 /* =============
     Overview
 ============= */
+#overview {
+  position: relative;
+  z-index: 1;
+  background-color: var(--white);
+}
 @media (min-width: 1440px) {
   #overview {
     display: grid;
@@ -948,6 +955,21 @@ header #header-container #mainNav ul {
     width: 90vw;
   }
 }
+@media (min-width: 992px) {
+  #contact-overlay #contact-panel {
+    width: 75vw;
+  }
+}
+@media (min-width: 1200px) {
+  #contact-overlay #contact-panel {
+    width: 60vw;
+  }
+}
+@media (min-width: 1440px) {
+  #contact-overlay #contact-panel {
+    width: 50vw;
+  }
+}
 #contact-overlay #contact-panel #contact-close {
   display: flex;
   justify-content: flex-end;
@@ -990,6 +1012,12 @@ header #header-container #mainNav ul {
 #contact-overlay #contact-panel #contact-top #contact-methods li a:link,
 #contact-overlay #contact-panel #contact-top #contact-methods li a:visited {
   color: var(--blue);
+}
+#contact-overlay #contact-panel #divide-line {
+  height: 1px;
+  background-color: var(--gray);
+  width: 100%;
+  margin: 24px 0;
 }
 #contact-overlay #contact-panel #contact-bottom {
   margin-top: 24px;

@@ -6,8 +6,8 @@
 header{
     position: fixed;
     top: 16px;
-    left: 5%;
-    width: 90%;
+    left: 3%;
+    width: 95%;
     z-index: 100;
     padding: 24px;
     box-sizing: border-box;
@@ -18,27 +18,25 @@ header{
     overflow: hidden;
 
 
-    @include helpers.lg{
-        display: grid;
-        grid-template-columns: auto 90vw auto;
-        grid-template-areas: ". header .";
-    }
-
     @include helpers.xl{
-        grid-template-columns: auto 80vw auto;
+       max-width: 1440px;
+        // top: 16px;
+        left: 50%;
+        transform: translate(-50%, 0%);
     }
     
     #header-container{
 
-        grid-area: header;
-
+        // grid-area: header;
+        width: 100%;
+        box-sizing: border-box;
         display: grid;
         grid-template-columns: 50% auto;
         grid-template-areas: "logo burger"
                             "nav nav";
 
          @include helpers.lg{
-           grid-template-columns: 20% auto;
+           grid-template-columns: 15% auto;
            grid-template-areas: "logo nav";
         }
         
@@ -48,6 +46,10 @@ header{
             align-items: center;
             img{
                 width: 150px;
+
+                 @include helpers.lg{
+                    width: 100%;
+                 }
             }
         }
 
@@ -103,29 +105,6 @@ header{
 
         #mainNav{
             grid-area: nav;
-            overflow: hidden; // clips the nav content during animation
-            height: 0;        // collapsed by default on mobile
-
-            @include helpers.lg{
-                overflow: visible;
-                height: auto; // always open on desktop
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-            }
-
-            ul{
-                list-style: none;
-                margin: 0;
-                padding: 16px 0 0 0; // breathing room at top when open
-
-                @include helpers.lg{
-                    display: flex;
-                    gap: 32px;
-                    align-items: center;
-                    padding: 0;
-                }
-            }
         }
     }
 }

@@ -6,7 +6,7 @@ export function initHeader() {
     const navItems = mainNav.querySelectorAll("li");
 
     // Match your lg breakpoint — adjust this value to match helpers.lg
-    const desktopMQ = window.matchMedia("(min-width: 1024px)");
+    const desktopMQ = window.matchMedia("(min-width: 992px)");
 
     let isMenuOpen = false;
 

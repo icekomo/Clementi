@@ -10,17 +10,39 @@ a{
 
 #mainNav{
     width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; // clips the nav content during animation
+    height: 0;        // collapsed by default on mobile
+
+    @include helpers.lg{
+        overflow: visible;
+        height: auto; // always open on desktop
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
 
     ul{
+        list-style: none;
+        margin: 0;
+        padding: 16px 0 0 0; // breathing room at top when open
+
+
         @include helpers.lg{
             display: flex;
-            justify-content: flex-end;
-            width: 100%;
+            align-items: center;
+            padding: 0;
+            margin-left: auto;
+        }
+
+        @include helpers.xl{
+            // justify-content: flex-end;
         }
 
         li{
             text-align: right;
-            
+            height: 100%;
 
             @include helpers.lg{
                 padding-right: 16px;
@@ -32,9 +54,12 @@ a{
                 padding: 24px 0;
                 color: var(--blue);
                 transition: 0.25s;
+                height: 100%;
 
                 @include helpers.lg{
-                    padding: 24px;
+                      padding: 24px;
+        
+                    font-size: helpers.rem-calc(16);
                 }
 
                 &:hover, &:active{

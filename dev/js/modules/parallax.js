@@ -5,15 +5,15 @@ export function initParallax() {
     /* ============================================
         Home — background-image parallax
     ============================================ */
-        // ScrollTrigger.create({
-        //     trigger: "#home",
-        //     start: "top top",
-        //     end: "bottom top",
-        //     pin: true,
-        //     pinSpacing:false,
-        //     scrub: true,
-        //     markers:true
-        // });
+        ScrollTrigger.create({
+            trigger: "#home",
+            start: "top top",
+            end: "bottom top",
+            pin: true,
+            pinSpacing:false,
+            scrub: true
+            //markers:true
+        });
 
 
 

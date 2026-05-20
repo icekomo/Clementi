@@ -5,6 +5,8 @@
 
 #what{
     background-color: var(--white-smoke);
+    position: relative;
+    z-index: 50;
 
     @include helpers.lg{
         display: grid;

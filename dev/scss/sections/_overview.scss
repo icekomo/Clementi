@@ -4,66 +4,102 @@
 @use "../helpers";
 
 #overview {
-
     position: relative;
-    z-index: 1;padding-top: 100px;
-    // transform: translateY(-60px); // pulls it up to overlap the hero slightly
-    // margin-bottom: -60px;     
+    z-index: 1;
+    padding-top: 100px;
     background-color: var(--white);
 
-    @include helpers.xxl{
+    @include helpers.xxl {
         display: grid;
         grid-template-columns: auto 1200px auto;
-        grid-template-areas: ". overview-top ."
-                            ". overview-bottom .";
+        grid-template-areas:
+            ". overview-top ."
+            ". overview-bottom .";
     }
 
-    #overview-top{
+    #overview-top {
+        // border: 1px solid red;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "title"
-        "svg"
-        "content";
+        grid-template-areas:
+            "title"
+            "svg"
+            "content";
 
-        @include helpers.md{
-             grid-template-columns: 50% auto;
-                     grid-template-areas: 
-                        "content svg";
+        @include helpers.lg {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "content svg";
+            gap: 24px;
+            align-items: center; // ← prevents the row from stretching and overlapping
         }
 
-        @include helpers.xxl{
+        @include helpers.xxl {
             grid-area: overview-top;
         }
-    }
 
-    #overview-video {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        mask: url(#blob-mask);
-    }
+        #overview-svg {
+            grid-area: svg;
+            margin: 0 auto;
+            width: 80vw;
+            aspect-ratio: 1036 / 808; // matches the blob path's actual bounding box
+            position: relative;
 
-    #overview-title{
-        // border: 1px solid red;
-         grid-area: title;
-         h2{
-            
-         }
-    }
+            @include helpers.md {
+                width: 70vw;
+                margin: 0 auto;
+            }
 
-    #overview-content{
-        margin-top: 16px;
-        grid-area: content;
-        p{
-            margin-bottom: 16px;
+            @include helpers.lg {
+                width: 100%;
+            }
+
+            #overview-video {
+                display: block;
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                mask: url(#blob-mask);
+                mask-repeat: no-repeat;
+                -webkit-mask-repeat: no-repeat;
+            }
+        }
+
+        #overview-title {
+            grid-area: title;
+            @include helpers.md {
+                width: 80vw;
+                margin: 0 auto;
+            }
+        }
+
+        #overview-content {
+            margin-top: 24px;
+            grid-area: content;
+
+            @include helpers.md {
+                padding-top: 24px;
+                width: 80vw;
+                margin: 0 auto;
+            }
+
+            @include helpers.md {
+                width: 100%;
+            }
+
+            p {
+                font-size: helpers.rem-calc(17);
+                line-height: helpers.rem-calc(28);
+                margin-bottom: 16px;
+            }
         }
     }
 
-    #overview-bottom{
-        @include helpers.xxl{
+    #overview-bottom {
+        margin-top: 24px;
+        @include helpers.xxl {
             grid-area: overview-bottom;
         }
-    }   
+    }
 }

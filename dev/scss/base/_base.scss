@@ -14,15 +14,15 @@ ul{
     }
 }
 
-.show-md{
+.show-lg{
     display: none;
-    @include helpers.md{
+    @include helpers.lg{
         display: block;
     }
 }
 
-.hide-md{
-    @include helpers.md{
+.hide-lg{
+    @include helpers.lg{
         display: none;
     }
 }

@@ -3,6 +3,8 @@ import { initCardflip } from "./modules/card-flip.js";
 import { initContact } from "./modules/contact.js";
 import { initHeader } from "./modules/header.js";
 import { initParallax } from "./modules/parallax.js";
+//import { initOverview } from "./modules/overview.js";
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -11,4 +13,5 @@ document.addEventListener("DOMContentLoaded", () => {
     initContact();
     initHeader();
     initParallax();
+    //initOverview();
 });

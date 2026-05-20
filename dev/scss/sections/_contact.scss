@@ -39,6 +39,14 @@
         #contact-close {
             display: flex;
             justify-content: flex-end;
+            position: sticky;
+            width: 100%;
+            top:-16px;
+            right:0;
+            left:0;
+            box-sizing: border-box;
+            background-color: var(--white);
+            padding: 4px;
 
             button {
                 border: none;

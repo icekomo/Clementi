@@ -55,15 +55,15 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/hero\/hero.jpg" : {
+    "\/deploy\/img\/home\/hero-2.jpg" : {
       "ft" : 16384,
-      "iS" : 537925,
+      "iS" : 242789,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/hero\/hero.jpg",
+      "oAP" : "\/deploy\/img\/home\/hero-2.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75

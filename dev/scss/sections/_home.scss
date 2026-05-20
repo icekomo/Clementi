@@ -5,68 +5,120 @@
 
 #home{
 
-    // position: sticky;
-    // top:0;
-    // z-index: 0;
-
-    height: 100vh;
-    background-image: url("../img/home/hero.jpg");
-     background-position: 40% 25%;
-    background-size: cover;
-    padding-top: 100px;
+    height: 100dvh;
     background-color: #0a6383;
+    // display: flex;
+    display: grid;
+    // flex-direction: column;
+    margin-bottom: 0;
 
     @include helpers.md{
-        background-position: 35% center;
-        display: flex;
-        justify-content: right;
-        align-items: top;
-        height: 90vh;
+        // height: 80vh;
+    }
+
+    @include helpers.xxl{
+        //  height: 100dvh;
     }
 
 
-    >div{
+
+    #home-top{
         padding: 16px;
         color: var(--white);
-
+        display: grid;
+        align-items: end;
+        height: 100%;  
+        padding-bottom: 10vh;
+       
         @include helpers.md{
-            width: 50vh;
-            // border: 1px solid yellow;
+            grid-template-columns: auto 70vw auto;
+            grid-template-areas: ". hero-content .";
+            padding-bottom: 15vh;
         }
 
         @include helpers.lg{
-            width: 60vw;
+            // grid-template-columns: auto 50vw auto;
+            padding-bottom: 0vh;
             // border: 1px solid red;
         }
 
+        @include helpers.xl{
+            grid-template-columns: auto 60vw auto;
+            // border: 1px solid yellow;
+        }
+
         @include helpers.xxl{
-            // width: 1200px;
+            grid-template-columns: auto 1200px auto;
+            // border: 1px solid green;
+        }
+
+        >div{
+            grid-area: hero-content;
+
+             @include helpers.lg{
+                // border: 1px solid red;
+             }
+
+            h1{
+                font-size: helpers.rem-calc(33);
+                font-weight: 375;
+                margin-bottom: 16px;
+
+                @include helpers.md{
+                    font-size: helpers.rem-calc(45);
+                }
+
+                @include helpers.lg{
+                    font-size: helpers.rem-calc(50);
+                }
+            }
+
+            p{
+                font-size: helpers.rem-calc(20);
+                line-height: helpers.rem-calc(35);
+
+                span{
+                    font-weight: 600;
+                    color: var(--yellow)
+                }
+            }
         }
 
         
 
-        h1{
-            font-size: helpers.rem-calc(30);
-            font-weight: 375;
-            margin-bottom: 16px;
+        
+    }
 
-            @include helpers.md{
-                font-size: helpers.rem-calc(40);
-                padding-top: 5vh;;
-            }
+    #home-img{
+        margin-top: auto;
+        
+        margin-bottom: 0;
+        padding-bottom: 0;
+        background-color: var(--white);
 
-            @include helpers.lg{
-                font-size: helpers.rem-calc(50);
-                padding-top: 5vh;
-            }
+       
+        @include helpers.lg{
+             height: 30vh;
+             background-image: url("../img/home/hero-2.jpg");
+             background-size: cover;
+             background-position: center;
         }
 
-        p{
-            line-height: helpers.rem-calc(25);
+        @include helpers.xl{
+             height: 40vh;
+        }
 
-            span{
-                font-weight: 600;
-                color: var(--yellow)
+        @include helpers.xxl{
+             height: 50vh;
+        }
+
+        img{
+            width: 100%;
+            object-fit: scale-down;
+            margin-bottom: 0;
+
+            @include helpers.lg{
+                display: none;
             }
         }
     }

@@ -3,9 +3,132 @@
 ============= */
 @use "../helpers";
 
-#services{
+#services {
+    position: relative;
+    z-index: 100;
+    background-color: var(--white);
+    width: 100%;
+    box-sizing: border-box;
 
-    >div{
-        
+    display: grid;
+
+    @include helpers.xl {
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". services .";
+    }
+
+    #services-container {
+        @include helpers.xl {
+            grid-area: services;
+        }
+
+        #service-card-container {
+            display: grid;
+            gap: 16px;
+
+            @include helpers.md {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include helpers.xl {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .service-card {
+                background-color: var(--white-smoke);
+                border-radius: 12px;
+                overflow: hidden;
+                 box-shadow:
+                        0 4px 6px -1px rgba(0, 0, 0, 0.05),
+                        0 2px 4px -1px rgba(0, 0, 0, 0.03);
+
+
+                .service-img {
+                    height: 200px;
+                    background-position: center;
+                    background-size: cover;
+                    display: flex;
+                    align-items: flex-end;
+                    img{
+                        position: relative;
+                        bottom: -30px;
+                    }
+                }
+
+                article {
+                    margin-top: 24px;
+                    padding: 16px;
+                    h2 {
+                        font-weight: 600;
+                        font-size: helpers.rem-calc(20);
+                        margin-bottom: 8px;
+                    }
+
+                    p {
+                        font-size: helpers.rem-calc(16);
+                        line-height: helpers.rem-calc(20);
+                        margin-bottom: 16px;
+                    }
+
+                    ul {
+                        
+                        li {
+                            font-size: helpers.rem-calc(14);
+                            margin-bottom: 8px;
+                            padding: 0;
+                            display: flex;
+                        }
+                    }
+
+                    #fda-list{
+
+                        i{
+                            color: #F97316;
+                            margin-right: 8px;
+                        }
+                    }
+
+                    #doc-list{
+
+                        i{
+                            color: #111827;
+                            margin-right: 8px;
+                        }
+                    }
+
+                    #cmc-list{
+
+                        i{
+                            color: #10B981;
+                            margin-right: 8px;
+                        }
+                    }
+
+                    #therapy-list{
+
+                        i{
+                            color: #EF4444;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+
+            #service-card-1 {
+                background-image: url("../img/service/fda.jpg");
+            }
+
+            #service-card-2 {
+                background-image: url("../img/service/doc.jpg");
+            }
+
+            #service-card-3 {
+                background-image: url("../img/service/therapy.jpg");
+            }
+
+            #service-card-4 {
+                background-image: url("../img/service/cmc.jpg");
+            }
+        }
     }
 }

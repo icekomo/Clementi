@@ -28,7 +28,7 @@
 
     <header id="site-header">
         <div id="header-container">
-            <section id="logo"><img src="img/header/logo.svg" alt=""></section>
+            <section id="logo"><a href="#home" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" ><img src="img/header/logo.svg" alt=""></a></section>
     
             <section id="burger-container">
                 <div id="burgerBtn">
@@ -40,10 +40,10 @@
     
             <nav id="mainNav">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Overview</a></li>
-                    <li><a href="#">What We Do</a></li>
-                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#home" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Home</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#what">What We Do</a></li>
+                    <li><a href="#who">Who We Are</a></li>
                     <li><button id="contact-btn">Contact Us</button></li>
                 </ul>
             </nav>
@@ -141,46 +141,46 @@
                         <section id="what-cards">
                             <ul id="what-card-container">
                 
-                                <li class="what-card">
+                                <li class="what-card" id="card-1-container">
                                     <div class="card-img" id="card-1"></div>
                                     <div class="card-content">
                                          <h3>Therapeutic Focus</h3>
                                         <ul>
-                                            <li>Cell and gene therapies</li>
-                                            <li>Monoclonal antibodies</li>
-                                            <li>Recombinant proteins</li>
-                                            <li>Vaccines</li>
-                                            <li>Tissue-engineered products</li>
+                                            <li><i class="fa-duotone fa-regular fa-check"></i>Cell and gene therapies</li>
+                                            <li><i class="fa-duotone fa-regular fa-check"></i>Monoclonal antibodies</li>
+                                            <li><i class="fa-duotone fa-regular fa-check"></i>Recombinant proteins</li>
+                                            <li><i class="fa-duotone fa-regular fa-check"></i>Vaccines</li>
+                                            <li><i class="fa-duotone fa-regular fa-check"></i>Tissue-engineered products</li>
                                         </ul>
                                     </div>
                                 </li>
                 
-                                <li class="what-card">
+                                <li class="what-card" id="card-2-container">
                                     <div class="card-img" id="card-2"></div>
                                     <div class="card-content">
                                         <h3>Medical and FDA Interactions </h3>
                                         <p>We help you communicate effectively with FDA:</p>
                                         <ul>
-                                            <li>Meeting briefing documents</li>
-                                            <li>Meeting strategy and rehearsals</li>
-                                            <li>Post-meeting follow-up and commitments</li>
+                                            <li><i class="fa-duotone fa-regular fa-check"></i>Meeting briefing documents</li>
+                                            <li><i class="fa-duotone fa-regular fa-check"></i>Meeting strategy and rehearsals</li>
+                                            <li><i class="fa-duotone fa-regular fa-check"></i>Post-meeting follow-up and commitments</li>
                                         </ul>
                                     </div>
                                 </li>
                 
-                                <li class="what-card">
+                                <li class="what-card" id="card-3-container">
                                     <div class="card-img" id="card-3"></div>
                                       <div class="card-content">
                                         <h3>Regulatory Strategy</h3>
                                         <p>We develop tailored regulatory strategies aligned with your product type, development stage, and commercial goals.</p>
                                         <ul>
-                                            <li>Regulatory pathway assessment (CDER vs. CBER)</li>
-                                            <li>Orphan Drug (OOPD) </li>
-                                            <li>Regenerative Medicine Advanced Therapies (RMAT)</li>
-                                            <li>Expedited Program Strategies</li>
-                                            <li>Global Regulatory Alignment</li>
-                                            <li>Endpoints</li>
-                                            <li>Dose Selection</li>
+                                            <li><i class="fa-duotone fa-regular fa-check"></i>Regulatory pathway assessment (CDER vs. CBER)</li>
+                                            <li><i class="fa-duotone fa-regular fa-check"></i>Orphan Drug (OOPD) </li>
+                                            <li><i class="fa-duotone fa-regular fa-check"></i>Regenerative Medicine Advanced Therapies (RMAT)</li>
+                                            <li><i class="fa-duotone fa-regular fa-check"></i>Expedited Program Strategies</li>
+                                            <li><i class="fa-duotone fa-regular fa-check"></i>Global Regulatory Alignment</li>
+                                            <li><i class="fa-duotone fa-regular fa-check"></i>Endpoints</li>
+                                            <li><i class="fa-duotone fa-regular fa-check"></i>Dose Selection</li>
                                         </ul>
                                     </div>
                                 </li>
@@ -188,372 +188,426 @@
                         </section>
                     </div>
                 </section>
-    <sectoin id="services">
-                        <div>
-                            <h1>Key Services</h1>
-                    
-                            <ul>
-                                <li>
-                                    <h2>FDA Submissions </h2>
-                                    <p>We provide end-to-end support for regulatory submissions.</p>
-                                    <ul>
-                                        <li>Pre-IND and INTERACT meetings</li>
-                                        <li>IND applications</li>
-                                        <li>NDA and BLA Submissions</li>
-                                        <li>Amendments, Supplements, & Annual reports</li>
-                                    </ul>
-                                </li>
-                    
-                                <li>
-                                    <h2>Document Management</h2>p>
-                                    <ul>
-                                        <li>Maintenance of Full Regulatory History</li>
-                                        <li>Manage ESG Client Accounts</li>
-                                        <li>Secure Cloud Project, Workflows, and Task Manager</li>
-                                        <li>Current XML eCTD Publisher and Validator</li>
-                                        <li>Preparation of Submission-Ready Compliant Documents</li>
-                                        <li>Document Management System (Cloud and Premises)</li>
-                                        <li>Off-site Multiple Backup Systems (Cloud)</li>
-                                    </ul>
-                                </li>
-                    
-                                <li>
-                                    <h2>CMC Development</h2>
-                                    <p>We support Chemistry, Manufacturing, and Controls (CMC) development for complex biologics and cell-based products.</p>
-                                    <ul>
-                                        <li>Process development and scale-up</li>
-                                        <li>Analytical method developmentns</li>
-                                        <li>Stability programs</li>
-                                        <li>CMC documentation for IND/BLA</li>
-                                    </ul>
-                                </li>
-                    
-                                <li>
-                                    <h2>Advanced Therapies</h2>
-                                    <p>Specialized support for cutting-edge therapeutics.</p>
-                                    <ul>
-                                        <li>Cell and gene therapy products</li>
-                                        <li>ATMP regulatory strategy</li>
-                                        <li>Comparability and potency assays</li>
-                                        <li>Vector manufacturing and control strategies</li>
-                                        <li>Document Management</li>
-                                    </ul>
-                                </li>
-                    
-                                <li>
-                                    <h2>FDA Submissions </h2>
-                                </li>
-                            </ul>
+    <section id="slideshow">
+                        <div class="slides-track">
+                            <div class="slide" id="slide-1"></div>
+                            <div class="slide" id="slide-2"></div>
+                            <div class="slide" id="slide-3"></div>
+                            <!-- duplicates for seamless loop -->
+                            <div class="slide" id="slide-1"></div>
+                            <div class="slide" id="slide-2"></div>
+                            <div class="slide" id="slide-3"></div>
                         </div>
-                    </sectoin>
-    <section id="gxp">
-                            <div>
-                                <h1>Success With Critical GxP Services</h1>
-                        
-                                <ul>
-                                    <li>
-                                        <h2>GCP Compliance</h2>
+                    </section>
+    <section id="services" class="content-padding">
+                            <div id="services-container">
+                                <h1 class="content-title">Key Services</h1>
+                                <ul id="service-card-container">
+                                    <li class="service-card">
+                                        <div class="service-img" id="service-card-1">
+                                            <img src="img/service/rx-icon.svg" alt="RX icon" />
+                                        </div>
+                                        <article>
+                                            <h2>FDA Submissions</h2>
+                                            <p>
+                                                We provide end-to-end support for regulatory
+                                                submissions.
+                                            </p>
+                                            <ul id="fda-list">
+                                                <li>
+                                                    <i class="fa-solid fa-circle-check"></i>Pre-IND and
+                                                    INTERACT meetings
+                                                </li>
+                                                <li>
+                                                    <i class="fa-solid fa-circle-check"></i>IND
+                                                    applications
+                                                </li>
+                                                <li>
+                                                    <i class="fa-solid fa-circle-check"></i>NDA and BLA
+                                                    Submissions
+                                                </li>
+                                                <li>
+                                                    <i class="fa-solid fa-circle-check"></i>Amendments,
+                                                    Supplements, & Annual reports
+                                                </li>
+                                            </ul>
+                                        </article>
                                     </li>
                         
-                                    <li>
-                                        <h2>GLP Compliance</h2>
-                                        <p>Support for nonclinical studies to meet regulatory standards.</p>
-                                        <ul>
-                                            <li>Study protocol review</li>
-                                            <li>GLP compliance audits</li>
-                                            <li>Vendor qualification</li>
-                                            <li>Data integrity assessments</li>
-                                        </ul>
+                                    <li class="service-card">
+                                        <div class="service-img" id="service-card-2">
+                                            <img src="img/service/doc-icon.svg" alt="RX icon" />
+                                        </div>
+                                        <article>
+                                            <h2>Document Management</h2>
+                                            <ul id="doc-list">
+                                                <li><i class="fa-solid fa-circle-check"></i>Maintenance of Full Regulatory History</li>
+                                                <li><i class="fa-solid fa-circle-check"></i>Manage ESG Client Accounts</li>
+                                                <li>
+                                                    <i class="fa-solid fa-circle-check"></i>Secure Cloud Project, Workflows, and Task Manager
+                                                </li>
+                                                <li><i class="fa-solid fa-circle-check"></i>Current XML eCTD Publisher and Validator</li>
+                                                <li>
+                                                    <i class="fa-solid fa-circle-check"></i>Preparation of Submission-Ready Compliant Documents
+                                                </li>
+                                                <li><i class="fa-solid fa-circle-check"></i>Document Management System (Cloud and Premises)</li>
+                                                <li><i class="fa-solid fa-circle-check"></i>Off-site Multiple Backup Systems (Cloud)</li>
+                                            </ul>
+                                        </article>
                                     </li>
                         
-                                    <li>
-                                        <h2>GMP</h2>
-                                        <p>Ensure your manufacturing operations meet FDA expectations.</p>
-                                        <ul>
-                                            <li>Quality system design and remediation</li>
-                                            <li>SOP development</li>
-                                            <li>Batch record review</li>
-                                            <li>Mock inspections and audit readiness</li>
-                                        </ul>
+                                    <li class="service-card">
+                                        <div class="service-img" id="service-card-3">
+                                            <img src="img/service/therapy-icon.svg" alt="therapy icon" />
+                                        </div>
+                                        <article>
+                                            <h2>CMC Development</h2>
+                                            <p>
+                                                We support Chemistry, Manufacturing, and Controls (CMC)
+                                                development for complex biologics and cell-based
+                                                products.
+                                            </p>
+                                            <ul id="cmc-list">
+                                                <li><i class="fa-solid fa-circle-check"></i>Process development and scale-up</li>
+                                                <li><i class="fa-solid fa-circle-check"></i>Analytical method developmentns</li>
+                                                <li><i class="fa-solid fa-circle-check"></i>Stability programs</li>
+                                                <li><i class="fa-solid fa-circle-check"></i>CMC documentation for IND/BLA</li>
+                                            </ul>
+                                        </article>
                                     </li>
                         
-                                    <li>
-                                        <h2>GDP</h2>
+                                    <li class="service-card">
+                                        <div class="service-img" id="service-card-4">
+                                            <img src="img/service/cmc-icon.svg" alt="cmc icon" />
+                                        </div>
+                                        <article>
+                                            <h2>Advanced Therapies</h2>
+                                            <p>Specialized support for cutting-edge therapeutics.</p>
+                                            <ul id="therapy-list">
+                                                <li><i class="fa-solid fa-circle-check"></i>Cell and gene therapy products</li>
+                                                <li><i class="fa-solid fa-circle-check"></i>ATMP regulatory strategy</li>
+                                                <li><i class="fa-solid fa-circle-check"></i>Comparability and potency assays</li>
+                                                <li><i class="fa-solid fa-circle-check"></i>Vector manufacturing and control strategies</li>
+                                                <li><i class="fa-solid fa-circle-check"></i>Document Management</li>
+                                            </ul>
+                                        </article>
+                                    </li>
+                        
+                                    <li class="service-card">
+                                        <h2>FDA Submissions</h2>
                                     </li>
                                 </ul>
                             </div>
-                        </section> 
+                        </section>
                         
-    <section id="who">
+    <section id="gxp">
                                 <div>
-                                    <h1>Who We Are</h1>
+                                    <h1>Success With Critical GxP Services</h1>
+                            
                                     <ul>
-                                        <li class="card-wrapper">
-                                            <div class="card-inner">
-                                                <!-- FRONT -->
-                                                <div class="card-face card-front">
-                                                <div class="photo-area">
-                                                    <img src="photo.jpg" alt="Sarah Chen" />
-                                                </div>
-                                                <div class="name-area">
-                                                     <h2 class="name">William A. Clementi Pharm.D., F.C.P.</h2>
-                                                    <p class="title">Creative Director</p>
-                                                </div>
-                                                </div>
-                            
-                                                <!-- BACK -->
-                                                <div class="card-face card-back">
-                                                <div class="initials">SC</div>
-                                                <p class="back-name">Sarah Chen</p>
-                                                <p class="back-title">Creative Director</p>
-                                                <div class="divider"></div>
-                                                <div class="contact-row">
-                                                    <i class="ti ti-mail"></i>
-                                                    <span>s.chen@studio.com</span>
-                                                </div>
-                                                <div class="contact-row">
-                                                    <i class="ti ti-phone"></i>
-                                                    <span>(717) 555-0142</span>
-                                                </div>
-                                                </div>
-                            
-                                            </div>
+                                        <li>
+                                            <h2>GCP Compliance</h2>
                                         </li>
                             
                                         <li>
-                                            <h2>Nancy D. Clementi, M.D</h2>
+                                            <h2>GLP Compliance</h2>
+                                            <p>Support for nonclinical studies to meet regulatory standards.</p>
+                                            <ul>
+                                                <li>Study protocol review</li>
+                                                <li>GLP compliance audits</li>
+                                                <li>Vendor qualification</li>
+                                                <li>Data integrity assessments</li>
+                                            </ul>
                                         </li>
                             
                                         <li>
-                                            <h2>Paul Heslin,  M.B.A.</h2>
+                                            <h2>GMP</h2>
+                                            <p>Ensure your manufacturing operations meet FDA expectations.</p>
+                                            <ul>
+                                                <li>Quality system design and remediation</li>
+                                                <li>SOP development</li>
+                                                <li>Batch record review</li>
+                                                <li>Mock inspections and audit readiness</li>
+                                            </ul>
                                         </li>
                             
                                         <li>
-                                            <h2>David L. Sloane, Ph.D.</h2>
-                                        </li>
-                            
-                                        <li>
-                                            <h2>Larry Stevens, M.S.</h2>
-                                        </li>
-                            
-                                        <li>
-                                            <h2>Nemisha Patel</h2>
-                                        </li>
-                            
-                                        <li>
-                                            <h2>Ethan D. Hausman, M.D.</h2>
+                                            <h2>GDP</h2>
                                         </li>
                                     </ul>
                                 </div>
-                            </section>
-    <section id="submission">
+                            </section> 
+                            
+    <section id="who">
                                     <div>
-                                        <h1>Submission Group</h1>
-                                        <p>Our submissions group is seasoned and experienced in all aspects of document preparation and submissions. They apply their long and comprehensive experience with submission-ready templates, formatting, digital media, graphics, FDA guidelines, to the submission process. Their mastery of these guidelines and tools allow them to seamlessly enter the e-submission space without skipping a beat. They have the current tools and methods but more importantly the knowledge and discipline to resolve even complex document preparation issues typically found in critical submission.</p>
+                                        <h1>Who We Are</h1>
+                                        <ul>
+                                            <li class="card-wrapper">
+                                                <div class="card-inner">
+                                                    <!-- FRONT -->
+                                                    <div class="card-face card-front">
+                                                    <div class="photo-area">
+                                                        <img src="photo.jpg" alt="Sarah Chen" />
+                                                    </div>
+                                                    <div class="name-area">
+                                                         <h2 class="name">William A. Clementi Pharm.D., F.C.P.</h2>
+                                                        <p class="title">Creative Director</p>
+                                                    </div>
+                                                    </div>
+                                
+                                                    <!-- BACK -->
+                                                    <div class="card-face card-back">
+                                                    <div class="initials">SC</div>
+                                                    <p class="back-name">Sarah Chen</p>
+                                                    <p class="back-title">Creative Director</p>
+                                                    <div class="divider"></div>
+                                                    <div class="contact-row">
+                                                        <i class="ti ti-mail"></i>
+                                                        <span>s.chen@studio.com</span>
+                                                    </div>
+                                                    <div class="contact-row">
+                                                        <i class="ti ti-phone"></i>
+                                                        <span>(717) 555-0142</span>
+                                                    </div>
+                                                    </div>
+                                
+                                                </div>
+                                            </li>
+                                
+                                            <li>
+                                                <h2>Nancy D. Clementi, M.D</h2>
+                                            </li>
+                                
+                                            <li>
+                                                <h2>Paul Heslin,  M.B.A.</h2>
+                                            </li>
+                                
+                                            <li>
+                                                <h2>David L. Sloane, Ph.D.</h2>
+                                            </li>
+                                
+                                            <li>
+                                                <h2>Larry Stevens, M.S.</h2>
+                                            </li>
+                                
+                                            <li>
+                                                <h2>Nemisha Patel</h2>
+                                            </li>
+                                
+                                            <li>
+                                                <h2>Ethan D. Hausman, M.D.</h2>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </section>
-    <section id="started">
+    <section id="submission">
                                         <div>
-                                            <h1>Get Started With the FDA</h1>
-                                            <section>
-                                                <div class="steps">
-                                                    <h3>Request IND #</h3>
-                                                </div>
-                                    
-                                                <div class="steps">
-                                                    <h3>Submit Pre-IND Meeting Request and Briefing Book (4 Weeks)</h3>
-                                                </div>
-                                    
-                                                <div class="steps">
-                                                    <h3>FDA Pre-IND Type B Meeting (60 Days)</h3>
-                                                </div>
-                                    
-                                                <div class="steps">
-                                                    <h3>IND Submission (90 Days)</h3>
-                                                </div>
-                                    
-                                                <div class="steps">
-                                                    <h3>IND Lifecycle Management (Annual)</h3>
-                                                </div>
-                                            </section>
+                                            <h1>Submission Group</h1>
+                                            <p>Our submissions group is seasoned and experienced in all aspects of document preparation and submissions. They apply their long and comprehensive experience with submission-ready templates, formatting, digital media, graphics, FDA guidelines, to the submission process. Their mastery of these guidelines and tools allow them to seamlessly enter the e-submission space without skipping a beat. They have the current tools and methods but more importantly the knowledge and discipline to resolve even complex document preparation issues typically found in critical submission.</p>
                                         </div>
                                     </section>
-    <section id="phase-1">
+    <section id="started">
                                             <div>
-                                                <h1>Are you ready to start your Phase I First in Human (FIH) Study?</h1>
+                                                <h1>Get Started With the FDA</h1>
+                                                <section>
+                                                    <div class="steps">
+                                                        <h3>Request IND #</h3>
+                                                    </div>
+                                        
+                                                    <div class="steps">
+                                                        <h3>Submit Pre-IND Meeting Request and Briefing Book (4 Weeks)</h3>
+                                                    </div>
+                                        
+                                                    <div class="steps">
+                                                        <h3>FDA Pre-IND Type B Meeting (60 Days)</h3>
+                                                    </div>
+                                        
+                                                    <div class="steps">
+                                                        <h3>IND Submission (90 Days)</h3>
+                                                    </div>
+                                        
+                                                    <div class="steps">
+                                                        <h3>IND Lifecycle Management (Annual)</h3>
+                                                    </div>
+                                                </section>
                                             </div>
                                         </section>
-                                        
-    <section id="contact-overlay">
-                                                <div id="contact-panel">
-                                                    <section id="contact-close">
-                                                        <button id="close-btn">Close</button>
-                                                    </section>
-                                            
-                                                    <section id="contact-top">
-                                                        <article>
-                                                            <h1 class="section-title">Contact Us</h1>
-                                                            <p>
-                                                                Our expert team would love to help your company succeed.
-                                                                Don't wait for the moment — Make it!
-                                                            </p>
-                                                        </article>
-                                            
-                                                        <ul id="contact-methods">
-                                                            <li>
-                                                                <a href="tel:+16105272600">
-                                                                    <div class="contact-icon">
-                                                                        <i class="fa-solid fa-mobile"></i>
-                                                                    </div>
-                                                                    +1 (610) 527-2600
-                                                                </a>
-                                                            </li>
-                                            
-                                                            <li>
-                                                                <a href="mailto:info@regulatoryaffairs.com"
-                                                                    ><div class="contact-icon">
-                                                                        <i class="fa-solid fa-envelope"></i>
-                                                                    </div>
-                                                                    info@regulatoryaffairs.com</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a href="#"
-                                                                    ><div class="contact-icon">
-                                                                        <i class="fa-solid fa-map-pin"></i>
-                                                                    </div>
-                                                                    Get Directions</a
-                                                                >
-                                                            </li>
-                                                        </ul>
-                                                    </section>
-                                            
-                                                    <div id="divide-line"></div>
-                                            
-                                                    <section id="contact-bottom">
-                                                        <h2>Request a Consultation</h2>
-                                                        <p>
-                                                            Fill out our contact form and one of our experts will reach out
-                                                            to you shortly.
-                                                        </p>
-                                                    </section>
-                                            
-                                                    <section id="form-container">
-                                                        <!-- <h2>How Can We Help?</h2> -->
-                                                        <form>
-                                                            <div id="name-container">
-                                                                <label>Name <span>*</span></label>
-                                                                <div id="name-input-container">
-                                                                    <input
-                                                                        type="text"
-                                                                        id="first-name"
-                                                                        name="first_name"
-                                                                        required
-                                                                        placeholder="First Name"
-                                                                    />
-                                                                    <input
-                                                                        type="text"
-                                                                        id="last-name"
-                                                                        name="last_name"
-                                                                        required
-                                                                        placeholder="Last Name"
-                                                                    />
-                                                                </div>
-                                                            </div>
-                                            
-                                                            <div id="company-container">
-                                                                <label for="company">Company</label>
-                                                                <input
-                                                                    type="text"
-                                                                    id="company"
-                                                                    name="company"
-                                                                    placeholder="Company"
-                                                                />
-                                                            </div>
-                                            
-                                                            <div id="email-container">
-                                                                <label>Email <span>*</span></label>
-                                                                <div id="email-input-container">
-                                                                   
-                                                                    <input
-                                                                        type="email"
-                                                                        id="enter-email"
-                                                                        name="email"
-                                                                        placeholder="Enter Email"
-                                                                        required
-                                                                    />
-                                                                    <input
-                                                                        type="email"
-                                                                        id="confirm-email"
-                                                                        name="confirm_email"
-                                                                        placeholder="Confirm Email"
-                                                                        required
-                                                                    />
-                                                                </div>
-                                                            </div>
-                                            
-                                                            <div id="phone-container">
-                                                                <label for="phone">Phone <span>*</span></label>
-                                                                <input
-                                                                    type="tel"
-                                                                    id="phone"
-                                                                    name="phone"
-                                                                    required
-                                                                    placeholder="Phone"
-                                                                />
-                                                            </div>
-                                            
-                                                            <div id="reason-container">
-                                                                <legend>Reason <span>*</span></legend>
-                                                                <div class="checkbox">
-                                                                    <input
-                                                                        type="checkbox"
-                                                                        id="rfp"
-                                                                        name="reason"
-                                                                        value="request_for_proposal"
-                                                                    />
-                                                                    <label for="rfp">Request for Proposal</label>
-                                                                </div>
-                                                                <div class="checkbox">
-                                                                    <input
-                                                                        type="checkbox"
-                                                                        id="rfc"
-                                                                        name="reason"
-                                                                        value="request_for_consultation"
-                                                                    />
-                                                                    <label for="rfc">Request for Consultation</label>
-                                                                </div>
-                                                                <div class="checkbox">
-                                                                    <input
-                                                                        type="checkbox"
-                                                                        id="general"
-                                                                        name="reason"
-                                                                        value="general_inquiry"
-                                                                    />
-                                                                    <label for="general">General Inquiry</label>
-                                                                </div>
-                                                            </div>
-                                            
-                                                            <div id="comment-container">
-                                                                <label for="comments"
-                                                                    >Comments & Inquiries <span>*</span></label
-                                                                >
-                                                                <textarea
-                                                                    id="comments"
-                                                                    name="comments"
-                                                                    required
-                                                                    placeholder="Comment"
-                                                                ></textarea>
-                                                            </div>
-                                            
-                                                            <div id="submit-container">
-                                                                <button type="submit">Submit</button>
-                                                            </div>
-                                                        </form>
-                                                    </section>
+    <section id="phase-1">
+                                                <div>
+                                                    <h1>Are you ready to start your Phase I First in Human (FIH) Study?</h1>
                                                 </div>
                                             </section>
                                             
+    <section id="contact-overlay">
+                                                    <div id="contact-panel">
+                                                        <section id="contact-close">
+                                                            <button id="close-btn">Close</button>
+                                                        </section>
+                                                
+                                                        <section id="contact-top">
+                                                            <article>
+                                                                <h1 class="section-title">Contact Us</h1>
+                                                                <p>
+                                                                    Our expert team would love to help your company succeed.
+                                                                    Don't wait for the moment — Make it!
+                                                                </p>
+                                                            </article>
+                                                
+                                                            <ul id="contact-methods">
+                                                                <li>
+                                                                    <a href="tel:+16105272600">
+                                                                        <div class="contact-icon">
+                                                                            <i class="fa-solid fa-mobile"></i>
+                                                                        </div>
+                                                                        +1 (610) 527-2600
+                                                                    </a>
+                                                                </li>
+                                                
+                                                                <li>
+                                                                    <a href="mailto:info@regulatoryaffairs.com"
+                                                                        ><div class="contact-icon">
+                                                                            <i class="fa-solid fa-envelope"></i>
+                                                                        </div>
+                                                                        info@regulatoryaffairs.com</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#"
+                                                                        ><div class="contact-icon">
+                                                                            <i class="fa-solid fa-map-pin"></i>
+                                                                        </div>
+                                                                        Get Directions</a
+                                                                    >
+                                                                </li>
+                                                            </ul>
+                                                        </section>
+                                                
+                                                        <div id="divide-line"></div>
+                                                
+                                                        <section id="contact-bottom">
+                                                            <h2>Request a Consultation</h2>
+                                                            <p>
+                                                                Fill out our contact form and one of our experts will reach out
+                                                                to you shortly.
+                                                            </p>
+                                                        </section>
+                                                
+                                                        <section id="form-container">
+                                                            <!-- <h2>How Can We Help?</h2> -->
+                                                            <form>
+                                                                <div id="name-container">
+                                                                    <label>Name <span>*</span></label>
+                                                                    <div id="name-input-container">
+                                                                        <input
+                                                                            type="text"
+                                                                            id="first-name"
+                                                                            name="first_name"
+                                                                            required
+                                                                            placeholder="First Name"
+                                                                        />
+                                                                        <input
+                                                                            type="text"
+                                                                            id="last-name"
+                                                                            name="last_name"
+                                                                            required
+                                                                            placeholder="Last Name"
+                                                                        />
+                                                                    </div>
+                                                                </div>
+                                                
+                                                                <div id="company-container">
+                                                                    <label for="company">Company</label>
+                                                                    <input
+                                                                        type="text"
+                                                                        id="company"
+                                                                        name="company"
+                                                                        placeholder="Company"
+                                                                    />
+                                                                </div>
+                                                
+                                                                <div id="email-container">
+                                                                    <label>Email <span>*</span></label>
+                                                                    <div id="email-input-container">
+                                                                       
+                                                                        <input
+                                                                            type="email"
+                                                                            id="enter-email"
+                                                                            name="email"
+                                                                            placeholder="Enter Email"
+                                                                            required
+                                                                        />
+                                                                        <input
+                                                                            type="email"
+                                                                            id="confirm-email"
+                                                                            name="confirm_email"
+                                                                            placeholder="Confirm Email"
+                                                                            required
+                                                                        />
+                                                                    </div>
+                                                                </div>
+                                                
+                                                                <div id="phone-container">
+                                                                    <label for="phone">Phone <span>*</span></label>
+                                                                    <input
+                                                                        type="tel"
+                                                                        id="phone"
+                                                                        name="phone"
+                                                                        required
+                                                                        placeholder="Phone"
+                                                                    />
+                                                                </div>
+                                                
+                                                                <div id="reason-container">
+                                                                    <legend>Reason <span>*</span></legend>
+                                                                    <div class="checkbox">
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            id="rfp"
+                                                                            name="reason"
+                                                                            value="request_for_proposal"
+                                                                        />
+                                                                        <label for="rfp">Request for Proposal</label>
+                                                                    </div>
+                                                                    <div class="checkbox">
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            id="rfc"
+                                                                            name="reason"
+                                                                            value="request_for_consultation"
+                                                                        />
+                                                                        <label for="rfc">Request for Consultation</label>
+                                                                    </div>
+                                                                    <div class="checkbox">
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            id="general"
+                                                                            name="reason"
+                                                                            value="general_inquiry"
+                                                                        />
+                                                                        <label for="general">General Inquiry</label>
+                                                                    </div>
+                                                                </div>
+                                                
+                                                                <div id="comment-container">
+                                                                    <label for="comments"
+                                                                        >Comments & Inquiries <span>*</span></label
+                                                                    >
+                                                                    <textarea
+                                                                        id="comments"
+                                                                        name="comments"
+                                                                        required
+                                                                        placeholder="Comment"
+                                                                    ></textarea>
+                                                                </div>
+                                                
+                                                                <div id="submit-container">
+                                                                    <button type="submit">Submit</button>
+                                                                </div>
+                                                            </form>
+                                                        </section>
+                                                    </div>
+                                                </section>
+                                                
 
 
     <script src="js/scripts-min.js"></script>

@@ -1,6 +1,6 @@
 <header id="site-header">
     <div id="header-container">
-        <section id="logo"><img src="img/header/logo.svg" alt=""></section>
+        <section id="logo"><a href="#home" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" ><img src="img/header/logo.svg" alt=""></a></section>
 
         <section id="burger-container">
             <div id="burgerBtn">
@@ -12,10 +12,10 @@
 
         <nav id="mainNav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Overview</a></li>
-                <li><a href="#">What We Do</a></li>
-                <li><a href="#">Who We Are</a></li>
+                <li><a href="#home" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Home</a></li>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#what">What We Do</a></li>
+                <li><a href="#who">Who We Are</a></li>
                 <li><button id="contact-btn">Contact Us</button></li>
             </ul>
         </nav>

@@ -17,6 +17,18 @@ export function initParallax() {
 
 
 
+        ScrollTrigger.create({
+            trigger: "#slideshow",
+            start: "top top",
+            end: "bottom top",
+            pin: true,
+            pinSpacing:false,
+            scrub: true
+            //markers:true
+        });
+
+
+
 //     gsap.to("#home", {
 //         backgroundPositionY: "60%",
 //         ease: "none",

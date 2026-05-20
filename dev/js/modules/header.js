@@ -4,70 +4,100 @@ export function initHeader() {
     const burgerBtn = document.querySelector("#burgerBtn");
     const mainNav = document.querySelector("#mainNav");
     const navItems = mainNav.querySelectorAll("li");
+    const navLinks = mainNav.querySelectorAll("a, button");
+    const topLine = document.querySelector("#top");
+    const bottomLine = document.querySelector("#bottom");
+    const middleLine = document.querySelector("#middle");
 
-    // Match your lg breakpoint — adjust this value to match helpers.lg
     const desktopMQ = window.matchMedia("(min-width: 992px)");
 
     let isMenuOpen = false;
 
+    // Burger icon timeline
+    const burgerTl = gsap.timeline({ paused: true });
+    gsap.set(topLine, { transformOrigin: "center center" });
+    gsap.set(bottomLine, { transformOrigin: "center center" });
+
+    burgerTl
+        .to(middleLine, { duration: 0.4, scaleX: 0 })
+        .to(topLine, { duration: 0.4, y: 8, rotation: 45, transformOrigin: "center center" }, "<")
+        .to(bottomLine, { duration: 0.4, y: -9, rotation: -45, transformOrigin: "center center" }, "<");
+
+    function openMenu() {
+        isMenuOpen = true;
+
+        burgerTl.play();
+
+        gsap.set(mainNav, { height: 0 });
+        gsap.set(navItems, { x: 40, opacity: 0 });
+
+        gsap.to(mainNav, {
+            height: "auto",
+            duration: 0.5,
+            ease: "power3.inOut",
+        });
+
+        gsap.to(navItems, {
+            x: 0,
+            opacity: 1,
+            duration: 0.4,
+            ease: "power3.out",
+            stagger: 0.07,
+            delay: 0.2,
+        });
+    }
+
+    function closeMenu() {
+        isMenuOpen = false;
+
+        burgerTl.reverse();
+
+        gsap.to(navItems, {
+            x: 40,
+            opacity: 0,
+            duration: 0.2,
+            ease: "power3.in",
+            stagger: 0.04,
+        });
+
+        gsap.to(mainNav, {
+            height: 0,
+            duration: 0.4,
+            ease: "power3.inOut",
+        });
+    }
+
     function setMobileState() {
-        // Only hide nav items on mobile
         if (!desktopMQ.matches) {
+            gsap.set(mainNav, { height: 0 });
             gsap.set(navItems, { x: 40, opacity: 0 });
         } else {
-            // Clear any inline GSAP styles on desktop so CSS takes over
+            gsap.set(mainNav, { clearProps: "all" });
             gsap.set(navItems, { clearProps: "all" });
+            burgerTl.pause(0); // reset burger icon to hamburger
         }
     }
 
     setMobileState();
 
-    // Re-evaluate if the window is resized across the breakpoint
     desktopMQ.addEventListener("change", () => {
         isMenuOpen = false;
-        burgerBtn.classList.remove("is-open");
         setMobileState();
+    });
+
+    navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+            if (!desktopMQ.matches && isMenuOpen) {
+                closeMenu();
+            }
+        });
     });
 
     burgerBtn.addEventListener("click", () => {
         if (!isMenuOpen) {
-            isMenuOpen = true;
-            burgerBtn.classList.add("is-open");
-
-            gsap.to(mainNav, {
-                height: "auto",
-                duration: 0.5,
-                ease: "power3.inOut",
-            });
-
-            gsap.to(navItems, {
-                x: 0,
-                opacity: 1,
-                duration: 0.4,
-                ease: "power3.out",
-                stagger: 0.07,
-                delay: 0.2,
-            });
-
+            openMenu();
         } else {
-            burgerBtn.classList.remove("is-open");
-
-            gsap.to(navItems, {
-                x: 40,
-                opacity: 0,
-                duration: 0.2,
-                ease: "power3.in",
-                stagger: 0.04,
-            });
-
-            gsap.to(mainNav, {
-                height: 0,
-                duration: 0.4,
-                ease: "power3.inOut",
-                onComplete: () => {
-                    isMenuOpen = false;
-                },
-            });
+            closeMenu();
         }
     });
 }

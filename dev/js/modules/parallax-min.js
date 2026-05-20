@@ -1,1 +1,0 @@
-import{gsap,ScrollTrigger}from"../gsap-setup.js";export function initParallax(){ScrollTrigger.create({trigger:"#home",start:"top top",end:"bottom top",pin:!0,pinSpacing:!1,scrub:!0,markers:!0})}

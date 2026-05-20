@@ -327,6 +327,10 @@ html {
 }
 
 /* ---------------- Media Queries ---------------- */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -710,6 +714,7 @@ header #header-container #mainNav {
     Overview
 ============= */
 #overview {
+  scroll-margin-top: 80px;
   position: relative;
   z-index: 1;
   padding-top: 100px;
@@ -812,6 +817,7 @@ header #header-container #mainNav {
     What
 ============= */
 #what {
+  scroll-margin-top: 80px;
   background-color: var(--white-smoke);
   position: relative;
   z-index: 50;
@@ -831,22 +837,28 @@ header #header-container #mainNav {
 #what > div #what-top {
   margin-bottom: 24px;
 }
+#what > div #what-top p {
+  font-size: 1.0625rem;
+  line-height: 1.75rem;
+}
 #what > div #what-cards #what-card-container {
   display: grid;
   gap: 16px;
 }
 @media (min-width: 768px) {
   #what > div #what-cards #what-card-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "card-1 card-1 card-2 card-2" ". card-3 card-3 .";
   }
 }
 @media (min-width: 992px) {
   #what > div #what-cards #what-card-container {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "card-1 card-2 card-3";
   }
 }
 #what > div #what-cards #what-card-container .what-card {
-  border: 1px solid #E5E7EB;
+  border: 1px solid #e5e7eb;
   border-radius: 8px;
   overflow: hidden;
   background-color: var(--white);
@@ -878,33 +890,149 @@ header #header-container #mainNav {
 #what > div #what-cards #what-card-container .what-card .card-content p {
   margin-bottom: 16px;
 }
-#what > div #what-cards #what-card-container .what-card .card-content ul {
-  padding-left: 24px;
-}
 #what > div #what-cards #what-card-container .what-card .card-content ul li {
-  list-style: circle;
   margin-bottom: 8px;
   font-size: 0.875rem;
 }
-#what > div #what-cards #what-card-container #card-1 {
+#what > div #what-cards #what-card-container .what-card .card-content ul li i {
+  margin-right: 8px;
+}
+@media (min-width: 768px) {
+  #what > div #what-cards #what-card-container #card-1-container {
+    grid-area: card-1;
+  }
+}
+#what > div #what-cards #what-card-container #card-1-container #card-1 {
   background-image: url("../img/what/card-1.jpg");
 }
-#what > div #what-cards #what-card-container #card-2 {
+@media (min-width: 768px) {
+  #what > div #what-cards #what-card-container #card-2-container {
+    grid-area: card-2;
+  }
+}
+#what > div #what-cards #what-card-container #card-2-container #card-2 {
   background-image: url("../img/what/card-2.jpg");
 }
-#what > div #what-cards #what-card-container #card-3 {
+@media (min-width: 768px) {
+  #what > div #what-cards #what-card-container #card-3-container {
+    grid-area: card-3;
+  }
+}
+#what > div #what-cards #what-card-container #card-3-container #card-3 {
   background-image: url("../img/what/card-3.jpg");
 }
 
 /* =============
     Services
 ============= */
+#services {
+  position: relative;
+  z-index: 100;
+  background-color: var(--white);
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+}
+@media (min-width: 1200px) {
+  #services {
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". services .";
+  }
+}
+@media (min-width: 1200px) {
+  #services #services-container {
+    grid-area: services;
+  }
+}
+#services #services-container #service-card-container {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #services #services-container #service-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  #services #services-container #service-card-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+#services #services-container #service-card-container .service-card {
+  background-color: var(--white-smoke);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+#services #services-container #service-card-container .service-card .service-img {
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+#services #services-container #service-card-container .service-card .service-img img {
+  position: relative;
+  bottom: -30px;
+}
+#services #services-container #service-card-container .service-card article {
+  margin-top: 24px;
+  padding: 16px;
+}
+#services #services-container #service-card-container .service-card article h2 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+#services #services-container #service-card-container .service-card article p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-bottom: 16px;
+}
+#services #services-container #service-card-container .service-card article ul li {
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+  padding: 0;
+  display: flex;
+}
+#services #services-container #service-card-container .service-card article #fda-list i {
+  color: #F97316;
+  margin-right: 8px;
+}
+#services #services-container #service-card-container .service-card article #doc-list i {
+  color: #111827;
+  margin-right: 8px;
+}
+#services #services-container #service-card-container .service-card article #cmc-list i {
+  color: #10B981;
+  margin-right: 8px;
+}
+#services #services-container #service-card-container .service-card article #therapy-list i {
+  color: #EF4444;
+  margin-right: 8px;
+}
+#services #services-container #service-card-container #service-card-1 {
+  background-image: url("../img/service/fda.jpg");
+}
+#services #services-container #service-card-container #service-card-2 {
+  background-image: url("../img/service/doc.jpg");
+}
+#services #services-container #service-card-container #service-card-3 {
+  background-image: url("../img/service/therapy.jpg");
+}
+#services #services-container #service-card-container #service-card-4 {
+  background-image: url("../img/service/cmc.jpg");
+}
+
 /* =============
     GxP Services
 ============= */
 /* =============
     Who We Are
 ============= */
+#who {
+  scroll-margin-top: 80px;
+}
 #who > div .card-wrapper {
   width: 200px;
   height: 260px;
@@ -1219,4 +1347,31 @@ header #header-container #mainNav {
   padding: 16px;
   border-radius: 12px;
   color: var(--blue);
+}
+
+/* =============
+    Slideshow
+============= */
+#slideshow {
+  overflow: hidden;
+}
+#slideshow .slides-track {
+  display: flex;
+  width: max-content;
+}
+#slideshow .slide {
+  width: 80vw;
+  height: 70vh;
+  flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
+}
+#slideshow #slide-1 {
+  background-image: url("../img/slideshow/slide-1.jpg");
+}
+#slideshow #slide-2 {
+  background-image: url("../img/slideshow/slide-2.jpg");
+}
+#slideshow #slide-3 {
+  background-image: url("../img/slideshow/slide-3.jpg");
 }

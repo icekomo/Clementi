@@ -1,0 +1,23 @@
+/* =============
+    Slideshow
+============= */
+#slideshow {
+    overflow: hidden; // clips the track so only the visible slides show
+
+    .slides-track {
+        display: flex;
+        width: max-content; // lets the track be as wide as all slides combined
+    }
+
+    .slide {
+        width: 80vw; // adjust to your preferred slide width
+        height: 70vh;
+        flex-shrink: 0;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #slide-1 { background-image: url("../img/slideshow/slide-1.jpg"); }
+    #slide-2 { background-image: url("../img/slideshow/slide-2.jpg"); }
+    #slide-3 { background-image: url("../img/slideshow/slide-3.jpg"); }
+}

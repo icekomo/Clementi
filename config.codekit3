@@ -55,6 +55,19 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/divide\/divide-1.jpg" : {
+      "ft" : 16384,
+      "iS" : 567227,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/divide\/divide-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/header\/logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -320,6 +333,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/contact.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/divide.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/divide.html",
       "oF" : 0
     },
     "\/dev\/content\/get-started.kit" : {
@@ -669,6 +690,19 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_contact.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0
+    },
+    "\/dev\/scss\/sections\/_divide.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_divide.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0

@@ -1375,3 +1375,18 @@ header #header-container #mainNav {
 #slideshow #slide-3 {
   background-image: url("../img/slideshow/slide-3.jpg");
 }
+
+/* =============
+    Divide
+============= */
+#divide-1 {
+  background-image: url("../img/divide/divide-1.jpg");
+  height: 25vh;
+  background-position: left center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  #divide-1 {
+    height: 35vh;
+  }
+}

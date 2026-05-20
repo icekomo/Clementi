@@ -1,0 +1,16 @@
+
+/* =============
+    Divide
+============= */
+@use "../helpers";
+
+#divide-1{
+    background-image: url("../img/divide/divide-1.jpg");
+    height: 25vh;
+    background-position: left center;
+    background-size: cover;
+
+    @include helpers.md{
+         height: 35vh;
+    }
+}

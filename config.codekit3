@@ -122,6 +122,32 @@
       "oAP" : "\/deploy\/img\/overview\/overview.mp4",
       "oF" : 0
     },
+    "\/deploy\/img\/phase-1\/background-DT.jpg" : {
+      "ft" : 16384,
+      "iS" : 3103375,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/phase-1\/background-DT.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/phase-1\/background-MB.jpg" : {
+      "ft" : 16384,
+      "iS" : 61552,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/phase-1\/background-MB.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/service\/cmc-icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,

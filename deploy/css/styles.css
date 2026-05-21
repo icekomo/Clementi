@@ -1390,3 +1390,78 @@ header #header-container #mainNav {
     height: 35vh;
   }
 }
+
+/* =============
+    Phase 1
+============= */
+#phase-1 {
+  background-image: url("../img/phase-1/background-MB.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  justify-content: flex-end;
+  padding: 25vh 16px 16px;
+}
+@media (min-width: 992px) {
+  #phase-1 {
+    height: 40vh;
+    background-image: url("../img/phase-1/background-DT.jpg");
+  }
+}
+#phase-1 > div {
+  padding: 24px;
+}
+@media (min-width: 768px) {
+  #phase-1 > div {
+    width: 70vw;
+  }
+}
+@media (min-width: 992px) {
+  #phase-1 > div {
+    width: 70vw;
+  }
+}
+@media (min-width: 1200px) {
+  #phase-1 > div {
+    width: 60vw;
+  }
+}
+@media (min-width: 1440px) {
+  #phase-1 > div {
+    width: 50vw;
+  }
+}
+#phase-1 > div h1 {
+  color: var(--blue);
+  text-align: right;
+  font-weight: 550;
+}
+@media (min-width: 768px) {
+  #phase-1 > div h1 {
+    font-size: 3.4375rem;
+  }
+}
+#phase-1 > div #phase-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+#phase-1 > div #phase-btn-container button {
+  border: none;
+  background-color: var(--purple);
+  padding: 16px;
+  color: var(--white);
+  font-weight: 550;
+  transition: 0.25s;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  #phase-1 > div #phase-btn-container button {
+    font-size: 1.875rem;
+    padding: 24px;
+  }
+}
+#phase-1 > div #phase-btn-container button:hover {
+  background-color: var(--white);
+  color: var(--purple);
+}

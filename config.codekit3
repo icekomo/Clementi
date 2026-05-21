@@ -318,6 +318,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/who\/william.jpg" : {
+      "ft" : 16384,
+      "iS" : 118192,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/who\/william.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -336,22 +349,6 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
-    },
-    "\/dev\/content\/_submission.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/_submission.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/_who.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/_who.html",
-      "oF" : 0
     },
     "\/dev\/content\/contact.kit" : {
       "cB" : 0,
@@ -425,12 +422,28 @@
       "oAP" : "\/dev\/content\/slideshow.html",
       "oF" : 0
     },
+    "\/dev\/content\/submission.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/submission.html",
+      "oF" : 0
+    },
     "\/dev\/content\/what.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/what.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/who.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/who.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {

@@ -1504,3 +1504,63 @@ header #header-container #mainNav {
   background-color: var(--white);
   color: var(--purple);
 }
+
+/* =============
+    Bio Modal
+============= */
+#bio-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+#bio-overlay #bio-panel {
+  background: var(--white);
+  margin: 40px auto;
+  padding: 16px;
+  overflow-y: auto;
+  max-height: calc(100vh - 80px);
+  border-radius: 16px;
+  width: 90vw;
+}
+@media (min-width: 768px) {
+  #bio-overlay #bio-panel {
+    width: 90vw;
+  }
+}
+@media (min-width: 992px) {
+  #bio-overlay #bio-panel {
+    width: 75vw;
+  }
+}
+@media (min-width: 1200px) {
+  #bio-overlay #bio-panel {
+    width: 60vw;
+  }
+}
+@media (min-width: 1440px) {
+  #bio-overlay #bio-panel {
+    width: 50vw;
+  }
+}
+#bio-overlay #bio-panel #bio-close {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  width: 100%;
+  top: -16px;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+  background-color: var(--white);
+  padding: 4px;
+}
+#bio-overlay #bio-panel #bio-close button {
+  border: none;
+  background-color: var(--red);
+  color: var(--white);
+  padding: 16px;
+  border-radius: 16px;
+  font-weight: 550;
+}

@@ -4,6 +4,7 @@ import { initContact } from "./modules/contact.js";
 import { initHeader } from "./modules/header.js";
 import { initParallax } from "./modules/parallax.js";
 import { initSlideshow } from "./modules/slideshow.js";
+import { initBioModal } from "./modules/bio-modal.js";
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -12,4 +13,5 @@ document.addEventListener("DOMContentLoaded", () => {
     initHeader();
     initParallax();
     initSlideshow();
+    initBioModal();
 });

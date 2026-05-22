@@ -1314,6 +1314,47 @@ header #header-container #mainNav {
 /* =============
     Submission
 ============= */
+#submission {
+  background-image: url("../img/who/submission.jpg");
+  background-blend-mode: multiply;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+@media (min-width: 768px) {
+  #submission {
+    justify-content: flex-end;
+    height: 60vh;
+  }
+}
+@media (min-width: 992px) {
+  #submission {
+    justify-content: center;
+  }
+}
+#submission #sub-card {
+  background: var(--black);
+  padding: 16px;
+  margin: auto 16px;
+  color: var(--white);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+@media (min-width: 768px) {
+  #submission #sub-card {
+    width: 50vw;
+  }
+}
+@media (min-width: 1440px) {
+  #submission #sub-card {
+    width: 30vw;
+  }
+}
+#submission #sub-card p {
+  margin-bottom: 16px;
+  line-height: 1.5rem;
+}
+
 /* =============
     Contact
 ============= */

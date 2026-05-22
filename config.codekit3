@@ -422,6 +422,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/who\/submission.jpg" : {
+      "ft" : 16384,
+      "iS" : 647576,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/who\/submission.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/who\/william.jpg" : {
       "ft" : 16384,
       "iS" : 118192,

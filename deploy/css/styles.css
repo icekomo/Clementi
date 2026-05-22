@@ -1115,6 +1115,12 @@ header #header-container #mainNav {
 #who > div #who-container .card-wrapper .card-front #david {
   background-image: url("../img/who/david.jpg");
 }
+#who > div #who-container .card-wrapper .card-front #larry {
+  background-image: url("../img/who/larry.jpg");
+}
+#who > div #who-container .card-wrapper .card-front #nemisha {
+  background-image: url("../img/who/nemisha.jpg");
+}
 #who > div #who-container .card-wrapper .card-front .name-area {
   position: relative;
   z-index: 1;
@@ -1126,13 +1132,14 @@ header #header-container #mainNav {
   text-align: center;
 }
 #who > div #who-container .card-wrapper .card-front .name-area .name {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 1rem;
+  color: var(--purple);
+  font-weight: 550;
   margin: 0 0 2px;
 }
 #who > div #who-container .card-wrapper .card-front .name-area .title {
-  font-size: 12px;
-  color: #666;
+  font-size: 0.875rem;
+  color: var(--blue);
   margin: 0;
 }
 #who > div #who-container .card-wrapper .card-front,
@@ -1150,24 +1157,26 @@ header #header-container #mainNav {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: #e6f1fb;
+  background: var(--purple);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 500;
   font-size: 14px;
-  color: #185fa5;
+  color: var(--white);
   margin-bottom: 10px;
   flex-shrink: 0;
 }
 #who > div #who-container .card-wrapper .card-back .back-name {
-  font-size: 14px;
-  font-weight: 500;
+  color: var(--blue);
+  font-size: 1rem;
+  font-weight: 550;
   margin: 0 0 2px;
 }
 #who > div #who-container .card-wrapper .card-back .back-title {
-  font-size: 11px;
-  color: #666;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--blue);
   margin: 0 0 14px;
 }
 #who > div #who-container .card-wrapper .card-back .divider {
@@ -1181,17 +1190,35 @@ header #header-container #mainNav {
   gap: 8px;
   margin-bottom: 10px;
 }
-#who > div #who-container .card-wrapper .card-back .contact-row i {
+#who > div #who-container .card-wrapper .card-back .contact-row a:link, #who > div #who-container .card-wrapper .card-back .contact-row a:visited {
+  background-color: var(--white-smoke);
+  width: 100%;
+  padding: 16px;
+  font-size: 1rem;
+  font-weight: 450;
+  display: inline-block;
+  color: var(--purple);
+}
+#who > div #who-container .card-wrapper .card-back .contact-row a:link i, #who > div #who-container .card-wrapper .card-back .contact-row a:visited i {
   font-size: 14px;
-  color: #666;
+  color: var(--purple);
   margin-top: 1px;
   flex-shrink: 0;
 }
-#who > div #who-container .card-wrapper .card-back .contact-row span {
+#who > div #who-container .card-wrapper .card-back .contact-row a:link span, #who > div #who-container .card-wrapper .card-back .contact-row a:visited span {
   font-size: 11px;
   color: #555;
   line-height: 1.4;
   word-break: break-word;
+}
+#who > div #who-container .card-wrapper .card-back .contact-row button {
+  border: none;
+  background-color: var(--yellow);
+  color: var(--blue);
+  cursor: pointer;
+  padding: 16px;
+  font-weight: 450;
+  border-radius: 8px;
 }
 
 /* =============
@@ -1492,7 +1519,6 @@ header #header-container #mainNav {
 }
 #phase-1 > div #phase-btn-container {
   display: flex;
-  justify-content: flex-end;
 }
 #phase-1 > div #phase-btn-container button {
   border: none;
@@ -1572,4 +1598,21 @@ header #header-container #mainNav {
   padding: 16px;
   border-radius: 16px;
   font-weight: 550;
+}
+#bio-overlay #bio-panel #bio {
+  color: var(--blue);
+}
+#bio-overlay #bio-panel #bio #bio-name {
+  color: var(--blue);
+  font-size: 1.875rem;
+  margin-bottom: 16px;
+}
+#bio-overlay #bio-panel #bio #bio-title {
+  color: var(--gray);
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+#bio-overlay #bio-panel #bio p {
+  margin-bottom: 24px;
+  line-height: 1.5625rem;
 }

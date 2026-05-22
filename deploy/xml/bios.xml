@@ -29,10 +29,28 @@
         <p4></p4>
     </person>
 
-    <person id="david">
+    <person id="larry">
         <name>Larry Stevens, M.S.</name>
         <title>Senior Director GMP Manufacturing</title>
-        <p1>Pharmaceutical research, development, quality, and compliance spanning over forty years in large and small pharma and biotech. Positions ranged from scientist, principal scientist, Directors of R&D, Quality, Quality Control, and interim Vice President of Quality. Experience includes small and large molecules, biologics, devices, drug delivery, radiochemicals, and sterilization with a range of dosage forms (e.g., oral, ophthalmic, parenteral, inhalation, topical). Accomplishments include creation and submission of multiple marketed FDA approved products, development and implementation of new instrumental and software systems measuring drug release kinetics, implementation of multiple departments, quality management systems, over three hundred analytical methods, validations (method, equipment, cleaning, software, process). An Alcon Research Award recipient with numerous presentations and publications.</p1>
+        <p1>Pharmaceutical research, development, quality, and compliance spanning over forty years in large and small pharma and biotech. Positions ranged from scientist, principal scientist, Directors of R&amp;D, Quality, Quality Control, and interim Vice President of Quality. Experience includes small and large molecules, biologics, devices, drug delivery, radiochemicals, and sterilization with a range of dosage forms (e.g., oral, ophthalmic, parenteral, inhalation, topical). Accomplishments include creation and submission of multiple marketed FDA approved products, development and implementation of new instrumental and software systems measuring drug release kinetics, implementation of multiple departments, quality management systems, over three hundred analytical methods, validations (method, equipment, cleaning, software, process). An Alcon Research Award recipient with numerous presentations and publications.</p1>
+        <p2></p2>
+        <p3></p3>
+        <p4></p4>
+    </person>
+
+    <person id="nemisha">
+        <name>Nemisha Patel</name>
+        <title>Senior Director Quality Assurance</title>
+        <p1>Pharmaceutical research, development, quality, and compliance spanning over forty years in large and small pharma and biotech. Positions ranged from scientist, principal scientist, Directors of R&amp;D, Quality, Quality Control, and interim Vice President of Quality. Experience includes small and large molecules, biologics, devices, drug delivery, radiochemicals, and sterilization with a range of dosage forms (e.g., oral, ophthalmic, parenteral, inhalation, topical). Accomplishments include creation and submission of multiple marketed FDA approved products, development and implementation of new instrumental and software systems measuring drug release kinetics, implementation of multiple departments, quality management systems, over three hundred analytical methods, validations (method, equipment, cleaning, software, process). An Alcon Research Award recipient with numerous presentations and publications.</p1>
+        <p2></p2>
+        <p3></p3>
+        <p4></p4>
+    </person>
+
+    <person id="ethan">
+        <name>Ethan D. Hausman, M.D.</name>
+        <title>Senior Director FDA Regulatory Policy</title>
+        <p1>Dr. Ethan Hausman is a multi-specialty physician (Anatomic Pathology, Clinical Pathology, Transfusion Medicine/Blood Banking, and Pediatrics) who brings more than 20 years of regulatory and policy expertise to Clementi R&amp;D, Associates.  From 2002 to 2025 Dr. Hausman worked at the US Food and Drug Administration (FDA) in positions of increasing independence and responsibility.   While a generalist in the realm of drug and biologic regulation and policy across a variety of product portfolios for common (e.g., immune R&amp;D, non-immune mediated gastrointestinal, non-alcoholic steatohepatosis) disorders, Dr. Hausman has focused subject matter expertise in the clinical and regulatory and clinical aspects of rare/orphan product development, pediatric product development, and pre- and postmarket safety including pharmacovigilance and data-mining.  While at FDA, Dr. Hausman led the development of multiple products from the pre-IND stage through all clinical phases of product development and led interdisciplinary reviews for first-in-kind approvals.  He served on multiple internal committees including the Pediatric Review Committee (PeRC) and represented the Agency to the Secretary’s Advisory Committee on Heritable Disorders in Newborns and Children (SACHDNC) and the Pediatric Advisory Committee (PAC).  He also led the design and revision of multiple work processes and engaged in grant-funded research.  Dr. Hausman’s ability to render complex issues into easy-to-understand language was recognized by his several plain language writing awards.</p1>
         <p2></p2>
         <p3></p3>
         <p4></p4>

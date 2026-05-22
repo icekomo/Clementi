@@ -91,6 +91,16 @@
                         background-image: url("../img/who/david.jpg");
                     }
 
+                    #larry {
+                        background-image: url("../img/who/larry.jpg");
+                    }
+
+                    #nemisha {
+                        background-image: url("../img/who/nemisha.jpg");
+                    }
+
+                    
+
                     .name-area {
                         position: relative;
                         z-index: 1;
@@ -102,14 +112,15 @@
                         text-align: center;
 
                         .name {
-                            font-size: 14px;
-                            font-weight: 500;
+                            font-size: helpers.rem-calc(16);
+                            color: var(--purple);
+                            font-weight: 550;
                             margin: 0 0 2px;
                         }
 
                         .title {
-                            font-size: 12px;
-                            color: #666;
+                            font-size: helpers.rem-calc(14);
+                            color: var(--blue);
                             margin: 0;
                         }
                     }
@@ -131,26 +142,28 @@
                         width: 44px;
                         height: 44px;
                         border-radius: 50%;
-                        background: #e6f1fb;
+                        background: var(--purple);
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         font-weight: 500;
                         font-size: 14px;
-                        color: #185fa5;
+                        color: var(--white);
                         margin-bottom: 10px;
                         flex-shrink: 0;
                     }
 
                     .back-name {
-                        font-size: 14px;
-                        font-weight: 500;
+                        color: var(--blue);
+                        font-size: helpers.rem-calc(16);
+                        font-weight: 550;
                         margin: 0 0 2px;
                     }
 
                     .back-title {
-                        font-size: 11px;
-                        color: #666;
+                        font-size: helpers.rem-calc(14);
+                        font-weight: 400;
+                        color: var(--blue);
                         margin: 0 0 14px;
                     }
 
@@ -166,18 +179,42 @@
                         gap: 8px;
                         margin-bottom: 10px;
 
-                        i {
-                            font-size: 14px;
-                            color: #666;
-                            margin-top: 1px;
-                            flex-shrink: 0;
+                        a:link, a:visited{
+                            background-color: var(--white-smoke);
+                            width: 100%;
+                            padding: 16px;
+                            font-size: helpers.rem-calc(16);
+                            font-weight: 450;
+                            display: inline-block;
+                            color: var(--purple);
+
+                            i {
+                                font-size: 14px;
+                                color: var(--purple);
+                                margin-top: 1px;
+                                flex-shrink: 0;
+                            }
+
+                            span {
+                                font-size: 11px;
+                                color: #555;
+                                line-height: 1.4;
+                                word-break: break-word;
+                            }
+
+                            &:hover, &:active{
+
+                            }
                         }
 
-                        span {
-                            font-size: 11px;
-                            color: #555;
-                            line-height: 1.4;
-                            word-break: break-word;
+                        button{
+                            border: none;
+                            background-color: var(--yellow);
+                            color: var(--blue);
+                            cursor: pointer;
+                            padding: 16px;
+                            font-weight: 450;
+                            border-radius: 8px;
                         }
                     }
                 }

@@ -56,5 +56,27 @@
                 font-weight: 550;
             }
         }
+
+        #bio{
+            color: var(--blue);
+
+            #bio-name{
+                color: var(--blue);
+                font-size: helpers.rem-calc(30);
+                margin-bottom: 16px;
+            }
+
+            #bio-title{
+                color: var(--gray);
+                font-size: helpers.rem-calc(20);
+                margin-bottom: 16px;
+            }
+
+            p{
+                margin-bottom: 24px;
+                line-height: helpers.rem-calc(25);
+            }
+
+        }
     }
 }

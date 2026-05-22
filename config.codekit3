@@ -344,6 +344,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/who\/nemisha.jpg" : {
+      "ft" : 16384,
+      "iS" : 271495,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/who\/nemisha.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/who\/paul.jpg" : {
       "ft" : 16384,
       "iS" : 120336,

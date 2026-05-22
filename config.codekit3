@@ -68,6 +68,58 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/gxp\/card-1.jpg" : {
+      "ft" : 16384,
+      "iS" : 63920,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gxp\/card-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/gxp\/card-2.jpg" : {
+      "ft" : 16384,
+      "iS" : 35913,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gxp\/card-2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/gxp\/card-3.jpg" : {
+      "ft" : 16384,
+      "iS" : 139538,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gxp\/card-3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/gxp\/card-4.jpg" : {
+      "ft" : 16384,
+      "iS" : 76100,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gxp\/card-4.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/header\/logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,

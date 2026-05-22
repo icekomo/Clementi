@@ -2,3 +2,115 @@
     GxP Services
 ============= */
 @use "../helpers";
+
+#gxp {
+    background-color: #0a6383;
+    color: var(--white);
+
+    @include helpers.xxl {
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". gxp .";
+    }
+
+    > div {
+        @include helpers.xxl {
+            grid-area: gxp;
+        }
+
+        h1 {
+        }
+
+        #gxp-card-container {
+            display: grid;
+            gap: 16px;
+
+            @include helpers.md {
+                grid-template-columns: 50% auto;
+            }
+
+            @include helpers.lg {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .gxp-card {
+                display: grid;
+                // background-color: var(--gray-light);
+                // background-color: #687278;
+                background-color: #0a6383;
+                background-color: #ffffff15;
+                color: var(--white-smoke);
+
+                .gxp-img {
+                    background-position: center;
+                    background-size: cover;
+                    height: 20vh;
+
+                    @include helpers.md {
+                        height: 100%;
+                        min-height: 20vh;
+                    }
+                }
+
+                #gxp-card-1 {
+                    background-image: url("../img/gxp/card-1.jpg");
+                }
+
+                #gxp-card-2 {
+                    background-image: url("../img/gxp/card-2.jpg");
+                }
+
+                #gxp-card-3 {
+                    background-image: url("../img/gxp/card-3.jpg");
+                }
+
+                #gxp-card-4 {
+                    background-image: url("../img/gxp/card-4.jpg");
+                }
+
+                .gxp-bottom {
+                    // background-color: var(--white-smoke);
+                    padding: 16px;
+
+                    .icon-title {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 16px;
+                        i {
+                            margin-right: 8px;
+                        }
+
+                        h2 {
+                            font-weight: 450;
+                            
+                        }
+                    }
+
+                    p {
+                        margin-bottom: 16px;
+                    }
+
+                    .gxp-divide{
+                        height: 1px;
+                        background-color: var(--white);
+                    }
+
+                    ul {
+                        li {
+                            display: flex;
+                            margin-bottom: 16px;
+                            font-size: helpers.rem-calc(14);
+                            i{
+                                margin-right: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // .odd-card{
+            //     direction: rtl;
+            // }
+        }
+    }
+}

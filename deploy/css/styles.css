@@ -1027,6 +1027,95 @@ header #header-container #mainNav {
 /* =============
     GxP Services
 ============= */
+#gxp {
+  background-color: #0a6383;
+  color: var(--white);
+}
+@media (min-width: 1440px) {
+  #gxp {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". gxp .";
+  }
+}
+@media (min-width: 1440px) {
+  #gxp > div {
+    grid-area: gxp;
+  }
+}
+#gxp > div #gxp-card-container {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #gxp > div #gxp-card-container {
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 992px) {
+  #gxp > div #gxp-card-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+#gxp > div #gxp-card-container .gxp-card {
+  display: grid;
+  background-color: #0a6383;
+  background-color: rgba(255, 255, 255, 0.0823529412);
+  color: var(--white-smoke);
+}
+#gxp > div #gxp-card-container .gxp-card .gxp-img {
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+}
+@media (min-width: 768px) {
+  #gxp > div #gxp-card-container .gxp-card .gxp-img {
+    height: 100%;
+    min-height: 20vh;
+  }
+}
+#gxp > div #gxp-card-container .gxp-card #gxp-card-1 {
+  background-image: url("../img/gxp/card-1.jpg");
+}
+#gxp > div #gxp-card-container .gxp-card #gxp-card-2 {
+  background-image: url("../img/gxp/card-2.jpg");
+}
+#gxp > div #gxp-card-container .gxp-card #gxp-card-3 {
+  background-image: url("../img/gxp/card-3.jpg");
+}
+#gxp > div #gxp-card-container .gxp-card #gxp-card-4 {
+  background-image: url("../img/gxp/card-4.jpg");
+}
+#gxp > div #gxp-card-container .gxp-card .gxp-bottom {
+  padding: 16px;
+}
+#gxp > div #gxp-card-container .gxp-card .gxp-bottom .icon-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+#gxp > div #gxp-card-container .gxp-card .gxp-bottom .icon-title i {
+  margin-right: 8px;
+}
+#gxp > div #gxp-card-container .gxp-card .gxp-bottom .icon-title h2 {
+  font-weight: 450;
+}
+#gxp > div #gxp-card-container .gxp-card .gxp-bottom p {
+  margin-bottom: 16px;
+}
+#gxp > div #gxp-card-container .gxp-card .gxp-bottom .gxp-divide {
+  height: 1px;
+  background-color: var(--white);
+}
+#gxp > div #gxp-card-container .gxp-card .gxp-bottom ul li {
+  display: flex;
+  margin-bottom: 16px;
+  font-size: 0.875rem;
+}
+#gxp > div #gxp-card-container .gxp-card .gxp-bottom ul li i {
+  margin-right: 4px;
+}
+
 /* =============
     Who We Are
 ============= */
@@ -1050,6 +1139,7 @@ header #header-container #mainNav {
   display: grid;
   gap: 16px;
   align-items: start;
+  margin-top: 24px;
 }
 @media (min-width: 768px) {
   #who > div #who-container {

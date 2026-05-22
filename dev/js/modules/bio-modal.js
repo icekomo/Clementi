@@ -27,21 +27,29 @@ export function initBioModal() {
     fetch("xml/bios.xml")
         .then(function(res) { return res.text(); })
         .then(function(text) {
-            console.log("XML loaded:", text);
-            console.log("bioData:", bioData);
             const xml = new DOMParser().parseFromString(text, "application/xml");
+
+
+            const parseError = xml.querySelector("parsererror");
+            if (parseError) {
+                console.error("XML parse error:", parseError.textContent);
+                return;
+            }
+
+
             const people = xml.querySelectorAll("person");
             people.forEach(function(person) {
                 const id = person.getAttribute("id");
                 bioData[id] = {
                     name:  getText(person, "name"),
                     title: getText(person, "title"),
-                    p1:    getText(person, "p-1"),
-                    p2:    getText(person, "p-2"),
-                    p3:    getText(person, "p-3"),
-                    p4:    getText(person, "p-4"),
+                    p1:    getText(person, "p1"),
+                    p2:    getText(person, "p2"),
+                    p3:    getText(person, "p3"),
+                    p4:    getText(person, "p4"),
                 };
             });
+            console.log("bioData loaded:", bioData);
         });
 
     // --- Populate modal from cached data ---
@@ -76,13 +84,13 @@ export function initBioModal() {
         });
     }
 
-    // --- Trigger — read data-bio from the button ---
-    document.querySelectorAll(".read-bio-btn").forEach(function(btn) {
-        btn.addEventListener("click", function(e) {
-            e.stopPropagation();
-            populateBio(btn.dataset.bio);
-            openBio();
-        });
+    // --- Trigger — event delegation handles buttons regardless of DOM timing ---
+    document.addEventListener("click", function(e) {
+        const btn = e.target.closest(".read-bio-btn");
+        if (!btn) return;
+        e.stopPropagation();
+        populateBio(btn.dataset.bio);
+        openBio();
     });
 
     closeBtn.addEventListener("click", closeBio);

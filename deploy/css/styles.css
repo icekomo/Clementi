@@ -1106,6 +1106,15 @@ header #header-container #mainNav {
 #who > div #who-container .card-wrapper .card-front #william {
   background-image: url("../img/who/william.jpg");
 }
+#who > div #who-container .card-wrapper .card-front #nancy {
+  background-image: url("../img/who/nancy.jpg");
+}
+#who > div #who-container .card-wrapper .card-front #paul {
+  background-image: url("../img/who/paul.jpg");
+}
+#who > div #who-container .card-wrapper .card-front #david {
+  background-image: url("../img/who/david.jpg");
+}
 #who > div #who-container .card-wrapper .card-front .name-area {
   position: relative;
   z-index: 1;

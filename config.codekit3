@@ -318,6 +318,45 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/who\/david.jpg" : {
+      "ft" : 16384,
+      "iS" : 181573,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/who\/david.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/who\/nancy.jpg" : {
+      "ft" : 16384,
+      "iS" : 191285,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/who\/nancy.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/who\/paul.jpg" : {
+      "ft" : 16384,
+      "iS" : 120336,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/who\/paul.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/who\/william.jpg" : {
       "ft" : 16384,
       "iS" : 118192,

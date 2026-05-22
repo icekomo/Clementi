@@ -350,6 +350,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/deploy\/xml\/bios.xml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/xml\/bios.xml",
+      "oF" : 0
+    },
     "\/dev\/content\/bio-modal.kit" : {
       "cB" : 0,
       "ft" : 2048,

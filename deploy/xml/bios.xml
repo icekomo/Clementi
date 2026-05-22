@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bios>
+
+    <person id="william">
+        <name>William A. Clementi Pharm.D., F.C.P.</name>
+        <title>Founder and Chief Regulatory Officer</title>
+        <p-1>Dr. Clementi held an academic appointment in pharmacology at the University of Texas Health Science Center in San Antonio, after completing an NIH Training Program in Clinical Pharmacology. He remained as a faculty member at UTHSCSA, holding positions of Instructor and then Assistant Professor. In addition to teaching in the Colleges of Medicine, Dentistry, and Pharmacy, Dr. Clementi directed the Clinical Pharmacokinetic Consulting Service, providing pharmacokinetic and drug interaction expertise to the Intensive Care Units at the Audie Murphy VA Hospital and Bexar County Hospital. His areas of interest remain cardiovascular pharmacology and applied principles of therapeutics to the clinical setting.</p-1>
+        <p-2>After completion of his tenure at the University of Texas and receipt of a VA Merit Review Grant in Population Pharmacokinetics of Cardiovascular Drugs, he assumed the position of Associate Director of Clinical Research at Lorex Pharmaceuticals, where he directed and designed pivotal studies in hypertension and angina. His responsibilities also included the oversight of Phase II/III pain management program. As a senior member of the development team, the efforts of the team lead to approvals for betaxolol in hypertension, the combination product of betaxolol with a diuretic, and zolpidem (Ambien). Dr. Clementi was promoted to worldwide responsibilities in market development for Ambien and Kerlidex, the first low dose diuretic-beta blocker combination developed in the United States. He has published over 60 papers on drug metabolism, baroreflex responses in blood pressure reduction, and predictive dosing models using Bayes Formulas and computer-assisted dosing.</p-2>
+        <p-3>Establishing a specialized consulting company proved an even more exciting challenge as new and novel therapies emerged during the last two decades. Clementi Associates has successfully filed many INDs and a select number of NDAs for specific drugs and combination drug-device products. Clementi Associates expanded and held full electronic submission capabilities until a few years ago when these services matured and could successfully be outsourced. Today Clementi Associates is focused on unique development problems and working with regulators to solve those problems.</p-3>
+        <p-4>Pharmaceutical research, development, quality, and compliance spanning over forty years in large and small pharma and biotech. Positions ranged from scientist, principal scientist, Directors of R&amp;D, Quality, Quality Control, and interim Vice President of Quality. Experience includes small and large molecules, biologics, devices, drug delivery, radiochemicals, and sterilization with a range of dosage forms (e.g., oral, ophthalmic, parenteral, inhalation, topical). Accomplishments include creation and submission of multiple marketed FDA approved products, development and implementation of new instrumental and software systems measuring drug release kinetics, implementation of multiple departments, quality management systems, over three hundred analytical methods, validations (method, equipment, cleaning, software, process). An Alcon Research Award recipient with numerous presentations and publications.</p-4>
+    </person>
+
+    <!--
+    <person id="jane">
+        <name>Jane Smith, Ph.D.</name>
+        <title>Director of Clinical Operations</title>
+        <p-1>Paragraph one...</p-1>
+        <p-2>Paragraph two...</p-2>
+        <p-3>Paragraph three...</p-3>
+        <p-4>Paragraph four...</p-4>
+    </person>
+    -->
+
+</bios>

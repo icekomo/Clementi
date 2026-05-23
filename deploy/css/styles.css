@@ -1827,19 +1827,12 @@ header #header-container #mainNav {
 }
 #started > div #steps-container .steps .arrow {
   position: absolute;
-  z-index: 200;
   bottom: -10px;
   left: 50%;
   transform: translate(-50%, 50%) rotate(90deg);
   height: 40px;
   width: 40px;
-  background-color: var(--yellow);
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--blue);
-  border: 2px solid var(--blue);
+  z-index: 10;
 }
 @media (min-width: 768px) {
   #started > div #steps-container .steps .arrow {
@@ -1848,4 +1841,15 @@ header #header-container #mainNav {
     left: auto;
     transform: translate(50%, -50%) rotate(0deg);
   }
+}
+#started > div #steps-container .steps .arrow .arrow-inner {
+  height: 100%;
+  width: 100%;
+  background-color: var(--yellow);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue);
+  border: 2px solid var(--blue);
 }

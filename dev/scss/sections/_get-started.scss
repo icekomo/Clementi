@@ -20,14 +20,13 @@
             display: grid;
             gap: 16px;
 
-            @include helpers.md{
+            @include helpers.md {
                 grid-template-columns: repeat(3, 1fr);
             }
 
-            @include helpers.lg{
+            @include helpers.lg {
                 grid-template-columns: repeat(5, 1fr);
             }
-  
 
             .steps {
                 padding: 16px;
@@ -37,7 +36,7 @@
                 text-align: center;
                 height: 25vh;
                 box-sizing: border-box;
-                display: flex; 
+                display: flex;
                 flex-direction: column;
                 position: relative;
 
@@ -61,40 +60,45 @@
                     }
                 }
 
-                .step-bottom{
+                .step-bottom {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    flex: 1; 
+                    flex: 1;
                     box-sizing: border-box;
 
-                    h3{
+                    h3 {
                         font-weight: 500;
                         color: var(--white);
                     }
                 }
 
-                .arrow{
+                .arrow {
                     position: absolute;
-                    z-index: 200;
                     bottom: -10px;
                     left: 50%;
                     transform: translate(-50%, 50%) rotate(90deg);
                     height: 40px;
                     width: 40px;
-                    background-color: var(--yellow);
-                    border-radius: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    color: var(--blue);
-                    border: 2px solid var(--blue);
+                    z-index: 10;
 
-                    @include helpers.md{
+                    @include helpers.md {
                         top: 50%;
                         right: -10px;
                         left: auto;
                         transform: translate(50%, -50%) rotate(0deg);
+                    }
+
+                    .arrow-inner {
+                        height: 100%;
+                        width: 100%;
+                        background-color: var(--yellow);
+                        border-radius: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: var(--blue);
+                        border: 2px solid var(--blue);
                     }
                 }
             }

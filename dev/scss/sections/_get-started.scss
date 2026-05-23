@@ -1,0 +1,103 @@
+/* =============
+    Get Started
+============= */
+@use "../helpers";
+
+#started {
+    background-color: var(--white-smoke);
+    @include helpers.lg {
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". started .";
+    }
+
+    > div {
+        @include helpers.lg {
+            grid-area: started;
+        }
+
+        #steps-container {
+            display: grid;
+            gap: 16px;
+
+            @include helpers.md{
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @include helpers.lg{
+                grid-template-columns: repeat(5, 1fr);
+            }
+  
+
+            .steps {
+                padding: 16px;
+                background-color: var(--blue);
+                border: 3px solid var(--purple);
+                border-radius: 12px;
+                text-align: center;
+                height: 25vh;
+                box-sizing: border-box;
+                display: flex; 
+                flex-direction: column;
+                position: relative;
+
+                .step-top {
+                    display: flex;
+                    justify-content: center;
+                    box-sizing: border-box;
+
+                    .number {
+                        background-color: var(--purple);
+                        height: 50px;
+                        width: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 800;
+                        font-size: helpers.rem-calc(30);
+                        color: var(--white);
+                        border-radius: 100%;
+                        border: 3px solid var(--gray);
+                    }
+                }
+
+                .step-bottom{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex: 1; 
+                    box-sizing: border-box;
+
+                    h3{
+                        font-weight: 500;
+                        color: var(--white);
+                    }
+                }
+
+                .arrow{
+                    position: absolute;
+                    z-index: 200;
+                    bottom: -10px;
+                    left: 50%;
+                    transform: translate(-50%, 50%) rotate(90deg);
+                    height: 40px;
+                    width: 40px;
+                    background-color: var(--yellow);
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--blue);
+                    border: 2px solid var(--blue);
+
+                    @include helpers.md{
+                        top: 50%;
+                        right: -10px;
+                        left: auto;
+                        transform: translate(50%, -50%) rotate(0deg);
+                    }
+                }
+            }
+        }
+    }
+}

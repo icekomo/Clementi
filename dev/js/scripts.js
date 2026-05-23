@@ -5,6 +5,7 @@ import { initHeader } from "./modules/header.js";
 import { initParallax } from "./modules/parallax.js";
 import { initSlideshow } from "./modules/slideshow.js";
 import { initBioModal } from "./modules/bio-modal.js";
+import { initGetStarted } from "./modules/get-started.js";
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -14,4 +15,5 @@ document.addEventListener("DOMContentLoaded", () => {
     initParallax();
     initSlideshow();
     initBioModal();
+    initGetStarted();
 });

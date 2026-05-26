@@ -3,3 +3,147 @@
 ============= */
 @use "../helpers";
 
+// =============
+//   Footer
+// =============
+
+#site-footer {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 10vh 16px 0;
+    font-family: "Montserrat", sans-serif;
+
+    // ---- Inner grid ----
+    #footer-inner {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding-bottom: 48px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+        @media (min-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (min-width: 992px) {
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 64px;
+        }
+    }
+
+    // ---- Brand column ----
+    #footer-brand {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        img {
+            height: 36px;
+            width: auto;
+            // If the logo is dark on transparent, invert it for the dark bg.
+            // Remove this line if the logo already has a light/white version.
+            filter: brightness(0) invert(1);
+        }
+
+        p {
+            font-size: 0.875rem;
+            font-weight: 400;
+            color: var(--gray-light);
+            line-height: 1.6;
+            max-width: 28ch;
+        }
+    }
+
+    // ---- Nav column ----
+    #footer-nav {
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        li a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--gray-light);
+            text-decoration: none;
+            transition: color 0.2s ease;
+
+            &:hover,
+            &:focus {
+                color: var(--yellow);
+            }
+        }
+    }
+
+    // ---- Contact column ----
+    #footer-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        h4 {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--yellow);
+            margin: 0 0 4px;
+        }
+
+        a {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--gray-light);
+            text-decoration: none;
+            transition: color 0.2s ease;
+
+            &:hover,
+            &:focus {
+                color: var(--white);
+            }
+        }
+    }
+
+    // ---- Bottom bar ----
+    #footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 24px 0;
+        text-align: center;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        p {
+            font-size: 0.8rem;
+            color: var(--gray);
+            margin: 0;
+        }
+
+        #footer-legal {
+            display: flex;
+            gap: 24px;
+
+            a {
+                font-size: 0.8rem;
+                color: var(--gray);
+                text-decoration: none;
+                transition: color 0.2s ease;
+
+                &:hover,
+                &:focus {
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}

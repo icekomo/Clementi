@@ -6,7 +6,7 @@ export function initGetStarted() {
     ============================================ */
 
     const arrows = gsap.utils.toArray("#steps-container .arrow-inner");
-    const TOTAL = 10;
+    const TOTAL = 6;
     const mdBreakpoint = 768;
 
     function buildTimeline() {

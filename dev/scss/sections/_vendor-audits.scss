@@ -1,0 +1,56 @@
+/* =============
+    Vendor Audits
+============= */
+@use "../helpers";
+
+#vendor{
+    background-image: url("../img/vendor/vendor-bg.jpg");
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+
+    >div{
+        color: var(--white);
+        background-color: var(--white);
+
+        @include helpers.md{
+            width: 60vw;
+        }
+
+        h2 {
+            color: var(--white);
+            font-size: helpers.rem-calc(30);
+            font-weight: 550;
+            margin-top: 8px;
+
+            @include helpers.md {
+                font-size: helpers.rem-calc(45);
+            }
+        }
+
+         button {
+            margin-top: 24px;
+                border: none;
+                background-color: var(--purple);
+                padding: 16px;
+                color: var(--white);
+                font-weight: 550;
+                transition: 0.25s;
+                cursor: pointer;
+
+                @include helpers.md {
+                    font-size: helpers.rem-calc(30);
+                    padding: 24px;
+                }
+
+                &:hover {
+                    background-color: var(--white);
+                    color: var(--purple);
+                }
+            }
+    }
+}

@@ -517,7 +517,7 @@ header {
   top: 16px;
   left: 3%;
   width: 95%;
-  z-index: 100;
+  z-index: 1000;
   padding: 24px;
   box-sizing: border-box;
   background-color: var(--white);
@@ -605,6 +605,17 @@ header #header-container #burger-container #burgerBtn #bottom {
 }
 header #header-container #mainNav {
   grid-area: nav;
+  position: relative;
+}
+header #header-container #mainNav #nav-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--purple);
+  pointer-events: none;
+  opacity: 0;
 }
 
 /* =============
@@ -2020,6 +2031,60 @@ header #header-container #mainNav {
   }
 }
 #ind > div button:hover {
+  background-color: var(--white);
+  color: var(--purple);
+}
+
+/* =============
+    Vendor Audits
+============= */
+#vendor {
+  background-image: url("../img/vendor/vendor-bg.jpg");
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+#vendor > div {
+  color: var(--white);
+  background-color: var(--white);
+}
+@media (min-width: 768px) {
+  #vendor > div {
+    width: 60vw;
+  }
+}
+#vendor > div h2 {
+  color: var(--white);
+  font-size: 1.875rem;
+  font-weight: 550;
+  margin-top: 8px;
+}
+@media (min-width: 768px) {
+  #vendor > div h2 {
+    font-size: 2.8125rem;
+  }
+}
+#vendor > div button {
+  margin-top: 24px;
+  border: none;
+  background-color: var(--purple);
+  padding: 16px;
+  color: var(--white);
+  font-weight: 550;
+  transition: 0.25s;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  #vendor > div button {
+    font-size: 1.875rem;
+    padding: 24px;
+  }
+}
+#vendor > div button:hover {
   background-color: var(--white);
   color: var(--purple);
 }

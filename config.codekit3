@@ -357,6 +357,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/vendor\/vendor-bg.jpg" : {
+      "ft" : 16384,
+      "iS" : 350391,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/vendor\/vendor-bg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/what\/card-1.jpg" : {
       "ft" : 16384,
       "iS" : 148150,
@@ -595,6 +608,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/submission.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/vendor-audits.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/vendor-audits.html",
       "oF" : 0
     },
     "\/dev\/content\/what.kit" : {
@@ -1069,6 +1090,19 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_submission.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0
+    },
+    "\/dev\/scss\/sections\/_vendor-audits.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_vendor-audits.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0

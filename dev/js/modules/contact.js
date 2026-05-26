@@ -6,7 +6,7 @@ export function initContact() {
 ============================================ */
 
     const overlay = document.getElementById("contact-overlay");
-    const openBtn = document.getElementById("contact-btn");
+    const openBtns = document.querySelectorAll(".contact-btn"); // returns a NodeList
     const closeBtn = document.getElementById("close-btn");
 
     function openContact() {
@@ -27,7 +27,7 @@ export function initContact() {
         });
     }
 
-    openBtn.addEventListener("click", openContact);
+    openBtns.forEach(btn => btn.addEventListener("click", openContact)); // loop over all matches
     closeBtn.addEventListener("click", closeContact);
 
     // Close on backdrop click

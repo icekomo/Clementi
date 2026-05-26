@@ -33,6 +33,19 @@
       "oAP" : "\/assets\/2026_04_20-Draft Text\/20260417-DRAFT-website-mock-up-clementi-ltd_al.pptx",
       "oF" : 0
     },
+    "\/assets\/AdobeStock_432790800.jpeg" : {
+      "ft" : 16384,
+      "iS" : 7490858,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/AdobeStock_432790800.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/cell.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -149,6 +162,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/home\/hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/ind\/ind-bg.jpg" : {
+      "ft" : 16384,
+      "iS" : 729081,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/ind\/ind-bg.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -404,7 +430,7 @@
       "oAP" : "\/deploy\/img\/who\/nemisha.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -523,6 +549,14 @@
       "oAP" : "\/dev\/content\/home.html",
       "oF" : 0
     },
+    "\/dev\/content\/ind-submission.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/ind-submission.html",
+      "oF" : 0
+    },
     "\/dev\/content\/overview.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -601,6 +635,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/header.html",
+      "oF" : 0
+    },
+    "\/dev\/global\/schema.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/global\/schema.html",
       "oF" : 0
     },
     "\/dev\/index.kit" : {
@@ -949,6 +991,19 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_home.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0
+    },
+    "\/dev\/scss\/sections\/_ind-submission.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_ind-submission.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0

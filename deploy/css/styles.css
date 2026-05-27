@@ -359,6 +359,36 @@ ul li {
   padding-left: 16px;
   padding-right: 16px;
 }
+.callout-section h2 {
+  font-weight: 550;
+}
+@media (min-width: 768px) {
+  .callout-section h2 {
+    font-size: 2.1875rem;
+    font-weight: 550;
+  }
+}
+.callout-section button {
+  margin-top: 24px;
+  border: none;
+  background-color: var(--purple);
+  padding: 16px;
+  color: var(--white);
+  font-weight: 550;
+  transition: 0.25s;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .callout-section button {
+    font-size: 1.25rem;
+    padding: 24px;
+  }
+}
+.callout-section button:hover {
+  background-color: var(--white);
+  color: var(--purple);
+}
+
 /* =============
     Typography
 ============= */
@@ -492,6 +522,7 @@ a {
     background-color: var(--gray-light);
     color: var(--white);
     border: 8px;
+    border-radius: 8px;
   }
 }
 #mainNav ul li .contact-btn {
@@ -1740,14 +1771,16 @@ header #header-container #mainNav #nav-indicator {
   justify-content: flex-end;
   padding: 25vh 16px 16px;
 }
+@media (min-width: 768px) {
+  #phase-1 {
+    height: 45vh;
+  }
+}
 @media (min-width: 992px) {
   #phase-1 {
     height: 40vh;
     background-image: url("../img/phase-1/background-DT.jpg");
   }
-}
-#phase-1 > div {
-  padding: 24px;
 }
 @media (min-width: 768px) {
   #phase-1 > div {
@@ -1772,35 +1805,10 @@ header #header-container #mainNav #nav-indicator {
 #phase-1 > div h2 {
   color: var(--blue);
   text-align: right;
-  font-weight: 550;
-}
-@media (min-width: 768px) {
-  #phase-1 > div h2 {
-    font-size: 3.4375rem;
-  }
 }
 #phase-1 > div #phase-btn-container {
   display: flex;
   justify-content: flex-end;
-}
-#phase-1 > div #phase-btn-container button {
-  border: none;
-  background-color: var(--purple);
-  padding: 16px;
-  color: var(--white);
-  font-weight: 550;
-  transition: 0.25s;
-  cursor: pointer;
-}
-@media (min-width: 768px) {
-  #phase-1 > div #phase-btn-container button {
-    font-size: 1.875rem;
-    padding: 24px;
-  }
-}
-#phase-1 > div #phase-btn-container button:hover {
-  background-color: var(--white);
-  color: var(--purple);
 }
 
 /* =============
@@ -1997,42 +2005,15 @@ header #header-container #mainNav #nav-indicator {
 }
 #ind > div {
   color: var(--white);
+  text-align: right;
 }
 @media (min-width: 768px) {
   #ind > div {
     width: 60vw;
   }
 }
-#ind > div p {
-  color: var(--white);
-  font-size: 1.875rem;
-  font-weight: 550;
-  margin-top: 8px;
-}
-@media (min-width: 768px) {
-  #ind > div p {
-    font-size: 2.8125rem;
-  }
-}
-#ind > div button {
-  margin-top: 24px;
-  border: none;
-  background-color: var(--purple);
-  padding: 16px;
-  color: var(--white);
-  font-weight: 550;
-  transition: 0.25s;
-  cursor: pointer;
-}
-@media (min-width: 768px) {
-  #ind > div button {
-    font-size: 1.875rem;
-    padding: 24px;
-  }
-}
-#ind > div button:hover {
-  background-color: var(--white);
-  color: var(--purple);
+#ind > div h2 {
+  margin-top: 12px;
 }
 
 /* =============
@@ -2047,44 +2028,27 @@ header #header-container #mainNav #nav-indicator {
   justify-content: center;
   align-items: center;
   padding: 16px;
+  text-align: center;
 }
 #vendor > div {
   color: var(--white);
-  background-color: var(--white);
+  background-color: var(--blue);
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #vendor > div {
-    width: 60vw;
+    width: 70vw;
   }
 }
-#vendor > div h2 {
-  color: var(--white);
-  font-size: 1.875rem;
-  font-weight: 550;
-  margin-top: 8px;
-}
-@media (min-width: 768px) {
-  #vendor > div h2 {
-    font-size: 2.8125rem;
+@media (min-width: 992px) {
+  #vendor > div {
+    width: 50vw;
   }
 }
-#vendor > div button {
-  margin-top: 24px;
-  border: none;
-  background-color: var(--purple);
-  padding: 16px;
-  color: var(--white);
-  font-weight: 550;
-  transition: 0.25s;
-  cursor: pointer;
-}
-@media (min-width: 768px) {
-  #vendor > div button {
-    font-size: 1.875rem;
-    padding: 24px;
+@media (min-width: 1200px) {
+  #vendor > div {
+    width: 45vw;
   }
-}
-#vendor > div button:hover {
-  background-color: var(--white);
-  color: var(--purple);
 }

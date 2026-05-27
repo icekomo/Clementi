@@ -12,6 +12,10 @@
     justify-content: flex-end;
     padding: 25vh 16px 16px;
 
+    @include helpers.md {
+        height: 45vh;
+    }
+
     @include helpers.lg {
         height: 40vh;
         background-image: url("../img/phase-1/background-DT.jpg");
@@ -19,7 +23,7 @@
 
     > div {
 
-        padding: 24px;
+        // padding: 16px;
 
         @include helpers.md {
             width: 70vw;
@@ -41,35 +45,31 @@
         h2 {
             color: var(--blue);
             text-align: right;
-            font-weight: 550;
-            @include helpers.md {
-                font-size: helpers.rem-calc(55);
-            }
         }
 
         #phase-btn-container {
             display: flex;
             justify-content: flex-end;
 
-            button {
-                border: none;
-                background-color: var(--purple);
-                padding: 16px;
-                color: var(--white);
-                font-weight: 550;
-                transition: 0.25s;
-                cursor: pointer;
+            // button {
+            //     border: none;
+            //     background-color: var(--purple);
+            //     padding: 16px;
+            //     color: var(--white);
+            //     font-weight: 550;
+            //     transition: 0.25s;
+            //     cursor: pointer;
 
-                @include helpers.md {
-                    font-size: helpers.rem-calc(30);
-                    padding: 24px;
-                }
+            //     @include helpers.md {
+            //         font-size: helpers.rem-calc(30);
+            //         padding: 24px;
+            //     }
 
-                &:hover {
-                    background-color: var(--white);
-                    color: var(--purple);
-                }
-            }
+            //     &:hover {
+            //         background-color: var(--white);
+            //         color: var(--purple);
+            //     }
+            // }
         }
     }
 }

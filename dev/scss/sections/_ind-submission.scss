@@ -15,41 +15,15 @@
 
     >div{
         color: var(--white);
+        text-align: right;
 
         @include helpers.md{
             width: 60vw;
         }
 
-        p {
-            color: var(--white);
-            font-size: helpers.rem-calc(30);
-            font-weight: 550;
-            margin-top: 8px;
-
-            @include helpers.md {
-                font-size: helpers.rem-calc(45);
-            }
+        h2{
+            // color: var(--white);
+            margin-top: 12px;
         }
-
-         button {
-            margin-top: 24px;
-                border: none;
-                background-color: var(--purple);
-                padding: 16px;
-                color: var(--white);
-                font-weight: 550;
-                transition: 0.25s;
-                cursor: pointer;
-
-                @include helpers.md {
-                    font-size: helpers.rem-calc(30);
-                    padding: 24px;
-                }
-
-                &:hover {
-                    background-color: var(--white);
-                    color: var(--purple);
-                }
-            }
     }
 }

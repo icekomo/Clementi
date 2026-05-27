@@ -5,21 +5,28 @@
 
 #vendor{
     background-image: url("../img/vendor/vendor-bg.jpg");
-    height: 50vh;
+    height: 60vh;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px;
+    padding: 24px;
     text-align: center;
 
+    @include helpers.md {
+        height: 45vh;
+    }
+
     >div{
-        color: var(--white);
-        background-color: var(--blue);
+        color: var(--blue);
+        background-color: var(--white-smoke);
         padding: 16px;
         border-radius: 12px;
         text-align: center;
+        box-shadow:
+            0 4px 6px -1px rgba(0, 0, 0, 0.05),
+            0 2px 4px -1px rgba(0, 0, 0, 0.03);
 
         @include helpers.md{
             width: 70vw;
@@ -30,7 +37,8 @@
         }
 
         @include helpers.xl{
-            width: 45vw;
+            margin: 0 auto;
+            width: 40vw;
         }
 
         h2 {

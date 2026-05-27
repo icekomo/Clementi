@@ -7,26 +7,30 @@
     background-image: url("../img/phase-1/background-MB.jpg");
     background-position: center bottom;
     background-size: cover;
-    height: 80vh;
+    height: 60vh;
     display: flex;
     justify-content: flex-end;
-    padding: 25vh 16px 16px;
+    padding: 24px;
 
     @include helpers.md {
         height: 45vh;
+        align-items: flex-end;
     }
 
     @include helpers.lg {
         height: 40vh;
         background-image: url("../img/phase-1/background-DT.jpg");
+        background-position: center;
     }
 
     > div {
 
         // padding: 16px;
+        padding-top: 15vh;
 
         @include helpers.md {
             width: 70vw;
+            padding-top: 0vh;
         }
 
         @include helpers.lg {
@@ -38,7 +42,8 @@
         }
 
         @include helpers.xxl {
-            width: 50vw;
+            width: 40vw;
+            margin: 0 auto;
         }
           
 

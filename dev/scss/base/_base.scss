@@ -72,6 +72,7 @@ ul{
         font-weight: 550;
         transition: 0.25s;
         cursor: pointer;
+        border-radius: 8px;
 
         @include helpers.md {
             font-size: helpers.rem-calc(20);

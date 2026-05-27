@@ -56,6 +56,46 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/who\/david.psd" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/who\/david.psd",
+      "oF" : 0
+    },
+    "\/assets\/who\/nancy.psd" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/who\/nancy.psd",
+      "oF" : 0
+    },
+    "\/assets\/who\/nemisha.psd" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/who\/nemisha.psd",
+      "oF" : 0
+    },
+    "\/assets\/who\/paul.psd" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/who\/paul.psd",
+      "oF" : 0
+    },
+    "\/assets\/who\/william.psd" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/who\/william.psd",
+      "oF" : 0
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -508,7 +548,7 @@
       "oAP" : "\/deploy\/img\/who\/david.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -521,7 +561,7 @@
       "oAP" : "\/deploy\/img\/who\/nancy.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -547,7 +587,7 @@
       "oAP" : "\/deploy\/img\/who\/paul.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -573,7 +613,7 @@
       "oAP" : "\/deploy\/img\/who\/william.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75

@@ -776,6 +776,7 @@ header #header-container #mainNav #nav-indicator {
   height: 100dvh;
   background-color: #0a6383;
   display: grid;
+  grid-template-rows: 1fr auto;
   margin-bottom: 0;
 }
 #home #home-top {
@@ -783,7 +784,6 @@ header #header-container #mainNav #nav-indicator {
   color: var(--white);
   display: grid;
   align-items: end;
-  height: 100%;
   padding-bottom: 10vh;
 }
 @media (min-width: 768px) {
@@ -838,7 +838,6 @@ header #header-container #mainNav #nav-indicator {
   margin-top: auto;
   margin-bottom: 0;
   padding-bottom: 0;
-  background-color: var(--white);
 }
 @media (min-width: 992px) {
   #home #home-img {

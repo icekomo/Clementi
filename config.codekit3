@@ -33,6 +33,19 @@
       "oAP" : "\/assets\/2026_04_20-Draft Text\/20260417-DRAFT-website-mock-up-clementi-ltd_al.pptx",
       "oF" : 0
     },
+    "\/assets\/AdobeStock_432790800.jpeg" : {
+      "ft" : 16384,
+      "iS" : 7490858,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/AdobeStock_432790800.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/cell.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -42,6 +55,46 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/assets\/who\/david.psd" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/who\/david.psd",
+      "oF" : 0
+    },
+    "\/assets\/who\/nancy.psd" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/who\/nancy.psd",
+      "oF" : 0
+    },
+    "\/assets\/who\/nemisha.psd" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/who\/nemisha.psd",
+      "oF" : 0
+    },
+    "\/assets\/who\/paul.psd" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/who\/paul.psd",
+      "oF" : 0
+    },
+    "\/assets\/who\/william.psd" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/who\/william.psd",
+      "oF" : 0
     },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
@@ -55,12 +108,155 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/favicon\/apple-touch-icon.png" : {
+      "ft" : 32768,
+      "iS" : 8048,
+      "oA" : 0,
+      "oAP" : "\/deploy\/favicon\/apple-touch-icon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/favicon\/favicon-96x96.png" : {
+      "ft" : 32768,
+      "iS" : 3888,
+      "oA" : 0,
+      "oAP" : "\/deploy\/favicon\/favicon-96x96.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/favicon\/favicon.ico" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/favicon\/favicon.ico",
+      "oF" : 0
+    },
+    "\/deploy\/favicon\/favicon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/favicon\/favicon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/favicon\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 4723,
+      "oA" : 0,
+      "oAP" : "\/deploy\/favicon\/logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/favicon\/site.webmanifest" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/favicon\/site.webmanifest",
+      "oF" : 0
+    },
+    "\/deploy\/favicon\/web-app-manifest-192x192.png" : {
+      "ft" : 32768,
+      "iS" : 8610,
+      "oA" : 0,
+      "oAP" : "\/deploy\/favicon\/web-app-manifest-192x192.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/favicon\/web-app-manifest-512x512.png" : {
+      "ft" : 32768,
+      "iS" : 31754,
+      "oA" : 0,
+      "oAP" : "\/deploy\/favicon\/web-app-manifest-512x512.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/divide\/divide-1.jpg" : {
       "ft" : 16384,
       "iS" : 567227,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/divide\/divide-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/gxp\/card-1.jpg" : {
+      "ft" : 16384,
+      "iS" : 63920,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gxp\/card-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/gxp\/card-2.jpg" : {
+      "ft" : 16384,
+      "iS" : 35913,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gxp\/card-2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/gxp\/card-3.jpg" : {
+      "ft" : 16384,
+      "iS" : 139538,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gxp\/card-3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/gxp\/card-4.jpg" : {
+      "ft" : 16384,
+      "iS" : 76100,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gxp\/card-4.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -97,6 +293,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/home\/hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/ind\/ind-bg.jpg" : {
+      "ft" : 16384,
+      "iS" : 729081,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/ind\/ind-bg.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -279,6 +488,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/vendor\/vendor-bg.jpg" : {
+      "ft" : 16384,
+      "iS" : 350391,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/vendor\/vendor-bg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/what\/card-1.jpg" : {
       "ft" : 16384,
       "iS" : 148150,
@@ -318,6 +540,71 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/who\/david.jpg" : {
+      "ft" : 16384,
+      "iS" : 181573,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/who\/david.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/who\/nancy.jpg" : {
+      "ft" : 16384,
+      "iS" : 191285,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/who\/nancy.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/who\/nemisha.jpg" : {
+      "ft" : 16384,
+      "iS" : 271495,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/who\/nemisha.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/who\/paul.jpg" : {
+      "ft" : 16384,
+      "iS" : 120336,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/who\/paul.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/who\/submission.jpg" : {
+      "ft" : 16384,
+      "iS" : 647576,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/who\/submission.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/who\/william.jpg" : {
       "ft" : 16384,
       "iS" : 118192,
@@ -349,6 +636,14 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/deploy\/xml\/bios.xml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/xml\/bios.xml",
+      "oF" : 0
     },
     "\/dev\/content\/bio-modal.kit" : {
       "cB" : 0,
@@ -398,6 +693,14 @@
       "oAP" : "\/dev\/content\/home.html",
       "oF" : 0
     },
+    "\/dev\/content\/ind-submission.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/ind-submission.html",
+      "oF" : 0
+    },
     "\/dev\/content\/overview.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -436,6 +739,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/submission.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/vendor-audits.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/vendor-audits.html",
       "oF" : 0
     },
     "\/dev\/content\/what.kit" : {
@@ -478,6 +789,14 @@
       "oAP" : "\/dev\/global\/header.html",
       "oF" : 0
     },
+    "\/dev\/global\/schema.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/global\/schema.html",
+      "oF" : 0
+    },
     "\/dev\/index.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -513,9 +832,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/js\/modules\/burger-min.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -541,6 +860,17 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/dev\/js\/modules\/get-started.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/modules\/get-started-min.js",
+      "oF" : 1,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/dev\/js\/modules\/header.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -557,9 +887,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/js\/modules\/overview-min.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -568,8 +898,19 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dev\/js\/modules\/parallax-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dev\/js\/modules\/scrollTrigger.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/modules\/scrollTrigger-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -778,6 +1119,19 @@
       "oS" : 0,
       "pg" : 0
     },
+    "\/dev\/scss\/sections\/_get-started.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_get-started.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0
+    },
     "\/dev\/scss\/sections\/_gxp-services.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -800,6 +1154,19 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_home.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0
+    },
+    "\/dev\/scss\/sections\/_ind-submission.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_ind-submission.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0
@@ -865,6 +1232,19 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_submission.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0
+    },
+    "\/dev\/scss\/sections\/_vendor-audits.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_vendor-audits.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0

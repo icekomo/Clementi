@@ -969,6 +969,7 @@ header #header-container #mainNav #nav-indicator {
 }
 #overview #overview-bottom {
   margin-top: 24px;
+  margin: 0 auto;
 }
 @media (min-width: 1440px) {
   #overview #overview-bottom {

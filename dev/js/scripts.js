@@ -7,6 +7,8 @@ import { initSlideshow } from "./modules/slideshow.js";
 import { initBioModal } from "./modules/bio-modal.js";
 import { initGetStarted } from "./modules/get-started.js";
 import { initScrollTrigger } from "./modules/scrollTrigger.js";
+import { initGearAnimation } from "./modules/gear-animation.js";
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -18,4 +20,5 @@ document.addEventListener("DOMContentLoaded", () => {
     initBioModal();
     initGetStarted();
     initScrollTrigger();
+    initGearAnimation();
 });

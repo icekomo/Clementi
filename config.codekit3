@@ -313,6 +313,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/overview\/gears.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/overview\/gears.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/overview\/overview-mask.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -669,6 +679,14 @@
       "oAP" : "\/dev\/content\/divide.html",
       "oF" : 0
     },
+    "\/dev\/content\/gears.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/gears.html",
+      "oF" : 0
+    },
     "\/dev\/content\/get-started.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -856,6 +874,17 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/dev\/js\/modules\/contact-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dev\/js\/modules\/gear-animation.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/modules\/gear-animation-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0

@@ -99,6 +99,7 @@
 
     #overview-bottom {
         margin-top: 24px;
+        margin: 0 auto;
         @include helpers.xxl {
             grid-area: overview-bottom;
         }

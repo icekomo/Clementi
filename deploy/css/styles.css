@@ -2027,7 +2027,7 @@ header #header-container #mainNav #nav-indicator {
     IND Submission
 ============= */
 #ind {
-  background-image: url("../img/ind/ind-bg.jpg");
+  background-image: url("../img/vendor/vendor-bg.jpg");
   height: 60vh;
   background-size: cover;
   background-position: center;
@@ -2035,32 +2035,37 @@ header #header-container #mainNav #nav-indicator {
   justify-content: center;
   align-items: center;
   padding: 24px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #ind {
     height: 45vh;
-    justify-content: flex-start;
   }
 }
 #ind > div {
-  color: var(--white);
-  text-align: left;
+  color: var(--blue);
+  background-color: var(--white-smoke);
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
 }
 @media (min-width: 768px) {
   #ind > div {
     width: 70vw;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 992px) {
   #ind > div {
-    width: 40vw;
-    margin: 0 auto;
+    width: 50vw;
   }
 }
-#ind > div h2 {
-  margin-top: 12px;
+@media (min-width: 1200px) {
+  #ind > div {
+    margin: 0 auto;
+    width: 40vw;
+  }
 }
-
 /* =============
     Vendor Audits
 ============= */

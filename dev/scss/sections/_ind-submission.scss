@@ -4,7 +4,7 @@
 @use "../helpers";
 
 #ind{
-    background-image: url("../img/ind/ind-bg.jpg");
+    background-image: url("../img/vendor/vendor-bg.jpg");
     height: 60vh;
     background-size: cover;
     background-position: center;
@@ -12,28 +12,37 @@
     justify-content: center;
     align-items: center;
     padding: 24px;
+    text-align: center;
 
     @include helpers.md {
         height: 45vh;
-         justify-content: flex-start;
     }
 
     >div{
-        color: var(--white);
-        text-align: left;
+        color: var(--blue);
+        background-color: var(--white-smoke);
+        padding: 16px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow:
+            0 4px 6px -1px rgba(0, 0, 0, 0.05),
+            0 2px 4px -1px rgba(0, 0, 0, 0.03);
 
         @include helpers.md{
             width: 70vw;
         }
 
-        @include helpers.xxl {
-            width: 40vw;
-            margin: 0 auto;
+        @include helpers.lg{
+            width: 50vw;
         }
 
-        h2{
-            // color: var(--white);
-            margin-top: 12px;
+        @include helpers.xl{
+            margin: 0 auto;
+            width: 40vw;
+        }
+
+        h2 {
+
         }
     }
 }

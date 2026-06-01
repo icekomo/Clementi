@@ -371,9 +371,9 @@ ul li {
 .callout-section button {
   margin-top: 24px;
   border: none;
-  background-color: var(--purple);
+  background-color: var(--yellow);
   padding: 16px;
-  color: var(--white);
+  color: var(--blue);
   font-weight: 550;
   transition: 0.25s;
   cursor: pointer;
@@ -386,8 +386,8 @@ ul li {
   }
 }
 .callout-section button:hover {
-  background-color: var(--white);
-  color: var(--purple);
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 /* =============
@@ -1829,6 +1829,14 @@ header #header-container #mainNav #nav-indicator {
 #phase-1 > div #phase-btn-container {
   display: flex;
   justify-content: flex-end;
+}
+#phase-1 > div #phase-btn-container button {
+  background-color: var(--purple);
+  color: var(--white);
+}
+#phase-1 > div #phase-btn-container button:hover {
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 /* =============

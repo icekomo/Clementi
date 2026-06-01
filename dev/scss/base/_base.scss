@@ -66,9 +66,9 @@ ul{
     button {
         margin-top: 24px;
         border: none;
-        background-color: var(--purple);
+        background-color: var(--yellow);
         padding: 16px;
-        color: var(--white);
+        color: var(--blue);
         font-weight: 550;
         transition: 0.25s;
         cursor: pointer;
@@ -80,8 +80,8 @@ ul{
         }
 
         &:hover {
-            background-color: var(--white);
-            color: var(--purple);
+            background-color: var(--blue);
+            color: var(--white);
         }
     }
 }

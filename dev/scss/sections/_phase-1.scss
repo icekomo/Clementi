@@ -56,25 +56,27 @@
             display: flex;
             justify-content: flex-end;
 
-            // button {
-            //     border: none;
-            //     background-color: var(--purple);
-            //     padding: 16px;
-            //     color: var(--white);
-            //     font-weight: 550;
-            //     transition: 0.25s;
-            //     cursor: pointer;
+            button {
+                // margin-top: 24px;
+                // border: none;
+                background-color: var(--purple);
+                // padding: 16px;
+                color: var(--white);
+                // font-weight: 550;
+                // transition: 0.25s;
+                // cursor: pointer;
+                // border-radius: 8px;
 
-            //     @include helpers.md {
-            //         font-size: helpers.rem-calc(30);
-            //         padding: 24px;
-            //     }
+                // @include helpers.md {
+                //     font-size: helpers.rem-calc(20);
+                //     padding: 24px;
+                // }
 
-            //     &:hover {
-            //         background-color: var(--white);
-            //         color: var(--purple);
-            //     }
-            // }
+                &:hover {
+                    background-color: var(--blue);
+                    color: var(--white);
+                }
+            }
         }
     }
 }

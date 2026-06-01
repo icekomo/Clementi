@@ -1474,6 +1474,10 @@ header #header-container #mainNav #nav-indicator {
   font-weight: 450;
   border-radius: 8px;
 }
+#who > div #who-container .card-wrapper .card-back .contact-row button:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
 
 /* =============
     Submission

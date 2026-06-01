@@ -216,6 +216,11 @@
                             padding: 16px;
                             font-weight: 450;
                             border-radius: 8px;
+
+                            &:hover{
+                                background-color: var(--blue);
+                                color: var(--white);
+                            }
                         }
                     }
                 }

@@ -421,6 +421,11 @@ ul {
 /* =============
     Buttons
 ============= */
+button {
+  cursor: pointer;
+  transition: 0.25s;
+}
+
 /* =============
     Forms
 ============= */
@@ -1577,6 +1582,10 @@ header #header-container #mainNav #nav-indicator {
   border-radius: 16px;
   font-weight: 550;
 }
+#contact-overlay #contact-panel #contact-close button:hover {
+  background-color: var(--black);
+  color: var(--red);
+}
 @media (min-width: 768px) {
   #contact-overlay #contact-panel #contact-top {
     display: grid;
@@ -1715,6 +1724,10 @@ header #header-container #mainNav #nav-indicator {
   padding: 16px;
   border-radius: 12px;
   color: var(--blue);
+}
+#contact-overlay #contact-panel #form-container form #submit-container button:hover {
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 /* =============

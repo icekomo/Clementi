@@ -30,14 +30,6 @@ export function initScrollTrigger() {
             //markers:true
         });
 
-
-
-//     gsap.to("#home", {
-//         backgroundPositionY: "60%",
-//         ease: "none",
-// ,
-//     });
-
     /* ============================================
         Overview — content slides in from left,
         svg slides in from right @ 992px+
@@ -51,7 +43,7 @@ export function initScrollTrigger() {
                 ease: "power2.out",
                 scrollTrigger: {
                     trigger: "#overview",
-                    start: "top 75%",
+                    start: "top 65%",
                     end: "top 50%",
                     scrub: true,
                     toggleActions: "play none none none"
@@ -65,7 +57,7 @@ export function initScrollTrigger() {
                 ease: "power2.out",
                 scrollTrigger: {
                     trigger: "#overview",
-                    start: "top 75%",
+                    start: "top 65%",
                     end: "top 50%",
                     scrub: true,
                     toggleActions: "play none none none"
@@ -73,8 +65,29 @@ export function initScrollTrigger() {
                 }
             });
 
+            /* ============================================
+            GxP Services — cards stagger up + fade in
+            ============================================ */
+            gsap.from(".gxp-card", {
+                y: 60,
+                opacity: 0,
+                duration: 0.6,
+                ease: "power2.out",
+                stagger: 0.15,
+                scrollTrigger: {
+                    trigger: "#gxp-card-container",
+                    start: "top 65%",
+                    end: "top 50%",
+                    scrub: true,
+                    toggleActions: "play none none none"
+                    //markers: true
+                }
+             });
+
         }
     });
+
+    
 
 
     /* ============================================
@@ -84,19 +97,4 @@ export function initScrollTrigger() {
         setTimeout(() => ScrollTrigger.refresh(), 100);
     });
 
-
-    /* ============================================
-        Overview — slides up over the hero
-    ============================================ */
-    // gsap.from("#overview", {
-    //     y: "30%",
-    //     ease: "none",
-    //     scrollTrigger: {
-    //         trigger: "#overview",
-    //         start: "top bottom",  // when overview enters the viewport
-    //         end: "top top",       // when overview reaches the top
-    //         scrub: true,
-    //         markers: true
-    //     },
-    // });
 }

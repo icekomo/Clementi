@@ -4,7 +4,7 @@ export function initHeader() {
     const burgerBtn = document.querySelector("#burgerBtn");
     const mainNav = document.querySelector("#mainNav");
     const navItems = mainNav.querySelectorAll("li");
-    const navLinks = mainNav.querySelectorAll("a, button");
+    const navLinks = mainNav.querySelectorAll("a");
     const topLine = document.querySelector("#top");
     const bottomLine = document.querySelector("#bottom");
     const middleLine = document.querySelector("#middle");
@@ -70,6 +70,15 @@ export function initHeader() {
             }
         });
     });
+
+    const contactBtn = document.querySelector(".contact-btn");
+    if (contactBtn) {
+        contactBtn.addEventListener("click", () => {
+            if (!desktopMQ.matches && isMenuOpen) {
+                closeMenu();
+            }
+        });
+    }
 
     // ─── Scroll-based active link via IntersectionObserver ───────────────────
     // Map each section id → its nav link.

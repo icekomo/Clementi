@@ -55,6 +55,11 @@
                 padding: 16px;
                 border-radius: 16px;
                 font-weight: 550;
+
+                 &:hover{
+                    background-color: var(--black);
+                    color: var(--red);
+                }
             }
         }
 
@@ -233,6 +238,11 @@
                         padding: 16px;
                         border-radius: 12px;
                         color: var(--blue);
+
+                        &:hover{
+                            background-color: var(--blue);
+                            color: var(--white);
+                        }
                     }
                 }
             }

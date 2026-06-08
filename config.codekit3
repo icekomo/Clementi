@@ -503,19 +503,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/slideshow\/slide-3.jpg" : {
-      "ft" : 16384,
-      "iS" : 306201,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/slideshow\/slide-3.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/img\/vendor\/vendor-bg.jpg" : {
       "ft" : 16384,
       "iS" : 144044,

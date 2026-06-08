@@ -1347,7 +1347,7 @@ header #header-container #mainNav #nav-indicator {
   }
 }
 @media (min-width: 1200px) {
-  #who > div #who-container #larry-card {
+  #who > div #who-container #lary-card {
     grid-area: c5;
   }
 }

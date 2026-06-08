@@ -815,6 +815,7 @@ header #header-container #mainNav #nav-indicator {
 }
 #home #home-top > div {
   grid-area: hero-content;
+  border: 1px solid var(--white);
 }
 #home #home-top > div h1 {
   font-size: 2.0625rem;
@@ -1322,6 +1323,37 @@ header #header-container #mainNav #nav-indicator {
 @media (min-width: 1200px) {
   #who > div #who-container {
     grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "c1 c2 c3 c4" ". c5 c6 .";
+  }
+}
+@media (min-width: 1200px) {
+  #who > div #who-container #william-card {
+    grid-area: c1;
+  }
+}
+@media (min-width: 1200px) {
+  #who > div #who-container #nancy-card {
+    grid-area: c2;
+  }
+}
+@media (min-width: 1200px) {
+  #who > div #who-container #paul-card {
+    grid-area: c3;
+  }
+}
+@media (min-width: 1200px) {
+  #who > div #who-container #david-card {
+    grid-area: c4;
+  }
+}
+@media (min-width: 1200px) {
+  #who > div #who-container #larry-card {
+    grid-area: c5;
+  }
+}
+@media (min-width: 1200px) {
+  #who > div #who-container #nemisha-card {
+    grid-area: c6;
   }
 }
 #who > div #who-container .card-wrapper {

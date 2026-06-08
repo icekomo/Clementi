@@ -33,6 +33,19 @@
       "oAP" : "\/assets\/2026_04_20-Draft Text\/20260417-DRAFT-website-mock-up-clementi-ltd_al.pptx",
       "oF" : 0
     },
+    "\/assets\/AdobeStock_94368252.jpeg" : {
+      "ft" : 16384,
+      "iS" : 1426479,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/AdobeStock_94368252.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/AdobeStock_432790800.jpeg" : {
       "ft" : 16384,
       "iS" : 7490858,
@@ -594,6 +607,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/who\/old\/submission.jpg" : {
+      "ft" : 16384,
+      "iS" : 245518,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/who\/old\/submission.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/who\/paul.jpg" : {
       "ft" : 16384,
       "iS" : 77044,
@@ -609,7 +635,7 @@
     },
     "\/deploy\/img\/who\/submission.jpg" : {
       "ft" : 16384,
-      "iS" : 245518,
+      "iS" : 478928,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/who\/submission.jpg",

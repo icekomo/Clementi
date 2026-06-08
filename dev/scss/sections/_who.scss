@@ -34,6 +34,47 @@
 
             @include helpers.xl {
                 grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: 
+                "c1 c2 c3 c4"
+                ". c5 c6 .";
+            }
+
+            #william-card{
+                @include helpers.xl {
+                    grid-area: c1;
+                 }
+            }
+
+            #nancy-card{
+                @include helpers.xl {
+                    grid-area: c2;
+                }
+            }
+
+            #paul-card{
+                @include helpers.xl {
+                    grid-area: c3;
+                }
+            }
+
+            #david-card{
+                @include helpers.xl {
+                    grid-area: c4;
+                }
+            }
+
+
+
+            #larry-card{
+                @include helpers.xl {
+                    grid-area: c5;
+                }
+            }
+
+            #nemisha-card{
+                 @include helpers.xl {
+                    grid-area: c6;
+                }
             }
 
             .card-wrapper {
@@ -76,25 +117,38 @@
                         background-size: cover;
                     }
 
+
+
                     #william {
                         background-image: url("../img/who/william.jpg");
                     }
+
+
 
                     #nancy {
                         background-image: url("../img/who/nancy.jpg");
                     }
 
+
+
                     #paul {
                         background-image: url("../img/who/paul.jpg");
                     }
 
+
+
                     #david {
                         background-image: url("../img/who/david.jpg");
+
                     }
+
+
 
                     #larry {
                         background-image: url("../img/who/larry.jpg");
                     }
+
+
 
                     #nemisha {
                         background-image: url("../img/who/nemisha.jpg");

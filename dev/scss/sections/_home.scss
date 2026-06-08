@@ -11,14 +11,6 @@
     grid-template-rows: 1fr auto;
     margin-bottom: 0;
 
-    @include helpers.md{
-        // height: 80vh;
-    }
-
-    @include helpers.xxl{
-        //  height: 100dvh;
-    }
-
     #home-top{
         padding: 16px;
         color: var(--white);
@@ -33,26 +25,23 @@
         }
 
         @include helpers.lg{
-            // grid-template-columns: auto 50vw auto;
             padding-bottom: 0vh;
-            // border: 1px solid red;
         }
 
         @include helpers.xl{
             grid-template-columns: auto 60vw auto;
-            // border: 1px solid yellow;
         }
 
         @include helpers.xxl{
             grid-template-columns: auto 1200px auto;
-            // border: 1px solid green;
         }
 
         >div{
             grid-area: hero-content;
+            border: 1px solid var(--white);
 
              @include helpers.lg{
-                // border: 1px solid red;
+            
              }
 
             h1{

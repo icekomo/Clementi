@@ -1487,12 +1487,8 @@ header #header-container #mainNav #nav-indicator {
     Submission
 ============= */
 #submission {
-  background-image: url("../img/who/submission.jpg");
   background-blend-mode: multiply;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
+  display: grid;
 }
 @media (min-width: 768px) {
   #submission {
@@ -1506,10 +1502,31 @@ header #header-container #mainNav #nav-indicator {
     height: auto;
   }
 }
+@media (min-width: 1200px) {
+  #submission {
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". sub .";
+  }
+}
+#submission > div {
+  grid-area: sub;
+}
+#submission #sub-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#submission #sub-top img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  #submission #sub-top img {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
 #submission #sub-card {
-  background: var(--black);
   padding: 16px;
-  color: var(--white);
   border-radius: 12px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
 }
@@ -1523,6 +1540,7 @@ header #header-container #mainNav #nav-indicator {
   #submission #sub-card {
     width: 30vw;
     padding: 32px;
+    margin: 0 auto;
   }
 }
 #submission #sub-card p {

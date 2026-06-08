@@ -33,14 +33,17 @@
 
         @include helpers.xxl{
             grid-template-columns: auto 1200px auto;
+            padding-bottom: 100px;
         }
 
         >div{
             grid-area: hero-content;
-            border: 1px solid var(--white);
+            border: 3px solid var(--white);
+            padding: 16px;
+            border-radius: 12px;
 
              @include helpers.lg{
-            
+
              }
 
             h1{

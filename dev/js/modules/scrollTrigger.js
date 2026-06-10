@@ -1,5 +1,6 @@
 import { gsap, ScrollTrigger } from "../gsap-setup.js";
 import { initGears } from "./gears.js";
+import { initSubModular } from "./sub-modular-animation.js";
 
 export function initScrollTrigger() {
 
@@ -99,6 +100,25 @@ export function initScrollTrigger() {
                 onEnter: () => {
                     console.log("gear trigger fired");
                     gearsMaster.play();
+                },
+            });
+        }
+
+        /* ============================================
+            Sub-modular — plays when #modular-container
+            reaches 50% of viewport
+        ============================================ */
+        const subModularMaster = initSubModular();
+
+        if (subModularMaster) {
+            ScrollTrigger.create({
+                trigger: "#modular-container",
+                start: "top 50%",
+                once: true,
+                // markers: true,
+                onEnter: () => {
+                    console.log("sub-modular trigger fired");
+                    subModularMaster.play();
                 },
             });
         }

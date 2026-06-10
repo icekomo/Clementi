@@ -1,23 +1,15 @@
-export function initSubModularAnimation() {
+import { gsap } from "../gsap-setup.js";
+
+export function initSubModular() {
     const m1Color = document.getElementById("m1-color");
     const m1Text = document.getElementById("m1-text");
     const mb1Color = document.getElementById("mb1-color");
     const mb1Text = document.getElementById("mb1-text");
 
-    if (!m1Color || !m1Text || !mb1Color || !mb1Text) return;
+    if (!m1Color || !m1Text || !mb1Color || !mb1Text) return null;
 
-    // Get the SVG's bounding box height to use as the wipe distance
-    const svgEl = m1Color.closest("svg");
-    const svgHeight = svgEl ? svgEl.viewBox.baseVal.height : 588;
-
-    // Master timeline
-    const tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#modular-container",
-            start: "top 75%",
-            toggleActions: "play none none none",
-        },
-    });
+    // Master timeline — paused, played externally via ScrollTrigger
+    const tl = gsap.timeline({ paused: true });
 
     // ─── Step 1: m1-color wipes in from bottom ───────────────────────────────
     // Clip the element by translating it up from below its natural position.
@@ -71,4 +63,6 @@ export function initSubModularAnimation() {
         },
         ">0.1"
     );
+
+    return tl;
 }

@@ -79,6 +79,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/modular.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/modular.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/video-mask.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -846,6 +856,14 @@
       "oAP" : "\/dev\/content\/slideshow.html",
       "oF" : 0
     },
+    "\/dev\/content\/sub-modular.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/sub-modular.html",
+      "oF" : 0
+    },
     "\/dev\/content\/submission.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -1057,6 +1075,17 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/dev\/js\/modules\/slideshow-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dev\/js\/modules\/sub-modular-animation.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/modules\/sub-modular-animation-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0

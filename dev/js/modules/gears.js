@@ -288,7 +288,32 @@ export function initGears() {
             svgOrigin: getOrigin(eOutter),
             ease: "power2.out",
             onComplete: rotateEGear,
-        }, "-=.5");
+        }, "-=.5")
+        .from(eLineTop,{
+            duration: 1,
+            alpha:0,
+            ease: "power2.out",
+        }, "-=.5")
+        .from(eLinesRight,{
+            duration: 1,
+            alpha:0,
+            ease: "power2.out",
+        }, "-=.5")
+        .from(eLineBottom,{
+            duration: 1,
+            alpha:0,
+            ease: "power2.out",
+        }, "-=.5")
+        .from(eBlocksTop,{
+            duration: 1,
+            alpha:0,
+            ease: "power2.out",
+        }, "-=.5")
+        .from(eBlocksBottom,{
+            duration: 1,
+            alpha:0,
+            ease: "power2.out",
+        });
 
         return tl;
     }

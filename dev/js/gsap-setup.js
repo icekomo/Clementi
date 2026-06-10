@@ -6,4 +6,4 @@ import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
 gsap.registerPlugin(GSDevTools, ScrollTrigger, DrawSVGPlugin, MorphSVGPlugin);
 
-export { gsap, ScrollTrigger };
+export { gsap, ScrollTrigger, DrawSVGPlugin };

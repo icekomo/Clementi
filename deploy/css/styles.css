@@ -980,6 +980,9 @@ header #header-container #mainNav #nav-indicator {
     grid-area: overview-bottom;
   }
 }
+#overview #overview-bottom #gear-container svg {
+  width: 100%;
+}
 #overview #overview-bottom img {
   width: 100%;
 }

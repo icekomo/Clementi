@@ -19,7 +19,6 @@
     }
 
     #overview-top {
-        // border: 1px solid red;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -104,16 +103,18 @@
             grid-area: overview-bottom;
         }
 
-        #gear-container{
-            svg{
+        #gear-container {
+            svg {
                 width: 100%;
             }
+            
+            // Crop the SVG's built-in whitespace without modifying the SVG
+            // overflow: hidden;
+            // margin-top: -5.3%;   // 65 / 1220 ≈ 5.3% of SVG height
+            // margin-bottom: -4.9%; // ~60 / 1220 ≈ 4.9% of SVG height
         }
-
-        img{
-            width: 100%;
-        }
-
 
     }
 }
+
+

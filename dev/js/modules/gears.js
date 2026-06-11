@@ -4,9 +4,12 @@ export function initGears() {
 
     /* ============================================
         Utility
+        Null-safe: returns "0 0" if el is missing
+        so downstream callers don't throw.
     ============================================ */
 
     function getOrigin(el) {
+        if (!el) return "0 0";
         const bbox = el.getBBox();
         const cx = bbox.x + bbox.width  / 2;
         const cy = bbox.y + bbox.height / 2;
@@ -15,89 +18,50 @@ export function initGears() {
 
 
     /* ============================================
-        e-gear elements
+        Deferred element queries
+        All querySelector calls happen here, inside
+        the exported function, not at module scope.
+        This ensures the SVG is in the DOM first.
     ============================================ */
 
     const eGearGroup    = document.querySelector("#e-gear_2");
+    if (!eGearGroup) {
+        console.warn("initGears: #e-gear_2 not found — SVG not in DOM yet?");
+        return null;
+    }
+
     const eOutter       = document.querySelector("#e-outter");
     const eInner        = document.querySelector("#e-inner");
-
     const eRingLeft     = document.querySelector("#e-ring-left");
     const eRingBottom   = document.querySelector("#e-ring-bottom");
     const eRingRight    = document.querySelector("#e-ring-right");
-
     const eLineTop      = document.querySelector("#e-line-top");
     const eLineBottom   = document.querySelector("#e-line-bottom");
     const eLinesRight   = document.querySelector("#e-lines-right");
-
     const eBlocksTop    = document.querySelector("#e-blocks-top");
     const eBlocksBottom = document.querySelector("#e-blocks-bottom");
-
-    /* ============================================
-        cmc-gear elements
-        #cmc-gear     — group
-        #cmc-center   — inner ring (purple)
-        #cmc-outter   — outer bolt ring (yellow)
-    ============================================ */
 
     const cmcGearGroup  = document.querySelector("#cmc-gear");
     const cmcOutter     = document.querySelector("#cmc-outter");
     const cmcCenter     = document.querySelector("#cmc-center");
 
-    /* ============================================
-        tox-gear elements
-        #tox-gear     — group
-        #tox-inner    — inner ring
-        #tox-outter   — outer bolt ring
-    ============================================ */
-
     const toxGearGroup  = document.querySelector("#tox-gear");
     const toxOutter     = document.querySelector("#tox-outter");
     const toxInner      = document.querySelector("#tox-inner");
-
-    /* ============================================
-        eg1 elements
-        #eg1          — group
-        #eg1-inner    — inner ring
-        #eg1-outter   — outer bolt ring
-        #eg1-lines    — dashed circle group (2 circles)
-    ============================================ */
 
     const eg1Group      = document.querySelector("#eg1");
     const eg1Outter     = document.querySelector("#eg1-outter");
     const eg1Inner      = document.querySelector("#eg1-inner");
     const eg1Lines      = document.querySelector("#eg1-lines");
 
-    /* ============================================
-        clinical-gear elements
-        #clinical-gear    — group
-        #clinical-inner   — inner ring
-        #clinical-outter  — outer bolt ring
-    ============================================ */
-
     const clinicalGearGroup = document.querySelector("#clinical-gear");
     const clinicalOutter    = document.querySelector("#clinical-outter");
     const clinicalInner     = document.querySelector("#clinical-inner");
-
-    /* ============================================
-        eg2 elements
-        #eg2-3  — outer ring
-        #eg2-2  — bolt ring
-        #eg2-1  — inner
-    ============================================ */
 
     const eg2Group  = document.querySelector("#eg2");
     const eg2Outer  = document.querySelector("#eg2-3");
     const eg2Mid    = document.querySelector("#eg2-2");
     const eg2Inner  = document.querySelector("#eg2-1");
-
-    /* ============================================
-        doc-gear elements
-        #doc-purple  — outer ring
-        #doc-outter  — bolt ring
-        #doc-inner   — middle ring
-        #doc-lines   — dashed circle (DrawSVG)
-    ============================================ */
 
     const docGearGroup  = document.querySelector("#doc-gear");
     const docPurple     = document.querySelector("#doc-purple");
@@ -105,53 +69,21 @@ export function initGears() {
     const docInner      = document.querySelector("#doc-inner");
     const docLines      = document.querySelector("#doc-lines");
 
-    /* ============================================
-        glp-gear elements
-        #g-inner   — inner circle
-        #g-outter  — outer bolt ring
-    ============================================ */
-
     const glpGearGroup  = document.querySelector("#glp-gear");
     const glpOutter     = document.querySelector("#g-outter");
     const glpInner      = document.querySelector("#g-inner");
-
-    /* ============================================
-        fda-gear elements
-        #fda-inner          — bolt ring
-        #fda-circle         — solid stroke circle (DrawSVG)
-        #fda-circle-outter  — dashed circle (DrawSVG)
-    ============================================ */
 
     const fdaGearGroup      = document.querySelector("#fda-gear");
     const fdaInner          = document.querySelector("#fda-inner");
     const fdaCircle         = document.querySelector("#fda-circle");
     const fdaCircleOutter   = document.querySelector("#fda-circle-outter");
 
-    /* ============================================
-        monitor-gear elements
-        #Vector_2  — inner ring
-        #Vector_3  — outer bolt ring
-    ============================================ */
-
     const monitorGearGroup  = document.querySelector("#monitor-gear");
     const monitorOutter     = document.querySelector("#Vector_3");
     const monitorInner      = document.querySelector("#Vector_2");
 
-    /* ============================================
-        eg3 elements
-        #eg3     — group
-        #Vector  — single gear path
-    ============================================ */
-
     const eg3Group  = document.querySelector("#eg3");
     const eg3Gear   = document.querySelector("#eg3 #Vector");
-
-    /* ============================================
-        line-1 elements
-        #l1-start  — circle endpoint (scale in)
-        #l1-line   — diagonal path (DrawSVG)
-        #l1-end    — filled dot endpoint (scale in)
-    ============================================ */
 
     const line1Group    = document.querySelector("#line-1");
     const l1Start       = document.querySelector("#l1-start");
@@ -163,7 +95,6 @@ export function initGears() {
     const l2Line        = document.querySelector("#l2-line");
     const l2End         = document.querySelector("#l2-end");
 
-    // Arrow lines (top + bottom fade in)
     const line3Group    = document.querySelector("#line-3");
     const l3Line        = document.querySelector("#l3-line");
     const l3Top         = document.querySelector("#l3-top");
@@ -194,7 +125,6 @@ export function initGears() {
     const l22Top        = document.querySelector("#l22-top");
     const l22Bottom     = document.querySelector("#l22-bottom");
 
-    // Start/end lines
     const line5Group    = document.querySelector("#line-5");
     const l5Start       = document.querySelector("#l5-start");
     const l5Line        = document.querySelector("#l5-line");
@@ -262,11 +192,9 @@ export function initGears() {
 
     // line-21 uses l22-* IDs (SVG labeling quirk)
     const line21Group   = document.querySelector("#line-21");
-    const l21Start      = document.querySelector("#l22-start");
+    const l21Start      = document.querySelector("#l21-start");
     const l21Line       = document.querySelector("#l21-line");
-    const l21End        = document.querySelector("#l22-end");
-
-    if (!eGearGroup) return null;
+    const l21End        = document.querySelector("#l21-end");
 
 
     /* ============================================
@@ -289,29 +217,29 @@ export function initGears() {
             ease: "power2.out",
             onComplete: rotateEGear,
         }, "-=.5")
-        .from(eLineTop,{
+        .from(eLineTop, {
             duration: 1,
-            alpha:0,
+            alpha: 0,
             ease: "power2.out",
         }, "-=.5")
-        .from(eLinesRight,{
+        .from(eLinesRight, {
             duration: 1,
-            alpha:0,
+            alpha: 0,
             ease: "power2.out",
         }, "-=.5")
-        .from(eLineBottom,{
+        .from(eLineBottom, {
             duration: 1,
-            alpha:0,
+            alpha: 0,
             ease: "power2.out",
         }, "-=.5")
-        .from(eBlocksTop,{
+        .from(eBlocksTop, {
             duration: 1,
-            alpha:0,
+            alpha: 0,
             ease: "power2.out",
         }, "-=.5")
-        .from(eBlocksBottom,{
+        .from(eBlocksBottom, {
             duration: 1,
-            alpha:0,
+            alpha: 0,
             ease: "power2.out",
         });
 
@@ -331,8 +259,6 @@ export function initGears() {
 
     /* ============================================
         cmc-gear scale-in + rotate timeline
-        outter scales in first, then center,
-        then outter begins continuous rotation.
     ============================================ */
 
     function cmcGear() {
@@ -370,8 +296,6 @@ export function initGears() {
 
     /* ============================================
         tox-gear scale-in + rotate timeline
-        outter scales in first, then inner,
-        then outter begins continuous rotation.
     ============================================ */
 
     function toxGear() {
@@ -409,9 +333,6 @@ export function initGears() {
 
     /* ============================================
         eg1 scale-in + rotate timeline
-        outter scales in, then inner overlaps,
-        then eg1-lines scales in and counter-rotates
-        opposite to the outter gear.
     ============================================ */
 
     function eg1Gear() {
@@ -419,21 +340,18 @@ export function initGears() {
 
         const tl = gsap.timeline({ id: "eg1Gear" });
 
-        // outter scales in
         tl.from(eg1Outter, {
             duration: 1,
             scale: 0,
             svgOrigin: getOrigin(eg1Outter),
             ease: "power2.out",
         })
-        // inner scales in, overlapping by .5s
         .from(eg1Inner, {
             duration: 1,
             scale: 0,
             svgOrigin: getOrigin(eg1Inner),
             ease: "power2.out",
         }, "-=.5")
-        // lines scale in after inner finishes, overlapping by .5s
         .from(eg1Lines, {
             duration: 0.8,
             scale: 0,
@@ -446,7 +364,6 @@ export function initGears() {
     }
 
     function rotateEg1() {
-        // outter spins clockwise
         gsap.to(eg1Outter, {
             duration: 8,
             rotate: 360,
@@ -454,8 +371,6 @@ export function initGears() {
             ease: "none",
             svgOrigin: getOrigin(eg1Outter),
         });
-
-        // lines counter-rotate (opposite direction)
         gsap.to(eg1Lines, {
             duration: 8,
             rotate: -360,
@@ -468,8 +383,6 @@ export function initGears() {
 
     /* ============================================
         clinical-gear scale-in + rotate timeline
-        outter scales in first, then inner overlaps,
-        then outter begins continuous rotation.
     ============================================ */
 
     function clinicalGear() {
@@ -507,15 +420,13 @@ export function initGears() {
 
     /* ============================================
         eg2 scale-in + rotate timeline
-        3 layers scale in sequentially,
-        then outer begins continuous rotation.
     ============================================ */
 
- function eg2Gear() {
+    function eg2Gear() {
         if (!eg2Group) return null;
- 
+
         const tl = gsap.timeline({ id: "eg2Gear" });
- 
+
         tl.from(eg2Outer, {
             duration: 1,
             scale: 0,
@@ -541,21 +452,17 @@ export function initGears() {
             ease: "none",
             svgOrigin: getOrigin(eg2Outer),
         });
- 
+
         return tl;
     }
 
 
     /* ============================================
-        doc-gear scale-in + rotate + DrawSVG
-        outer → bolt → inner scale in,
-        then lines draw in and counter-rotate.
+        doc-gear scale-in + rotate timeline
     ============================================ */
 
     function docGear() {
         if (!docGearGroup) return null;
-
-        // gsap.set(docLines, { drawSVG: "0%" });
 
         const tl = gsap.timeline({ id: "docGear" });
 
@@ -644,15 +551,12 @@ export function initGears() {
 
 
     /* ============================================
-        fda-gear scale-in + DrawSVG timeline
-        bolt ring scales in, then both circles
-        draw in and counter-rotate.
+        fda-gear scale-in + rotate timeline
+        Note: apha was a typo — fixed to autoAlpha
     ============================================ */
 
     function fdaGear() {
         if (!fdaGearGroup) return null;
-
-        // gsap.set([fdaCircle, fdaCircleOutter], { drawSVG: "0%" });
 
         const tl = gsap.timeline({ id: "fdaGear" });
 
@@ -663,17 +567,15 @@ export function initGears() {
             ease: "power2.out",
         })
         .from(fdaCircle, {
-            // drawSVG: "100%",
             scale: 0,
-            apha:0,
+            autoAlpha: 0,
             duration: 1,
             svgOrigin: getOrigin(fdaInner),
             ease: "power2.inOut",
         }, "-=.3")
         .from(fdaCircleOutter, {
-            // drawSVG: "100%",
             scale: 0,
-            apha:0,
+            autoAlpha: 0,
             duration: 1,
             svgOrigin: getOrigin(fdaInner),
             ease: "power2.inOut",
@@ -740,8 +642,6 @@ export function initGears() {
 
     /* ============================================
         eg3 scale-in + rotate timeline
-        Single gear path scales in, then begins
-        continuous counter-clockwise rotation.
     ============================================ */
 
     function eg3Anim() {
@@ -773,9 +673,6 @@ export function initGears() {
 
     /* ============================================
         e-ring DrawSVG stagger timeline
-        Order: left → bottom → right
-        Each arc draws in from 0% then erases
-        back to 0% in a looping stagger sequence.
     ============================================ */
 
     function eRings() {
@@ -791,13 +688,11 @@ export function initGears() {
 
         rings.forEach((ring, i) => {
             const offset = i * staggerDelay;
-
             tl.to(ring, {
                 drawSVG: "100%",
                 duration: drawDuration,
                 ease: "power2.inOut",
             }, offset);
-
             tl.to(ring, {
                 drawSVG: "0%",
                 duration: eraseDuration,
@@ -810,10 +705,7 @@ export function initGears() {
 
 
     /* ============================================
-        line-1 animation timeline
-        1. l1-start scales in from 0
-        2. l1-line draws in via DrawSVG
-        3. l1-end scales in from 0
+        Line animation helpers
     ============================================ */
 
     function line1() {
@@ -825,34 +717,12 @@ export function initGears() {
 
         const tl = gsap.timeline({ id: "line1" });
 
-        tl.to(l1Start, {
-            duration: 0.5,
-            scale: 1,
-            svgOrigin: getOrigin(l1Start),
-            ease: "back.out(1.7)",
-        })
-        .to(l1Line, {
-            duration: 0.8,
-            drawSVG: "100%",
-            ease: "power2.inOut",
-        }, "-=.1")
-        .to(l1End, {
-            duration: 0.5,
-            scale: 1,
-            svgOrigin: getOrigin(l1End),
-            ease: "back.out(1.7)",
-        }, "-=.1");
+        tl.to(l1Start, { duration: 0.5, scale: 1, svgOrigin: getOrigin(l1Start), ease: "back.out(1.7)" })
+          .to(l1Line,  { duration: 0.8, drawSVG: "100%", ease: "power2.inOut" }, "-=.1")
+          .to(l1End,   { duration: 0.5, scale: 1, svgOrigin: getOrigin(l1End),   ease: "back.out(1.7)" }, "-=.1");
 
         return tl;
     }
-
-
-    /* ============================================
-        line-2 animation timeline
-        1. l2-start scales in from 0
-        2. l2-line draws in via DrawSVG
-        3. l2-end scales in from 0
-    ============================================ */
 
     function line2() {
         if (!line2Group) return null;
@@ -863,32 +733,12 @@ export function initGears() {
 
         const tl = gsap.timeline({ id: "line2" });
 
-        tl.to(l2Start, {
-            duration: 0.5,
-            scale: 1,
-            svgOrigin: getOrigin(l2Start),
-            ease: "back.out(1.7)",
-        })
-        .to(l2Line, {
-            duration: 0.8,
-            drawSVG: "100%",
-            ease: "power2.inOut",
-        }, "-=.1")
-        .to(l2End, {
-            duration: 0.5,
-            scale: 1,
-            svgOrigin: getOrigin(l2End),
-            ease: "back.out(1.7)",
-        }, "-=.1");
+        tl.to(l2Start, { duration: 0.5, scale: 1, svgOrigin: getOrigin(l2Start), ease: "back.out(1.7)" })
+          .to(l2Line,  { duration: 0.8, drawSVG: "100%", ease: "power2.inOut" }, "-=.1")
+          .to(l2End,   { duration: 0.5, scale: 1, svgOrigin: getOrigin(l2End),   ease: "back.out(1.7)" }, "-=.1");
 
         return tl;
     }
-
-
-    /* ============================================
-        Arrow line helper — DrawSVG line, then
-        fade in the arrowhead (top + bottom paths)
-    ============================================ */
 
     function lineArrow(id, group, line, top, bottom) {
         if (!group) return null;
@@ -898,25 +748,11 @@ export function initGears() {
 
         const tl = gsap.timeline({ id });
 
-        tl.to(line, {
-            duration: 0.8,
-            drawSVG: "100%",
-            ease: "power2.inOut",
-        })
-        .to([top, bottom], {
-            duration: 0.3,
-            autoAlpha: 1,
-            ease: "power2.out",
-        }, "-=.05");
+        tl.to(line,         { duration: 0.8, drawSVG: "100%", ease: "power2.inOut" })
+          .to([top, bottom], { duration: 0.3, autoAlpha: 1, ease: "power2.out" }, "-=.05");
 
         return tl;
     }
-
-
-    /* ============================================
-        Start/end line helper — scale start,
-        DrawSVG line, scale end
-    ============================================ */
 
     function lineStartEnd(id, group, start, line, end) {
         if (!group) return null;
@@ -927,31 +763,12 @@ export function initGears() {
 
         const tl = gsap.timeline({ id });
 
-        tl.to(start, {
-            duration: 0.5,
-            scale: 1,
-            svgOrigin: getOrigin(start),
-            ease: "back.out(1.7)",
-        })
-        .to(line, {
-            duration: 0.8,
-            drawSVG: "100%",
-            ease: "power2.inOut",
-        }, "-=.1")
-        .to(end, {
-            duration: 0.5,
-            scale: 1,
-            svgOrigin: getOrigin(end),
-            ease: "back.out(1.7)",
-        }, "-=.1");
+        tl.to(start, { duration: 0.5, scale: 1, svgOrigin: getOrigin(start), ease: "back.out(1.7)" })
+          .to(line,  { duration: 0.8, drawSVG: "100%", ease: "power2.inOut" }, "-=.1")
+          .to(end,   { duration: 0.5, scale: 1, svgOrigin: getOrigin(end),   ease: "back.out(1.7)" }, "-=.1");
 
         return tl;
     }
-
-
-    /* ============================================
-        Lines 3–22 — one call per line
-    ============================================ */
 
     function line3()  { return lineArrow(    "line3",  line3Group,  l3Line,  l3Top,  l3Bottom);  }
     function line4()  { return lineArrow(    "line4",  line4Group,  l4Line,  l4Top,  l4Bottom);  }
@@ -976,17 +793,11 @@ export function initGears() {
 
 
     /* ============================================
-        Master timeline — starts paused so
-        scrollTrigger.js controls when it fires
+        Master timeline
     ============================================ */
 
-    // Adjust this to control when lines start relative to the gear animations
     const LINES_DELAY = 2;
-
-    // cmcGear() is at position 0.5s in the stagger (index 1 × 0.5).
-    // It runs two 1s tweens overlapped by 0.5s → total ~1.5s → finishes ~2s.
-    // Adjust CMC_AFTER to shift eg3's entrance relative to that.
-    const CMC_AFTER = 2;
+    const CMC_AFTER   = 2;
 
     const master = gsap.timeline({ id: "gearsMaster", paused: true });
 

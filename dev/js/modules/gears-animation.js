@@ -36,55 +36,66 @@ export function initGearAnimation() {
 
     /* ============================================
         Per-gear timeline functions
+        Targeting gear group IDs from the new SVG
     ============================================ */
 
     function eCtdInd() {
-        return buildRotation("#eCTD\\ IND", 60, 1);
+        return buildRotation("#e-gear", 60, 1);
     }
 
     function cmc() {
-        return buildRotation("#CMC", 45, -1);
+        return buildRotation("#cmc-gear", 45, -1);
     }
 
     function toxicology() {
-        return buildRotation("#Toxicology", 50, -1);
+        return buildRotation("#tox-gear", 50, -1);
     }
 
     function clinicalProtocol() {
-        return buildRotation("#Clinical\\ Protocol", 55, -1);
+        return buildRotation("#clinical-gear", 55, -1);
     }
 
     function documentManagement() {
-        return buildRotation("#Document\\ Management", 40, 1);
+        return buildRotation("#doc-gear", 40, 1);
     }
 
     function glp() {
-        return buildRotation("#GLP", 25, 1);
+        return buildRotation("#glp-gear", 25, 1);
     }
 
     function monitoringAudits() {
-        return buildRotation("#Monitoring\\ Audits", 30, -1);
+        return buildRotation("#monitor-gear", 30, -1);
     }
 
     function fdaMeetings() {
-        return buildRotation("#FDA\\ Meetings", 20, -1);
+        return buildRotation("#fda-gear", 20, -1);
+    }
+
+    function eg1() {
+        return buildRotation("#eg1", 35, 1);
+    }
+
+    function eg3() {
+        return buildRotation("#eg3", 50, -1);
     }
 
 
     /* ============================================
         Fade-in timeline
+        Pairs: [gear group, legend key group]
+        Key group IDs from the new SVG's #key section
     ============================================ */
 
     function fadeInGears() {
         const pairs = [
-            ["#eCTD\\ IND",             "#ect\\ text"],
-            ["#CMC",                     "#cmc\\ text"],
-            ["#Toxicology",              "#toxt\\ text"],
-            ["#Clinical\\ Protocol",     "#clincial\\ text"],
-            ["#Document\\ Management",   "#doc\\ text"],
-            ["#FDA\\ Meetings",          "#fda\\ text"],
-            ["#GLP",                     "#glp\\ text"],
-            ["#Monitoring\\ Audits",     "#monitor\\ text"],
+            ["#e-gear",       "#ect\\ text"],
+            ["#cmc-gear",     "#cmc\\ text"],
+            ["#tox-gear",     "#toxt\\ text"],
+            ["#clinical-gear","#clincial\\ text"],
+            ["#doc-gear",     "#doc\\ text"],
+            ["#fda-gear",     "#fda\\ text"],
+            ["#glp-gear",     "#glp\\ text"],
+            ["#monitor-gear", "#monitor\\ text"],
         ];
 
         const tl = gsap.timeline({ id: "fadeInGears" });
@@ -120,6 +131,8 @@ export function initGearAnimation() {
         glp(),
         monitoringAudits(),
         fdaMeetings(),
+        eg1(),
+        eg3(),
         fadeInGears(),
     ]
     .filter(Boolean)

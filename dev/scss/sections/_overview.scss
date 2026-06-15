@@ -10,6 +10,8 @@
     padding-top: 100px;
     background-color: var(--white);
 
+    padding-bottom: 0;
+
     @include helpers.xxl {
         display: grid;
         grid-template-columns: auto 1200px auto;
@@ -100,21 +102,43 @@
     }
 
     #overview-bottom {
-        margin-top: 24px;
+        // margin-top: 24px;
         margin: 0 auto;
+
         @include helpers.xxl {
             grid-area: overview-bottom;
         }
 
         #gear-container {
+            // border: 1px solid red;
+            height: 250px;
+
+            @include helpers.md{
+                 height: 450px;
+            }
+
+            @include helpers.lg{
+                height: auto;
+            }
+
             svg {
+                position: relative;
+                margin-top: -250px;
                 width: 100%;
+
+                @include helpers.md{
+                    margin-top: -150px;
+                }
+
+                @include helpers.lg{
+                    margin-top: 0px;
+                }
             }
             
             // Crop the SVG's built-in whitespace without modifying the SVG
-            // overflow: hidden;
-            // margin-top: -5.3%;   // 65 / 1220 ≈ 5.3% of SVG height
-            // margin-bottom: -4.9%; // ~60 / 1220 ≈ 4.9% of SVG height
+            overflow: hidden;
+            margin-top: -5.3%;   // 65 / 1220 ≈ 5.3% of SVG height
+            margin-bottom: -4.9%; // ~60 / 1220 ≈ 4.9% of SVG height
         }
 
     }

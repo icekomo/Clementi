@@ -31,17 +31,49 @@
             }
 
             @include helpers.xl {
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas:
+                    "s1 s1 s2 s2 s3 s3"
+                    ".. s4 s4 s5 s5 ..";
+            }
+
+            #s1 {
+                @include helpers.xl {
+                    grid-area: s1;
+                }
+            }
+
+            #s2 {
+                @include helpers.xl {
+                    grid-area: s2;
+                }
+            }
+
+            #s3 {
+                @include helpers.xl {
+                    grid-area: s3;
+                }
+            }
+
+            #s4 {
+                @include helpers.xl {
+                    grid-area: s4;
+                }
+            }
+
+            #s5 {
+                @include helpers.xl {
+                    grid-area: s5;
+                }
             }
 
             .service-card {
                 background-color: var(--white-smoke);
                 border-radius: 12px;
                 overflow: hidden;
-                 box-shadow:
-                        0 4px 6px -1px rgba(0, 0, 0, 0.05),
-                        0 2px 4px -1px rgba(0, 0, 0, 0.03);
-
+                box-shadow:
+                    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+                    0 2px 4px -1px rgba(0, 0, 0, 0.03);
 
                 .service-img {
                     height: 200px;
@@ -49,7 +81,24 @@
                     background-size: cover;
                     display: flex;
                     align-items: flex-end;
-                    img{
+                    position: relative;
+
+                    .card-icon {
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 16px;
+                        border: 4px solid var(--white);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: helpers.rem-calc(25);
+                        position: absolute;
+                        left: 8px;
+                        bottom: -16px;
+                        color: var(--white);
+                    }
+
+                    img {
                         position: relative;
                         bottom: -30px;
                     }
@@ -71,7 +120,6 @@
                     }
 
                     ul {
-                        
                         li {
                             font-size: helpers.rem-calc(14);
                             margin-bottom: 8px;
@@ -80,34 +128,37 @@
                         }
                     }
 
-                    #fda-list{
-
-                        i{
-                            color: #F97316;
+                    #fda-list {
+                        i {
+                            color: var(--purple);
                             margin-right: 8px;
                         }
                     }
 
-                    #doc-list{
-
-                        i{
+                    #doc-list {
+                        i {
                             color: #111827;
                             margin-right: 8px;
                         }
                     }
 
-                    #cmc-list{
-
-                        i{
-                            color: #10B981;
+                    #cmc-list {
+                        i {
+                            color: #10b981;
                             margin-right: 8px;
                         }
                     }
 
-                    #therapy-list{
+                    #therapy-list {
+                        i {
+                            color: var(--red);
+                            margin-right: 8px;
+                        }
+                    }
 
-                        i{
-                            color: #EF4444;
+                    #fdas-list {
+                        i {
+                            color: var(--blue);
                             margin-right: 8px;
                         }
                     }
@@ -116,6 +167,9 @@
 
             #service-card-1 {
                 background-image: url("../img/service/fda.jpg");
+                .card-icon {
+                    background-color: var(--purple);
+                }
             }
 
             #service-card-2 {
@@ -128,6 +182,16 @@
 
             #service-card-4 {
                 background-image: url("../img/service/cmc.jpg");
+                .card-icon {
+                    background-color: var(--blue);
+                }
+            }
+
+            #service-card-5 {
+                background-image: url("../img/service/fdas.jpg");
+                .card-icon {
+                    background-color: var(--blue);
+                }
             }
         }
     }

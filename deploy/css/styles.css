@@ -1212,7 +1212,33 @@ header #header-container #mainNav #nav-indicator {
 }
 @media (min-width: 1200px) {
   #services #services-container #service-card-container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "s1 s1 s2 s2 s3 s3" ".. s4 s4 s5 s5 ..";
+  }
+}
+@media (min-width: 1200px) {
+  #services #services-container #service-card-container #s1 {
+    grid-area: s1;
+  }
+}
+@media (min-width: 1200px) {
+  #services #services-container #service-card-container #s2 {
+    grid-area: s2;
+  }
+}
+@media (min-width: 1200px) {
+  #services #services-container #service-card-container #s3 {
+    grid-area: s3;
+  }
+}
+@media (min-width: 1200px) {
+  #services #services-container #service-card-container #s4 {
+    grid-area: s4;
+  }
+}
+@media (min-width: 1200px) {
+  #services #services-container #service-card-container #s5 {
+    grid-area: s5;
   }
 }
 #services #services-container #service-card-container .service-card {
@@ -1227,6 +1253,21 @@ header #header-container #mainNav #nav-indicator {
   background-size: cover;
   display: flex;
   align-items: flex-end;
+  position: relative;
+}
+#services #services-container #service-card-container .service-card .service-img .card-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 16px;
+  border: 4px solid var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5625rem;
+  position: absolute;
+  left: 8px;
+  bottom: -16px;
+  color: var(--white);
 }
 #services #services-container #service-card-container .service-card .service-img img {
   position: relative;
@@ -1253,7 +1294,7 @@ header #header-container #mainNav #nav-indicator {
   display: flex;
 }
 #services #services-container #service-card-container .service-card article #fda-list i {
-  color: #F97316;
+  color: var(--purple);
   margin-right: 8px;
 }
 #services #services-container #service-card-container .service-card article #doc-list i {
@@ -1261,15 +1302,22 @@ header #header-container #mainNav #nav-indicator {
   margin-right: 8px;
 }
 #services #services-container #service-card-container .service-card article #cmc-list i {
-  color: #10B981;
+  color: #10b981;
   margin-right: 8px;
 }
 #services #services-container #service-card-container .service-card article #therapy-list i {
-  color: #EF4444;
+  color: var(--red);
+  margin-right: 8px;
+}
+#services #services-container #service-card-container .service-card article #fdas-list i {
+  color: var(--blue);
   margin-right: 8px;
 }
 #services #services-container #service-card-container #service-card-1 {
   background-image: url("../img/service/fda.jpg");
+}
+#services #services-container #service-card-container #service-card-1 .card-icon {
+  background-color: var(--purple);
 }
 #services #services-container #service-card-container #service-card-2 {
   background-image: url("../img/service/doc.jpg");
@@ -1279,6 +1327,15 @@ header #header-container #mainNav #nav-indicator {
 }
 #services #services-container #service-card-container #service-card-4 {
   background-image: url("../img/service/cmc.jpg");
+}
+#services #services-container #service-card-container #service-card-4 .card-icon {
+  background-color: var(--blue);
+}
+#services #services-container #service-card-container #service-card-5 {
+  background-image: url("../img/service/fdas.jpg");
+}
+#services #services-container #service-card-container #service-card-5 .card-icon {
+  background-color: var(--blue);
 }
 
 /* =============
@@ -1882,17 +1939,23 @@ header #header-container #mainNav #nav-indicator {
 ============= */
 #slideshow {
   overflow: hidden;
+  height: 50vh;
 }
 #slideshow .slides-track {
   display: flex;
   width: max-content;
 }
 #slideshow .slide {
-  width: 80vw;
+  width: 100vw;
   height: 70vh;
   flex-shrink: 0;
   background-position: center;
   background-size: cover;
+}
+@media (min-width: 768px) {
+  #slideshow .slide {
+    width: 80vw;
+  }
 }
 #slideshow #slide-1 {
   background-image: url("../img/slideshow/slide-1.jpg");

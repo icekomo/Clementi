@@ -1,8 +1,11 @@
 /* =============
     Slideshow
 ============= */
+@use "../helpers";
+
 #slideshow {
     overflow: hidden; // clips the track so only the visible slides show
+    height: 50vh;
 
     .slides-track {
         display: flex;
@@ -10,11 +13,15 @@
     }
 
     .slide {
-        width: 80vw; // adjust to your preferred slide width
-        height: 70vh;
+        width: 100vw; // adjust to your preferred slide width
+        height: 70vh; 
         flex-shrink: 0;
         background-position: center;
         background-size: cover;
+
+        @include helpers.md{
+            width: 80vw;
+        }
     }
 
     #slide-1 { background-image: url("../img/slideshow/slide-1.jpg"); }

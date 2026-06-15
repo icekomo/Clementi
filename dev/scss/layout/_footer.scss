@@ -52,6 +52,29 @@
             line-height: 1.6;
             max-width: 28ch;
         }
+
+        #locations{
+            p{
+                margin-top: 16px;
+            }
+
+            .location{
+                display: flex;
+                align-items: center;
+                i{
+                    margin-right: 16px;
+                }
+
+                 a:link, a:visited{
+                color: var(--white);
+
+                &:hover, &:active{
+                    color: var(--yellow);
+                }
+            }
+            }
+           
+        }
     }
 
     // ---- Nav column ----

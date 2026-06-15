@@ -244,7 +244,7 @@
     },
     "\/deploy\/img\/divide\/divide-1.jpg" : {
       "ft" : 16384,
-      "iS" : 567227,
+      "iS" : 506235,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/divide\/divide-1.jpg",
@@ -319,7 +319,7 @@
     },
     "\/deploy\/img\/home\/hero-2.jpg" : {
       "ft" : 16384,
-      "iS" : 242789,
+      "iS" : 84290,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/home\/hero-2.jpg",
@@ -332,7 +332,7 @@
     },
     "\/deploy\/img\/home\/hero.jpg" : {
       "ft" : 16384,
-      "iS" : 796456,
+      "iS" : 102896,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/home\/hero.jpg",
@@ -430,7 +430,7 @@
     },
     "\/deploy\/img\/phase-1\/background-DT.jpg" : {
       "ft" : 16384,
-      "iS" : 3103375,
+      "iS" : 1068107,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/phase-1\/background-DT.jpg",
@@ -443,7 +443,7 @@
     },
     "\/deploy\/img\/phase-1\/background-MB.jpg" : {
       "ft" : 16384,
-      "iS" : 61552,
+      "iS" : 57417,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/phase-1\/background-MB.jpg",
@@ -466,7 +466,7 @@
     },
     "\/deploy\/img\/service\/cmc.jpg" : {
       "ft" : 16384,
-      "iS" : 85208,
+      "iS" : 32630,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/service\/cmc.jpg",
@@ -489,7 +489,7 @@
     },
     "\/deploy\/img\/service\/doc.jpg" : {
       "ft" : 16384,
-      "iS" : 72193,
+      "iS" : 27647,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/service\/doc.jpg",
@@ -502,7 +502,7 @@
     },
     "\/deploy\/img\/service\/fda.jpg" : {
       "ft" : 16384,
-      "iS" : 131715,
+      "iS" : 19278,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/service\/fda.jpg",
@@ -535,7 +535,7 @@
     },
     "\/deploy\/img\/service\/therapy.jpg" : {
       "ft" : 16384,
-      "iS" : 63459,
+      "iS" : 25959,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/service\/therapy.jpg",
@@ -548,7 +548,7 @@
     },
     "\/deploy\/img\/slideshow\/slide-1.jpg" : {
       "ft" : 16384,
-      "iS" : 725717,
+      "iS" : 199499,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/slideshow\/slide-1.jpg",
@@ -561,7 +561,7 @@
     },
     "\/deploy\/img\/slideshow\/slide-2.jpg" : {
       "ft" : 16384,
-      "iS" : 271988,
+      "iS" : 102653,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/slideshow\/slide-2.jpg",
@@ -587,7 +587,7 @@
     },
     "\/deploy\/img\/what\/card-1.jpg" : {
       "ft" : 16384,
-      "iS" : 148150,
+      "iS" : 83720,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/what\/card-1.jpg",
@@ -600,7 +600,7 @@
     },
     "\/deploy\/img\/what\/card-2.jpg" : {
       "ft" : 16384,
-      "iS" : 164875,
+      "iS" : 37008,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/what\/card-2.jpg",
@@ -613,7 +613,7 @@
     },
     "\/deploy\/img\/what\/card-3.jpg" : {
       "ft" : 16384,
-      "iS" : 156669,
+      "iS" : 32470,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/what\/card-3.jpg",
@@ -714,7 +714,7 @@
     },
     "\/deploy\/img\/who\/william.jpg" : {
       "ft" : 16384,
-      "iS" : 118192,
+      "iS" : 89305,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/who\/william.jpg",
@@ -872,14 +872,6 @@
       "oAP" : "\/dev\/content\/submission.html",
       "oF" : 0
     },
-    "\/dev\/content\/svg-new.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/svg-new.html",
-      "oF" : 0
-    },
     "\/dev\/content\/vendor-audits.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -910,7 +902,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/footer.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
@@ -1481,14 +1473,6 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
-    },
-    "\/svg-original.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/svg-original.html",
-      "oF" : 0
     }
   },
   "hooks" : [

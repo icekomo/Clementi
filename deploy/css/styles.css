@@ -699,6 +699,22 @@ header #header-container #mainNav #nav-indicator {
   line-height: 1.6;
   max-width: 28ch;
 }
+#site-footer #footer-brand #locations p {
+  margin-top: 16px;
+}
+#site-footer #footer-brand #locations .location {
+  display: flex;
+  align-items: center;
+}
+#site-footer #footer-brand #locations .location i {
+  margin-right: 16px;
+}
+#site-footer #footer-brand #locations .location a:link, #site-footer #footer-brand #locations .location a:visited {
+  color: var(--white);
+}
+#site-footer #footer-brand #locations .location a:link:hover, #site-footer #footer-brand #locations .location a:link:active, #site-footer #footer-brand #locations .location a:visited:hover, #site-footer #footer-brand #locations .location a:visited:active {
+  color: var(--yellow);
+}
 #site-footer #footer-nav ul {
   list-style: none;
   margin: 0;

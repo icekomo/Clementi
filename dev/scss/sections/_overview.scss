@@ -51,6 +51,10 @@
 
             @include helpers.lg {
                 width: 100%;
+                display: flex;
+                align-items: center;
+                border: 1px solid green;
+                height: 80%;
             }
 
             #overview-video {
@@ -58,11 +62,13 @@
                 position: absolute;
                 inset: 0;
                 width: 100%;
-                height: 100%;
+                // height: 100%;
                 object-fit: cover;
                 mask: url(#blob-mask);
                 mask-repeat: no-repeat;
                 -webkit-mask-repeat: no-repeat;
+
+                // border: 1px solid red;
             }
         }
 

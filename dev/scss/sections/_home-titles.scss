@@ -1,0 +1,58 @@
+// Add this inside the `> div` block in #home-top (alongside the existing h1/p rules)
+
+/* =============
+    Home Titles
+============= */
+@use "../helpers";
+
+#home-titles {
+    position: relative;
+    overflow: hidden;
+    // Match the tallest h1 so the container doesn't jump between slides.
+    // Adjust this value to match your tallest slide at each breakpoint.
+    min-height: 2.5lh;
+
+    @include helpers.md {
+        min-height: 1.5lh;
+    }
+
+    h1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        // visibility/opacity handled by GSAP (autoAlpha)
+    }
+
+    // First slide sits in normal flow to size the container,
+    // all others are pulled out with position: absolute above.
+    h1:first-child {
+        position: relative;
+    }
+}
+
+#home-titles-dots {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+
+    .home-titles-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: 2px solid var(--white);
+        background: transparent;
+        padding: 0;
+        cursor: pointer;
+        transition: background 0.3s ease;
+
+        &.is-active {
+            background: var(--white);
+        }
+
+        &:hover:not(.is-active) {
+            background: rgba(255, 255, 255, 0.4);
+        }
+    }
+}

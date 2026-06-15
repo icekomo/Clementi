@@ -36,37 +36,77 @@
             padding-bottom: 100px;
         }
 
-        >div{
+        // Wrapper that takes the grid-area — shrinks to fit its content
+        #home-hero{
             grid-area: hero-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .home-slides{
+            width: fit-content;
             border: 3px solid var(--white);
             padding: 16px;
             border-radius: 12px;
 
-             @include helpers.lg{
+            #home-titles{
+                position: relative;
+                overflow: hidden;
+                // Height set dynamically by JS (setContainerHeight)
 
-             }
+                h1{
+                    font-size: helpers.rem-calc(33);
+                    font-weight: 375;
+                    margin-bottom: 0;
 
-            h1{
-                font-size: helpers.rem-calc(33);
-                font-weight: 375;
-                margin-bottom: 16px;
+                    @include helpers.md{
+                        font-size: helpers.rem-calc(45);
+                    }
 
-                @include helpers.md{
-                    font-size: helpers.rem-calc(45);
-                }
-
-                @include helpers.lg{
-                    font-size: helpers.rem-calc(50);
+                    @include helpers.lg{
+                        font-size: helpers.rem-calc(50);
+                    }
                 }
             }
 
             p{
                 font-size: helpers.rem-calc(20);
                 line-height: helpers.rem-calc(35);
+                margin-top: 16px;
 
                 span{
                     font-weight: 600;
                     color: var(--yellow)
+                }
+            }
+        }
+
+        // Injected by JS after .home-slides inside #home-hero
+        #home-titles-dots{
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 16px;
+            // Stretch to match .home-slides width so centering works
+            align-self: stretch;
+
+            .home-titles-dot{
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                border: 2px solid var(--white);
+                background: transparent;
+                padding: 0;
+                cursor: pointer;
+                transition: background 0.3s ease;
+
+                &.is-active{
+                    background: var(--white);
+                }
+
+                &:hover:not(.is-active){
+                    background: rgba(255, 255, 255, 0.4);
                 }
             }
         }

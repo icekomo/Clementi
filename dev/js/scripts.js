@@ -6,6 +6,7 @@ import { initBioModal } from "./modules/bio-modal.js";
 import { initGetStarted } from "./modules/get-started.js";
 import { initScrollTrigger } from "./modules/scrollTrigger.js";
 import { initGearAnimation } from "./modules/gears-animation.js";
+import { initHomeTitles } from "./modules/home-titles.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     initCardflip();
@@ -16,4 +17,5 @@ document.addEventListener("DOMContentLoaded", () => {
     initGetStarted();
     initScrollTrigger();
     initGearAnimation();
+    initHomeTitles();
 });

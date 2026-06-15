@@ -966,7 +966,6 @@ header #header-container #mainNav #nav-indicator {
   grid-area: svg;
   margin: 0 auto;
   width: 80vw;
-  aspect-ratio: 1036/808;
   position: relative;
 }
 @media (min-width: 768px) {
@@ -980,19 +979,19 @@ header #header-container #mainNav #nav-indicator {
     width: 100%;
     display: flex;
     align-items: center;
-    border: 1px solid green;
-    height: 80%;
+    height: 100%;
   }
 }
-#overview #overview-top #overview-svg #overview-video {
-  display: block;
-  position: absolute;
-  inset: 0;
+#overview #overview-top #overview-svg #overview-video-wrap {
   width: 100%;
+  border-radius: 34px;
+  overflow: hidden;
+}
+#overview #overview-top #overview-svg #overview-video-wrap #overview-video {
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  mask: url(#blob-mask);
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
 }
 #overview #overview-top #overview-title {
   grid-area: title;

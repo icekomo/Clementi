@@ -87,9 +87,16 @@
                             li {
                                 margin-bottom: 8px;
                                 font-size: helpers.rem-calc(14);
-                                i {
+
+                                .list-container{
+                                    display: flex;
+                                    align-items: center;
+
+                                    i {
                                     margin-right: 8px;
+                                    }
                                 }
+                                
                             }
                         }
                     }

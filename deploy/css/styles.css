@@ -1117,7 +1117,11 @@ header #header-container #mainNav #nav-indicator {
   margin-bottom: 8px;
   font-size: 0.875rem;
 }
-#what > div #what-cards #what-card-container .what-card .card-content ul li i {
+#what > div #what-cards #what-card-container .what-card .card-content ul li .list-container {
+  display: flex;
+  align-items: center;
+}
+#what > div #what-cards #what-card-container .what-card .card-content ul li .list-container i {
   margin-right: 8px;
 }
 @media (min-width: 768px) {

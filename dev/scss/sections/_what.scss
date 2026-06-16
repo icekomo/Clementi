@@ -11,7 +11,7 @@
 
     @include helpers.lg {
         display: grid;
-        grid-template-columns: auto 1200px auto;
+        grid-template-columns: auto 992px auto;
         grid-template-areas: ". what .";
     }
 
@@ -30,21 +30,22 @@
         }
 
         #what-cards {
+            // border: 1px solid red;
             #what-card-container {
                 display: grid;
                 gap: 16px;
 
                 @include helpers.md {
-                    grid-template-columns: repeat(4, 1fr);
-                    grid-template-areas:
-                        "card-1 card-1 card-2 card-2"
-                        ". card-3 card-3 .";
+                    grid-template-columns: repeat(2, 1fr);
+                    // grid-template-areas:
+                    //     "card-1 card-1 card-2 card-2"
+                    //     ". card-3 card-3 .";
                 }
 
                 @include helpers.lg {
-                    grid-template-columns: repeat(3, 1fr);
-                    grid-template-areas:
-                        "card-1 card-2 card-3";
+                    // grid-template-columns: repeat(4, 1fr);
+                    // grid-template-areas:
+                    //     "card-1 card-2 card-3 card-4";
                 }
 
                 .what-card {
@@ -103,7 +104,7 @@
                 }
                 #card-1-container {
                     @include helpers.md {
-                        grid-area: card-1;
+                        // grid-area: card-1;
                     }
                     #card-1 {
                         background-image: url("../img/what/card-1.jpg");
@@ -112,7 +113,7 @@
 
                 #card-2-container {
                     @include helpers.md {
-                        grid-area: card-2;
+                        // grid-area: card-2;
                     }
                     #card-2 {
                         background-image: url("../img/what/card-2.jpg");
@@ -120,10 +121,19 @@
                 }
                 #card-3-container {
                     @include helpers.md {
-                        grid-area: card-3;
+                        // grid-area: card-3;
                     }
                     #card-3 {
                         background-image: url("../img/what/card-3.jpg");
+                    }
+                }
+
+                #card-4-container {
+                    @include helpers.md {
+                        // grid-area: card-4;
+                    }
+                    #card-4 {
+                        background-image: url("../img/what/card-4.jpg");
                     }
                 }
             }

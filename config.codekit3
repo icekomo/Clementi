@@ -673,6 +673,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/what\/card-4.jpg" : {
+      "ft" : 16384,
+      "iS" : 56452,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/what\/card-4.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/who\/david.jpg" : {
       "ft" : 16384,
       "iS" : 65819,

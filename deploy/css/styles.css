@@ -1078,7 +1078,7 @@ header #header-container #mainNav #nav-indicator {
 @media (min-width: 992px) {
   #what {
     display: grid;
-    grid-template-columns: auto 1200px auto;
+    grid-template-columns: auto 992px auto;
     grid-template-areas: ". what .";
   }
 }
@@ -1100,14 +1100,7 @@ header #header-container #mainNav #nav-indicator {
 }
 @media (min-width: 768px) {
   #what > div #what-cards #what-card-container {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "card-1 card-1 card-2 card-2" ". card-3 card-3 .";
-  }
-}
-@media (min-width: 992px) {
-  #what > div #what-cards #what-card-container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "card-1 card-2 card-3";
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 #what > div #what-cards #what-card-container .what-card {
@@ -1154,29 +1147,17 @@ header #header-container #mainNav #nav-indicator {
 #what > div #what-cards #what-card-container .what-card .card-content ul li .list-container i {
   margin-right: 8px;
 }
-@media (min-width: 768px) {
-  #what > div #what-cards #what-card-container #card-1-container {
-    grid-area: card-1;
-  }
-}
 #what > div #what-cards #what-card-container #card-1-container #card-1 {
   background-image: url("../img/what/card-1.jpg");
-}
-@media (min-width: 768px) {
-  #what > div #what-cards #what-card-container #card-2-container {
-    grid-area: card-2;
-  }
 }
 #what > div #what-cards #what-card-container #card-2-container #card-2 {
   background-image: url("../img/what/card-2.jpg");
 }
-@media (min-width: 768px) {
-  #what > div #what-cards #what-card-container #card-3-container {
-    grid-area: card-3;
-  }
-}
 #what > div #what-cards #what-card-container #card-3-container #card-3 {
   background-image: url("../img/what/card-3.jpg");
+}
+#what > div #what-cards #what-card-container #card-4-container #card-4 {
+  background-image: url("../img/what/card-4.jpg");
 }
 
 /* =============

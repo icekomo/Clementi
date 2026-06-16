@@ -69,6 +69,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/favicon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/favicon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/gear-container.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -153,7 +163,7 @@
     },
     "\/deploy\/favicon\/apple-touch-icon.png" : {
       "ft" : 32768,
-      "iS" : 8048,
+      "iS" : 2542,
       "oA" : 0,
       "oAP" : "\/deploy\/favicon\/apple-touch-icon.png",
       "oF" : 0,
@@ -166,7 +176,7 @@
     },
     "\/deploy\/favicon\/favicon-96x96.png" : {
       "ft" : 32768,
-      "iS" : 3888,
+      "iS" : 1164,
       "oA" : 0,
       "oAP" : "\/deploy\/favicon\/favicon-96x96.png",
       "oF" : 0,
@@ -218,7 +228,7 @@
     },
     "\/deploy\/favicon\/web-app-manifest-192x192.png" : {
       "ft" : 32768,
-      "iS" : 8610,
+      "iS" : 2676,
       "oA" : 0,
       "oAP" : "\/deploy\/favicon\/web-app-manifest-192x192.png",
       "oF" : 0,
@@ -231,7 +241,7 @@
     },
     "\/deploy\/favicon\/web-app-manifest-512x512.png" : {
       "ft" : 32768,
-      "iS" : 31754,
+      "iS" : 10162,
       "oA" : 0,
       "oAP" : "\/deploy\/favicon\/web-app-manifest-512x512.png",
       "oF" : 0,
@@ -1496,6 +1506,92 @@
       "oF" : 2,
       "oS" : 0,
       "pg" : 0
+    },
+    "\/favicon.zip" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/favicon.zip",
+      "oF" : 0
+    },
+    "\/favicon\/apple-touch-icon.png" : {
+      "ft" : 32768,
+      "iS" : 2542,
+      "oA" : 0,
+      "oAP" : "\/favicon\/apple-touch-icon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/favicon\/favicon-96x96.png" : {
+      "ft" : 32768,
+      "iS" : 1164,
+      "oA" : 0,
+      "oAP" : "\/favicon\/favicon-96x96.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/favicon\/favicon.ico" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/favicon\/favicon.ico",
+      "oF" : 0
+    },
+    "\/favicon\/favicon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/favicon\/favicon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/favicon\/site.webmanifest" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/favicon\/site.webmanifest",
+      "oF" : 0
+    },
+    "\/favicon\/web-app-manifest-192x192.png" : {
+      "ft" : 32768,
+      "iS" : 2676,
+      "oA" : 0,
+      "oAP" : "\/favicon\/web-app-manifest-192x192.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/favicon\/web-app-manifest-512x512.png" : {
+      "ft" : 32768,
+      "iS" : 10162,
+      "oA" : 0,
+      "oAP" : "\/favicon\/web-app-manifest-512x512.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
     },
     "\/node_modules" : {
       "ft" : 65536,

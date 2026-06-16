@@ -71,7 +71,7 @@ export function initSubModular() {
             { targets: q("#module-2, #module-2-bottom"), depth: 0.65 },
             { targets: q("#module-3-5"), depth: 0.35 },
             {
-                targets: q("#color-4-middle, [id='Nonclinical summary'], [id='Nonclinical overview'], #divide-line"),
+                targets: q("[id='Nonclinical summary'], [id='Nonclinical overview'], #divide-line"),
                 depth: -0.4, // counter-moves slightly for depth separation
             },
         ],

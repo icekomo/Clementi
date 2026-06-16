@@ -1212,33 +1212,7 @@ header #header-container #mainNav #nav-indicator {
 }
 @media (min-width: 1200px) {
   #services #services-container #service-card-container {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "s1 s1 s2 s2 s3 s3" ".. s4 s4 s5 s5 ..";
-  }
-}
-@media (min-width: 1200px) {
-  #services #services-container #service-card-container #s1 {
-    grid-area: s1;
-  }
-}
-@media (min-width: 1200px) {
-  #services #services-container #service-card-container #s2 {
-    grid-area: s2;
-  }
-}
-@media (min-width: 1200px) {
-  #services #services-container #service-card-container #s3 {
-    grid-area: s3;
-  }
-}
-@media (min-width: 1200px) {
-  #services #services-container #service-card-container #s4 {
-    grid-area: s4;
-  }
-}
-@media (min-width: 1200px) {
-  #services #services-container #service-card-container #s5 {
-    grid-area: s5;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 #services #services-container #service-card-container .service-card {

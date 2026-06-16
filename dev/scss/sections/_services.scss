@@ -31,39 +31,39 @@
             }
 
             @include helpers.xl {
-                grid-template-columns: repeat(6, 1fr);
-                grid-template-areas:
-                    "s1 s1 s2 s2 s3 s3"
-                    ".. s4 s4 s5 s5 ..";
+                grid-template-columns: repeat(4, 1fr);
+                // grid-template-areas:
+                //     "s1 s1 s2 s2 s3 s3"
+                //     ".. s4 s4 s5 s5 ..";
             }
 
             #s1 {
                 @include helpers.xl {
-                    grid-area: s1;
+                    // grid-area: s1;
                 }
             }
 
             #s2 {
                 @include helpers.xl {
-                    grid-area: s2;
+                    // grid-area: s2;
                 }
             }
 
             #s3 {
                 @include helpers.xl {
-                    grid-area: s3;
+                    // grid-area: s3;
                 }
             }
 
             #s4 {
                 @include helpers.xl {
-                    grid-area: s4;
+                    // grid-area: s4;
                 }
             }
 
             #s5 {
                 @include helpers.xl {
-                    grid-area: s5;
+                    // grid-area: s5;
                 }
             }
 

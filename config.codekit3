@@ -149,6 +149,32 @@
       "oAP" : "\/assets\/who\/william.psd",
       "oF" : 0
     },
+    "\/assets\/Zoom\/zoom-2.jpg" : {
+      "ft" : 16384,
+      "iS" : 6729,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/Zoom\/zoom-2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/Zoom\/zoom.jpg" : {
+      "ft" : 16384,
+      "iS" : 7099,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/Zoom\/zoom.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,

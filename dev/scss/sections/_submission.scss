@@ -41,14 +41,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        img{
-            width: 100%;
 
-            @include helpers.lg {
-                width: 70%;
-                margin: 0 auto;
+        #modular-container{
+            svg{
+                width: 100%;
             }
         }
+
+
+        // img{
+        //     @include helpers.lg {
+        //         width: 70%;
+        //         margin: 0 auto;
+        //     }
+        // }
     }
 
     #sub-card {

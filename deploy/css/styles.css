@@ -1458,11 +1458,6 @@ header #header-container #mainNav #nav-indicator {
 }
 @media (min-width: 768px) {
   #who > div #who-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 992px) {
-  #who > div #who-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -1694,14 +1689,8 @@ header #header-container #mainNav #nav-indicator {
   justify-content: center;
   align-items: center;
 }
-#submission #sub-top img {
+#submission #sub-top #modular-container svg {
   width: 100%;
-}
-@media (min-width: 992px) {
-  #submission #sub-top img {
-    width: 70%;
-    margin: 0 auto;
-  }
 }
 #submission #sub-card {
   padding: 16px;

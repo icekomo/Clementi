@@ -1093,6 +1093,7 @@ header #header-container #mainNav #nav-indicator {
 #what > div #what-top p {
   font-size: 1.0625rem;
   line-height: 1.75rem;
+  margin-bottom: 16px;
 }
 #what > div #what-cards #what-card-container {
   display: grid;

@@ -113,33 +113,23 @@
             // border: 1px solid red;
             height: 250px;
 
-            @include helpers.md{
-                 height: 450px;
+            @include helpers.md {
+                height: 450px;
             }
 
-            @include helpers.lg{
+            @include helpers.lg {
                 height: auto;
             }
 
+            // Whitespace is now cropped via the SVG's own viewBox
+            // (see gear-container.kit), so no margin/overflow hacks
+            // are needed here. This keeps the SVG's internal
+            // coordinate space deterministic for GSAP's getBBox()/
+            // svgOrigin calculations across browsers.
             svg {
-                position: relative;
-                margin-top: -250px;
+                display: block;
                 width: 100%;
-
-                @include helpers.md{
-                    margin-top: -150px;
-                }
-
-                @include helpers.lg{
-                    margin-top: 0px;
-                }
             }
-            
-            // Crop the SVG's built-in whitespace without modifying the SVG
-            overflow: hidden;
-            margin-top: -5.3%;   // 65 / 1220 ≈ 5.3% of SVG height
-            margin-bottom: -4.9%; // ~60 / 1220 ≈ 4.9% of SVG height
         }
-
     }
 }

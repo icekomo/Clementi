@@ -9,6 +9,10 @@ export function initGearAnimation() {
         both rotation and scale on SVG elements.
     ============================================ */
 
+    // Force layout flush before reading any SVG geometry,
+    // so getBBox() returns consistent values in every browser
+    document.querySelector('#gear-container svg')?.getBoundingClientRect();
+
     function getOrigin(el) {
         const bbox = el.getBBox();
         const cx = bbox.x + bbox.width  / 2;

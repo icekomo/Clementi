@@ -814,6 +814,14 @@
       "oAP" : "\/deploy\/xml\/bios.xml",
       "oF" : 0
     },
+    "\/dev\/content\/+old\/gears.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/+old\/gears.html",
+      "oF" : 0
+    },
     "\/dev\/content\/bio-modal.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -844,14 +852,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/gear-container.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/gears.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/gears.html",
       "oF" : 0
     },
     "\/dev\/content\/get-started.kit" : {
@@ -1066,7 +1066,7 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dev\/js\/modules\/gears-animation-min.js",
       "oF" : 0,
       "sC" : 3,

@@ -7,9 +7,9 @@
     scroll-margin-top: 80px;
     background-color: var(--white-smoke);
 
-    @include helpers.xl {
+    @include helpers.lg {
         display: grid;
-        grid-template-columns: auto 1200px auto;
+        grid-template-columns: auto 1000px auto;
         grid-template-areas: ". who .";
     }
 
@@ -32,56 +32,60 @@
             //     grid-template-columns: repeat(3, 1fr);
             // }
 
-            @include helpers.xl {
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-areas: 
-                "c1 c2 c6 c4"
-                ". c5 c3 .";
-            }
+            // @include helpers.xl {
+            //     grid-template-columns: repeat(4, 1fr);
+            //     grid-template-areas: 
+            //     "c1 c2 c6 c4"
+            //     ". c5 c3 .";
+            // }
 
-            #william-card{
-                @include helpers.xl {
-                    grid-area: c1;
-                 }
-            }
+            // #william-card{
+            //     @include helpers.xl {
+            //         grid-area: c1;
+            //      }
+            // }
 
-            #nancy-card{
-                @include helpers.xl {
-                    grid-area: c2;
-                }
-            }
+            // #nancy-card{
+            //     @include helpers.xl {
+            //         grid-area: c2;
+            //     }
+            // }
 
-            #paul-card{
-                @include helpers.xl {
-                    grid-area: c3;
-                }
-            }
+            // #paul-card{
+            //     @include helpers.xl {
+            //         grid-area: c3;
+            //     }
+            // }
 
-            #david-card{
-                @include helpers.xl {
-                    grid-area: c4;
-                }
-            }
+            // #david-card{
+            //     @include helpers.xl {
+            //         grid-area: c4;
+            //     }
+            // }
 
 
 
-            #lary-card{
-                @include helpers.xl {
-                    grid-area: c5;
-                }
-            }
+            // #lary-card{
+            //     @include helpers.xl {
+            //         grid-area: c5;
+            //     }
+            // }
 
-            #nemisha-card{
-                 @include helpers.xl {
-                    grid-area: c6;
-                }
-            }
+            // #nemisha-card{
+            //      @include helpers.xl {
+            //         grid-area: c6;
+            //     }
+            // }
 
             .card-wrapper {
                 width: 100%;
                 height: 360px;
                 perspective: 1000px;
                 cursor: pointer;
+
+                @include helpers.lg{
+                     height: 400px;
+                }
 
                 .card-inner {
                     width: 100%;
@@ -142,20 +146,11 @@
 
                     }
 
-
-
-                    #larry {
-                        background-image: url("../img/who/larry.jpg");
-                    }
-
-
-
                     #nemisha {
                         background-image: url("../img/who/nemisha.jpg");
                     }
 
-                    
-
+                
                     .name-area {
                         position: relative;
                         z-index: 1;

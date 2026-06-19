@@ -1378,10 +1378,10 @@ header #header-container #mainNav #nav-indicator {
   scroll-margin-top: 80px;
   background-color: var(--white-smoke);
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   #who {
     display: grid;
-    grid-template-columns: auto 1200px auto;
+    grid-template-columns: auto 1000px auto;
     grid-template-areas: ". who .";
   }
 }
@@ -1401,47 +1401,16 @@ header #header-container #mainNav #nav-indicator {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (min-width: 1200px) {
-  #who > div #who-container {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "c1 c2 c6 c4" ". c5 c3 .";
-  }
-}
-@media (min-width: 1200px) {
-  #who > div #who-container #william-card {
-    grid-area: c1;
-  }
-}
-@media (min-width: 1200px) {
-  #who > div #who-container #nancy-card {
-    grid-area: c2;
-  }
-}
-@media (min-width: 1200px) {
-  #who > div #who-container #paul-card {
-    grid-area: c3;
-  }
-}
-@media (min-width: 1200px) {
-  #who > div #who-container #david-card {
-    grid-area: c4;
-  }
-}
-@media (min-width: 1200px) {
-  #who > div #who-container #lary-card {
-    grid-area: c5;
-  }
-}
-@media (min-width: 1200px) {
-  #who > div #who-container #nemisha-card {
-    grid-area: c6;
-  }
-}
 #who > div #who-container .card-wrapper {
   width: 100%;
   height: 360px;
   perspective: 1000px;
   cursor: pointer;
+}
+@media (min-width: 992px) {
+  #who > div #who-container .card-wrapper {
+    height: 400px;
+  }
 }
 #who > div #who-container .card-wrapper .card-inner {
   width: 100%;
@@ -1485,9 +1454,6 @@ header #header-container #mainNav #nav-indicator {
 }
 #who > div #who-container .card-wrapper .card-front #david {
   background-image: url("../img/who/david.jpg");
-}
-#who > div #who-container .card-wrapper .card-front #larry {
-  background-image: url("../img/who/larry.jpg");
 }
 #who > div #who-container .card-wrapper .card-front #nemisha {
   background-image: url("../img/who/nemisha.jpg");

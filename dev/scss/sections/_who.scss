@@ -35,8 +35,8 @@
             @include helpers.xl {
                 grid-template-columns: repeat(4, 1fr);
                 grid-template-areas: 
-                "c1 c2 c3 c4"
-                ". c5 c6 .";
+                "c1 c2 c6 c4"
+                ". c5 c3 .";
             }
 
             #william-card{

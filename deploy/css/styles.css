@@ -1420,7 +1420,7 @@ header #header-container #mainNav #nav-indicator {
 @media (min-width: 1200px) {
   #who > div #who-container {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "c1 c2 c3 c4" ". c5 c6 .";
+    grid-template-areas: "c1 c2 c6 c4" ". c5 c3 .";
   }
 }
 @media (min-width: 1200px) {

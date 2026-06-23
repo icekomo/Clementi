@@ -705,6 +705,7 @@ header #header-container #mainNav #nav-indicator {
 #site-footer #footer-brand #locations .location {
   display: flex;
   align-items: center;
+  margin-top: 24px;
 }
 #site-footer #footer-brand #locations .location i {
   margin-right: 16px;

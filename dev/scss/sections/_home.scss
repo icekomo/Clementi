@@ -6,25 +6,34 @@
 #home{
     height: 100dvh;
     background-color: #0a6383;
-    display: grid;
-    grid-template-rows: 1fr auto;
-    margin-bottom: 0;
+    background-image: url("../img/home/hero-mobile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include helpers.md{
+        background-image: url("../img/home/hero-2.png");
+    }
 
     #home-top{
         padding: 16px;
         color: var(--white);
         display: grid;
-        align-items: end;
-        padding-bottom: 10vh;
+        align-items: center;
+        margin-top: -20vh;
+
        
         @include helpers.md{
             grid-template-columns: auto 70vw auto;
             grid-template-areas: ". hero-content .";
-            padding-bottom: 15vh;
+            // padding-bottom: 15vh;
         }
 
         @include helpers.lg{
-            padding-bottom: 0vh;
+            // padding-bottom: 0vh;
         }
 
         @include helpers.xl{
@@ -33,7 +42,7 @@
 
         @include helpers.xxl{
             grid-template-columns: auto 1200px auto;
-            padding-bottom: 100px;
+            // padding-bottom: 100px;
         }
 
         // Wrapper that takes the grid-area — shrinks to fit its content
@@ -41,7 +50,10 @@
             grid-area: hero-content;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
+
+            
         }
 
         .home-slides{
@@ -49,6 +61,7 @@
             border: 3px solid var(--white);
             padding: 16px;
             border-radius: 12px;
+            background-color: #0a6383;
 
             #home-titles{
                 position: relative;
@@ -112,37 +125,37 @@
         }
     }
 
-    #home-img{
-        margin-top: auto;
+    // #home-img{
+    //     margin-top: auto;
         
-        margin-bottom: 0;
-        padding-bottom: 0;
-        // background-color: var(--white);
+    //     margin-bottom: 0;
+    //     padding-bottom: 0;
+    //     // background-color: var(--white);
 
        
-        @include helpers.lg{
-             height: 30vh;
-             background-image: url("../img/home/hero-2.jpg");
-             background-size: cover;
-             background-position: center;
-        }
+    //     @include helpers.lg{
+    //          height: 30vh;
+    //          background-image: url("../img/home/hero-2.png");
+    //          background-size: cover;
+    //          background-position: center top;
+    //     }
 
-        @include helpers.xl{
-             height: 40vh;
-        }
+    //     @include helpers.xl{
+    //          height: 40vh;
+    //     }
 
-        @include helpers.xxl{
-             height: 50vh;
-        }
+    //     @include helpers.xxl{
+    //          height: 50vh;
+    //     }
 
-        img{
-            width: 100%;
-            object-fit: scale-down;
-            margin-bottom: 0;
+    //     img{
+    //         width: 100%;
+    //         object-fit: scale-down;
+    //         margin-bottom: 0;
 
-            @include helpers.lg{
-                display: none;
-            }
-        }
-    }
+    //         @include helpers.lg{
+    //             display: none;
+    //         }
+    //     }
+    // }
 }

@@ -797,27 +797,30 @@ header #header-container #mainNav #nav-indicator {
 #home {
   height: 100dvh;
   background-color: #0a6383;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  margin-bottom: 0;
+  background-image: url("../img/home/hero-mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  #home {
+    background-image: url("../img/home/hero-2.png");
+  }
 }
 #home #home-top {
   padding: 16px;
   color: var(--white);
   display: grid;
-  align-items: end;
-  padding-bottom: 10vh;
+  align-items: center;
+  margin-top: -20vh;
 }
 @media (min-width: 768px) {
   #home #home-top {
     grid-template-columns: auto 70vw auto;
     grid-template-areas: ". hero-content .";
-    padding-bottom: 15vh;
-  }
-}
-@media (min-width: 992px) {
-  #home #home-top {
-    padding-bottom: 0vh;
   }
 }
 @media (min-width: 1200px) {
@@ -828,13 +831,13 @@ header #header-container #mainNav #nav-indicator {
 @media (min-width: 1440px) {
   #home #home-top {
     grid-template-columns: auto 1200px auto;
-    padding-bottom: 100px;
   }
 }
 #home #home-top #home-hero {
   grid-area: hero-content;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 #home #home-top .home-slides {
@@ -842,6 +845,7 @@ header #header-container #mainNav #nav-indicator {
   border: 3px solid var(--white);
   padding: 16px;
   border-radius: 12px;
+  background-color: #0a6383;
 }
 #home #home-top .home-slides #home-titles {
   position: relative;
@@ -893,39 +897,6 @@ header #header-container #mainNav #nav-indicator {
 }
 #home #home-top #home-titles-dots .home-titles-dot:hover:not(.is-active) {
   background: rgba(255, 255, 255, 0.4);
-}
-#home #home-img {
-  margin-top: auto;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-@media (min-width: 992px) {
-  #home #home-img {
-    height: 30vh;
-    background-image: url("../img/home/hero-2.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-}
-@media (min-width: 1200px) {
-  #home #home-img {
-    height: 40vh;
-  }
-}
-@media (min-width: 1440px) {
-  #home #home-img {
-    height: 50vh;
-  }
-}
-#home #home-img img {
-  width: 100%;
-  object-fit: scale-down;
-  margin-bottom: 0;
-}
-@media (min-width: 992px) {
-  #home #home-img img {
-    display: none;
-  }
 }
 
 /* =============

@@ -1756,6 +1756,18 @@ header #header-container #mainNav #nav-indicator {
 #contact-overlay #contact-panel #form-container form #phone-container input {
   width: 100%;
 }
+#contact-overlay #contact-panel #form-container form #office-container {
+  margin-top: 24px;
+}
+#contact-overlay #contact-panel #form-container form #office-container .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-block: 8px;
+}
+#contact-overlay #contact-panel #form-container form #office-container .checkbox label {
+  display: inline-block;
+}
 #contact-overlay #contact-panel #form-container form #reason-container {
   margin-top: 24px;
 }
@@ -1763,6 +1775,7 @@ header #header-container #mainNav #nav-indicator {
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-block: 8px;
 }
 #contact-overlay #contact-panel #form-container form #reason-container .checkbox label {
   display: inline-block;

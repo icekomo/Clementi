@@ -189,7 +189,7 @@
     },
     "\/deploy\/favicon\/apple-touch-icon.png" : {
       "ft" : 32768,
-      "iS" : 2542,
+      "iS" : 8048,
       "oA" : 0,
       "oAP" : "\/deploy\/favicon\/apple-touch-icon.png",
       "oF" : 0,
@@ -202,7 +202,7 @@
     },
     "\/deploy\/favicon\/favicon-96x96.png" : {
       "ft" : 32768,
-      "iS" : 1164,
+      "iS" : 3888,
       "oA" : 0,
       "oAP" : "\/deploy\/favicon\/favicon-96x96.png",
       "oF" : 0,
@@ -254,7 +254,7 @@
     },
     "\/deploy\/favicon\/web-app-manifest-192x192.png" : {
       "ft" : 32768,
-      "iS" : 2676,
+      "iS" : 8610,
       "oA" : 0,
       "oAP" : "\/deploy\/favicon\/web-app-manifest-192x192.png",
       "oF" : 0,
@@ -267,7 +267,7 @@
     },
     "\/deploy\/favicon\/web-app-manifest-512x512.png" : {
       "ft" : 32768,
-      "iS" : 10162,
+      "iS" : 31754,
       "oA" : 0,
       "oAP" : "\/deploy\/favicon\/web-app-manifest-512x512.png",
       "oF" : 0,
@@ -280,7 +280,7 @@
     },
     "\/deploy\/img\/divide\/divide-1.jpg" : {
       "ft" : 16384,
-      "iS" : 506235,
+      "iS" : 567227,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/divide\/divide-1.jpg",
@@ -355,7 +355,7 @@
     },
     "\/deploy\/img\/home\/hero-2.jpg" : {
       "ft" : 16384,
-      "iS" : 84290,
+      "iS" : 242789,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/home\/hero-2.jpg",
@@ -407,7 +407,7 @@
     },
     "\/deploy\/img\/home\/hero.jpg" : {
       "ft" : 16384,
-      "iS" : 102896,
+      "iS" : 796456,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/home\/hero.jpg",
@@ -505,7 +505,7 @@
     },
     "\/deploy\/img\/phase-1\/background-DT.jpg" : {
       "ft" : 16384,
-      "iS" : 1068107,
+      "iS" : 3103375,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/phase-1\/background-DT.jpg",
@@ -518,7 +518,7 @@
     },
     "\/deploy\/img\/phase-1\/background-MB.jpg" : {
       "ft" : 16384,
-      "iS" : 57417,
+      "iS" : 61552,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/phase-1\/background-MB.jpg",
@@ -541,7 +541,7 @@
     },
     "\/deploy\/img\/service\/cmc.jpg" : {
       "ft" : 16384,
-      "iS" : 32630,
+      "iS" : 85208,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/service\/cmc.jpg",
@@ -564,7 +564,7 @@
     },
     "\/deploy\/img\/service\/doc.jpg" : {
       "ft" : 16384,
-      "iS" : 27647,
+      "iS" : 72193,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/service\/doc.jpg",
@@ -577,7 +577,7 @@
     },
     "\/deploy\/img\/service\/fda.jpg" : {
       "ft" : 16384,
-      "iS" : 19278,
+      "iS" : 131715,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/service\/fda.jpg",
@@ -623,7 +623,7 @@
     },
     "\/deploy\/img\/service\/therapy.jpg" : {
       "ft" : 16384,
-      "iS" : 25959,
+      "iS" : 63459,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/service\/therapy.jpg",
@@ -636,7 +636,7 @@
     },
     "\/deploy\/img\/slideshow\/slide-1.jpg" : {
       "ft" : 16384,
-      "iS" : 199499,
+      "iS" : 725717,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/slideshow\/slide-1.jpg",
@@ -649,7 +649,7 @@
     },
     "\/deploy\/img\/slideshow\/slide-2.jpg" : {
       "ft" : 16384,
-      "iS" : 102653,
+      "iS" : 271988,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/slideshow\/slide-2.jpg",
@@ -675,7 +675,7 @@
     },
     "\/deploy\/img\/what\/card-1.jpg" : {
       "ft" : 16384,
-      "iS" : 83720,
+      "iS" : 148150,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/what\/card-1.jpg",
@@ -688,7 +688,7 @@
     },
     "\/deploy\/img\/what\/card-2.jpg" : {
       "ft" : 16384,
-      "iS" : 37008,
+      "iS" : 164875,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/what\/card-2.jpg",
@@ -701,7 +701,7 @@
     },
     "\/deploy\/img\/what\/card-3.jpg" : {
       "ft" : 16384,
-      "iS" : 32470,
+      "iS" : 156669,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/what\/card-3.jpg",
@@ -815,7 +815,7 @@
     },
     "\/deploy\/img\/who\/william.jpg" : {
       "ft" : 16384,
-      "iS" : 89305,
+      "iS" : 118192,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/who\/william.jpg",

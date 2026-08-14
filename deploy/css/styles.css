@@ -1362,6 +1362,9 @@ header #header-container #mainNav #nav-indicator {
     grid-area: who;
   }
 }
+#who > div h2 {
+  margin-top: 48px;
+}
 #who > div #who-container {
   display: grid;
   gap: 16px;

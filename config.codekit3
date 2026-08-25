@@ -973,14 +973,6 @@
       "oAP" : "\/dev\/content\/submission.html",
       "oF" : 0
     },
-    "\/dev\/content\/svg-new.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/svg-new.html",
-      "oF" : 0
-    },
     "\/dev\/content\/vendor-audits.kit" : {
       "cB" : 0,
       "ft" : 2048,

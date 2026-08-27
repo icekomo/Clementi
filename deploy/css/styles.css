@@ -1433,6 +1433,9 @@ header #header-container #mainNav #nav-indicator {
 #who > div #who-container .card-wrapper .card-front #nemisha {
   background-image: url("../img/who/nemisha.jpg");
 }
+#who > div #who-container .card-wrapper .card-front #larry {
+  background-image: url("../img/who/larry.jpg");
+}
 #who > div #who-container .card-wrapper .card-front .name-area {
   position: relative;
   z-index: 1;

@@ -117,6 +117,14 @@
       "oAP" : "\/assets\/who\/david.psd",
       "oF" : 0
     },
+    "\/assets\/who\/larry.psd" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/who\/larry.psd",
+      "oF" : 0
+    },
     "\/assets\/who\/nancy.psd" : {
       "cB" : 0,
       "ft" : 8192,
@@ -734,6 +742,19 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/who\/larry.jpg" : {
+      "ft" : 16384,
+      "iS" : 59645,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/who\/larry.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75

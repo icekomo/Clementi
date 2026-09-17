@@ -7,7 +7,7 @@
       "uuidString" : "D743EC21-E8A4-488F-A8C0-7D647989089C"
     }
   ],
-  "creatorBuild" : "34921",
+  "creatorBuild" : "36757",
   "files" : {
     "\/assets\/2026_04_20-Draft Text.zip" : {
       "cB" : 0,
@@ -193,7 +193,6 @@
     },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
-      "bl" : 0,
       "ci" : 0,
       "co" : 0,
       "ft" : 16,
@@ -1257,7 +1256,6 @@
     },
     "\/dev\/scss\/base\/_base.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1270,7 +1268,6 @@
     },
     "\/dev\/scss\/base\/_normalize.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1283,7 +1280,6 @@
     },
     "\/dev\/scss\/base\/_typography.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1296,7 +1292,6 @@
     },
     "\/dev\/scss\/components\/_buttons.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1309,7 +1304,6 @@
     },
     "\/dev\/scss\/components\/_forms.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1322,7 +1316,6 @@
     },
     "\/dev\/scss\/components\/_navigation.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1335,7 +1328,6 @@
     },
     "\/dev\/scss\/helpers\/_index.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1348,7 +1340,6 @@
     },
     "\/dev\/scss\/helpers\/_mixins.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1361,7 +1352,6 @@
     },
     "\/dev\/scss\/helpers\/_variables.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1374,7 +1364,6 @@
     },
     "\/dev\/scss\/layout\/_footer.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1387,7 +1376,6 @@
     },
     "\/dev\/scss\/layout\/_header.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1400,7 +1388,6 @@
     },
     "\/dev\/scss\/sections\/_bio-modal.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1413,7 +1400,6 @@
     },
     "\/dev\/scss\/sections\/_contact.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1426,7 +1412,6 @@
     },
     "\/dev\/scss\/sections\/_divide.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1439,7 +1424,6 @@
     },
     "\/dev\/scss\/sections\/_get-started.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1452,7 +1436,6 @@
     },
     "\/dev\/scss\/sections\/_gxp-services.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1465,7 +1448,6 @@
     },
     "\/dev\/scss\/sections\/_home-titles.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1478,7 +1460,6 @@
     },
     "\/dev\/scss\/sections\/_home.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1491,7 +1472,6 @@
     },
     "\/dev\/scss\/sections\/_ind-submission.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1504,7 +1484,6 @@
     },
     "\/dev\/scss\/sections\/_overview.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1517,7 +1496,6 @@
     },
     "\/dev\/scss\/sections\/_phase-1.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1530,7 +1508,6 @@
     },
     "\/dev\/scss\/sections\/_services.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1543,7 +1520,6 @@
     },
     "\/dev\/scss\/sections\/_slideshow.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1556,7 +1532,6 @@
     },
     "\/dev\/scss\/sections\/_submission.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1569,7 +1544,6 @@
     },
     "\/dev\/scss\/sections\/_vendor-audits.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1582,7 +1556,6 @@
     },
     "\/dev\/scss\/sections\/_what.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1595,7 +1568,6 @@
     },
     "\/dev\/scss\/sections\/_who.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1608,7 +1580,6 @@
     },
     "\/dev\/scss\/styles.scss" : {
       "aP" : 0,
-      "bl" : 0,
       "co" : 0,
       "ec" : 1,
       "ft" : 4,
@@ -1713,7 +1684,7 @@
     },
     "\/package-lock.json" : {
       "ft" : 524288,
-      "oA" : 1,
+      "oA" : 2,
       "oAP" : "\/package-lock-min.json",
       "oF" : 0,
       "oO" : 1,
@@ -1721,7 +1692,7 @@
     },
     "\/package.json" : {
       "ft" : 524288,
-      "oA" : 1,
+      "oA" : 2,
       "oAP" : "\/package-min.json",
       "oF" : 0,
       "oO" : 1,
@@ -2035,10 +2006,6 @@
     },
     "babelRetainLines" : 0,
     "babelUseBuiltInsType" : 0,
-    "bowerAbbreviatedPath" : "bower_components",
-    "bowerForceLatestOnConflict" : 1,
-    "bowerTargetDependencyListType" : 1,
-    "bowerUseExactVersion" : 0,
     "browserRefreshDelay" : 0,
     "browserslistString" : ">0.2%, last 2 versions, Firefox ESR, not dead",
     "buildEnvironment" : 0,
@@ -2772,7 +2739,6 @@
       "cssoStyle" : 0,
       "purgeCSSStyle" : 0,
       "shouldRunAutoprefixer" : 1,
-      "shouldRunBless" : 0,
       "sourceMapStyle" : 0
     },
     "languageDefaultsGIF" : {
@@ -2861,7 +2827,6 @@
       "purgeCSSStyle" : 0,
       "rewriteURLStyle" : 0,
       "shouldRunAutoprefixer" : 0,
-      "shouldRunBless" : 0,
       "sourceMapStyle" : 0,
       "strictImports" : 0,
       "strictUnits" : 0
@@ -2933,7 +2898,6 @@
       "outputStyle" : 0,
       "purgeCSSStyle" : 0,
       "shouldRunAutoprefixer" : 0,
-      "shouldRunBless" : 0,
       "sourceMapStyle" : 0
     },
     "languageDefaultsSLIM" : {
@@ -2965,7 +2929,6 @@
       "purgeCSSStyle" : 0,
       "resolveRelativeURLS" : 0,
       "shouldRunAutoprefixer" : 0,
-      "shouldRunBless" : 0,
       "sourceMapStyle" : 0
     },
     "languageDefaultsSVG" : {
@@ -2984,12 +2947,13 @@
       "autoOutputPathReplace1" : "",
       "autoOutputPathReplace2" : "",
       "autoOutputPathStyle" : 0,
+      "bundleFormat" : 4,
       "createDeclarationFile" : 0,
       "jsxMode" : 0,
       "minifierStyle" : 0,
       "moduleDetectionType" : 0,
-      "moduleResolutionType" : 0,
-      "moduleType" : 2,
+      "moduleResolutionType" : 5,
+      "moduleType" : 5,
       "removeComments" : 0,
       "sourceMapStyle" : 0,
       "targetECMAVersion" : 2018
@@ -3051,15 +3015,12 @@
     "susyVersion" : 3,
     "tsAllowArbitraryExtensions" : 0,
     "tsAllowImportingTSExtensions" : 0,
-    "tsAllowSyntheticDefaultImports" : 0,
     "tsAllowUMDGlobalAccess" : 0,
     "tsAllowUnreachableCode" : 0,
     "tsAllowUnusedLabels" : 0,
-    "tsAlwaysStrict" : 0,
-    "tsDownlevelIteration" : 0,
+    "tsConfigFileHandlingType" : 0,
     "tsEmitBOM" : 0,
     "tsEmitDecoratorMetadata" : 0,
-    "tsESModuleInterop" : 0,
     "tsExactOptionalPropertyTypes" : 0,
     "tsExperimentalDecorators" : 0,
     "tsForceConsistentCasingInFileNames" : 1,
@@ -3067,6 +3028,7 @@
     "tsIsolatedModules" : 0,
     "tsJSXFactory" : "React.createElement",
     "tsJSXFragmentFactory" : "Fragment",
+    "tsLibString" : "",
     "tsNoEmitHelpers" : 0,
     "tsNoFallthroughCasesInSwitch" : 0,
     "tsNoImplicitAny" : 0,
@@ -3077,6 +3039,7 @@
     "tsNoPropertyAccessFromIndexSignature" : 0,
     "tsNoResolve" : 0,
     "tsNoUncheckedIndexAccess" : 0,
+    "tsNoUncheckedSideEffectImports" : 0,
     "tsNoUnusedLocals" : 0,
     "tsNoUnusedParameters" : 0,
     "tsPreserveConstEnums" : 0,
@@ -3089,6 +3052,7 @@
     "tsStrictNullChecks" : 0,
     "tsStrictPropertyInitialization" : 0,
     "tsStripInternal" : 0,
+    "tsTypesString" : "*",
     "tsUseDefineForClassFields" : 0,
     "tsUseUnknownInCatchVariables" : 0,
     "tsVerbatimModuleSyntax" : 0,

@@ -1439,6 +1439,9 @@ header #header-container #mainNav #nav-indicator {
 #who > div #who-container .card-wrapper .card-front #imani {
   background-image: url("../img/who/imani.jpg");
 }
+#who > div #who-container .card-wrapper .card-front #susan {
+  background-image: url("../img/who/susan.jpg");
+}
 #who > div #who-container .card-wrapper .card-front .name-area {
   position: relative;
   z-index: 1;

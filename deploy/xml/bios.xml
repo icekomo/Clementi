@@ -28,7 +28,7 @@
 
     <person id="larry">
         <name>Larry Stevens, M.S.</name>
-        <title>Pharmaceutical Quality & Compliance Specialist</title>
+        <title>Pharmaceutical Quality &amp; Compliance Specialist</title>
         <p1>Larry Stevens is a pharmaceutical analytical chemistry, quality, compliance, and product development specialist whose career spans 1978 to the present. His resume emphasizes consulting leadership, drug delivery development, regulatory readiness, and scientific communication. • As founder and principal consultant of PharmaAnalytic LLC since 2009, he has led quality systems, audits, remediation, validations, training, and development projects for pharmaceutical and biotech clients. • At Neos Therapeutics and Alcon Laboratories, he directed quality control and research teams, supported ANDA submissions, developed hundreds of analytical methods, and created FDA-approved bioequivalent drug delivery products. • He holds an M.S. in Chemistry from the University of North Texas and a B.S. from Oral Roberts University, alongside numerous publications, presentations, professional affiliations, and community leadership roles.</p1>
     </person>
 
@@ -42,6 +42,13 @@
         <name>Imani D. Johnson</name>
         <title>Multidisciplinary cCreative Professional </title>
         <p1>Imani D. Johnson is a multidisciplinary creative professional with experience in writing, producing, management, design, and regulatory submissions. The resume combines theatre, podcast, administrative, and evaluation work with screenwriting and theatre design education. • Professional roles include FDA submissions management at Clementi Associates and producing content and events at OMG! Studios. • Theatre experience spans props, scenic design, production administration, play evaluation, and skills in Adobe, Final Draft, AutoCAD, sewing, and construction. • Education includes an MFA in TV and Screenwriting from Stephens College, 2023-2025, and a BFA in Theatre Design and Technology from West Virginia University, 2014-2018.</p1>
+    </person>
+
+        <person id="susan">
+        <name>Dr. Susan A. Lerke</name>
+        <title>PhD in Analytical Chemistry</title>
+        <p1>Dr. Susan A. Lerke holds a PhD in Analytical Chemistry from the University of Delaware and a BA in Chemistry from La Salle University. She has more than 30 years of pharmaceutical experience in analytical development, biotherapeutics, vaccines, materials science, quality, and regulatory CMC. Her career includes senior leadership roles at Johnson &amp; Johnson, QI Consulting, Bristol-Myers Squibb, and Sanofi Winthrop.</p1>
+        <p2>She has led global analytical and CMC teams supporting five successful regulatory filings, including a therapy granted FDA Breakthrough Therapy designation. Her accomplishments also include reducing development timelines by 18 months, achieving major savings to the company in cost avoidance through process improvements, supporting health-authority inspections, and contributing to 15 publications or book chapters and 39 invited presentations.</p2>
     </person>
 
    

@@ -14,7 +14,7 @@
     }
 
     > div {
-        @include helpers.xl {
+        @include helpers.lg {
             grid-area: who;
         }
 
@@ -31,56 +31,6 @@
             @include helpers.md {
                 grid-template-columns: repeat(3, 1fr);
             }
-
-            // @include helpers.lg {
-            //     grid-template-columns: repeat(3, 1fr);
-            // }
-
-            // @include helpers.xl {
-            //     grid-template-columns: repeat(4, 1fr);
-            //     grid-template-areas: 
-            //     "c1 c2 c6 c4"
-            //     ". c5 c3 .";
-            // }
-
-            // #william-card{
-            //     @include helpers.xl {
-            //         grid-area: c1;
-            //      }
-            // }
-
-            // #nancy-card{
-            //     @include helpers.xl {
-            //         grid-area: c2;
-            //     }
-            // }
-
-            // #paul-card{
-            //     @include helpers.xl {
-            //         grid-area: c3;
-            //     }
-            // }
-
-            // #david-card{
-            //     @include helpers.xl {
-            //         grid-area: c4;
-            //     }
-            // }
-
-
-
-            // #lary-card{
-            //     @include helpers.xl {
-            //         grid-area: c5;
-            //     }
-            // }
-
-            // #nemisha-card{
-            //      @include helpers.xl {
-            //         grid-area: c6;
-            //     }
-            // }
-
             .card-wrapper {
                 width: 100%;
                 height: 360px;

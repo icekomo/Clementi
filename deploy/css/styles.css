@@ -1093,6 +1093,49 @@ header #header-container #mainNav #nav-indicator {
 #what > div #what-cards #what-card-container .what-card .card-content p {
   margin-bottom: 16px;
 }
+#what > div #what-cards #what-card-container .what-card .card-content .card-more {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+#what > div #what-cards #what-card-container .what-card .card-content .card-more .card-more-inner {
+  overflow: hidden;
+  min-height: 0;
+  visibility: hidden;
+  transition: visibility 0.35s;
+}
+#what > div #what-cards #what-card-container .what-card .card-content .read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  background: none;
+  border: 0;
+  font: inherit;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+#what > div #what-cards #what-card-container .what-card .card-content .read-more::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.35s ease;
+}
+#what > div #what-cards #what-card-container .what-card .card-content .read-more:hover {
+  text-decoration-thickness: 2px;
+}
+#what > div #what-cards #what-card-container .what-card .card-content .read-more:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
 #what > div #what-cards #what-card-container .what-card .card-content ul li {
   margin-bottom: 8px;
   font-size: 0.875rem;
@@ -1103,6 +1146,22 @@ header #header-container #mainNav #nav-indicator {
 }
 #what > div #what-cards #what-card-container .what-card .card-content ul li .list-container i {
   margin-right: 8px;
+}
+#what > div #what-cards #what-card-container .what-card.is-open .card-content .card-more {
+  grid-template-rows: 1fr;
+}
+#what > div #what-cards #what-card-container .what-card.is-open .card-content .card-more .card-more-inner {
+  visibility: visible;
+}
+#what > div #what-cards #what-card-container .what-card.is-open .card-content .read-more::after {
+  transform: translateY(2px) rotate(-135deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  #what > div #what-cards #what-card-container .card-more,
+  #what > div #what-cards #what-card-container .card-more-inner,
+  #what > div #what-cards #what-card-container .read-more::after {
+    transition: none !important;
+  }
 }
 #what > div #what-cards #what-card-container #card-1-container #card-1 {
   background-image: url("../img/what/card-1.jpg");

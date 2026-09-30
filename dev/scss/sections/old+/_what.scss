@@ -85,57 +85,6 @@
                             margin-bottom: 16px;
                         }
 
-                        // Collapsible 2nd paragraph (grid 0fr -> 1fr animates to auto height)
-                        .card-more {
-                            display: grid;
-                            grid-template-rows: 0fr;
-                            transition: grid-template-rows 0.35s ease;
-
-                            .card-more-inner {
-                                overflow: hidden;
-                                min-height: 0;
-                                visibility: hidden; // keeps collapsed text out of tab order / screen readers
-                                transition: visibility 0.35s;
-                            }
-                        }
-
-                        .read-more {
-                            display: inline-flex;
-                            align-items: center;
-                            gap: 6px;
-                            padding: 0;
-                            background: none;
-                            border: 0;
-                            font: inherit;
-                            font-size: helpers.rem-calc(15);
-                            font-weight: 600;
-                            color: inherit;
-                            cursor: pointer;
-                            text-decoration: underline;
-                            text-underline-offset: 3px;
-
-                            // chevron
-                            &::after {
-                                content: "";
-                                width: 7px;
-                                height: 7px;
-                                border-right: 2px solid currentColor;
-                                border-bottom: 2px solid currentColor;
-                                transform: translateY(-2px) rotate(45deg);
-                                transition: transform 0.35s ease;
-                            }
-
-                            &:hover {
-                                text-decoration-thickness: 2px;
-                            }
-
-                            &:focus-visible {
-                                outline: 2px solid currentColor;
-                                outline-offset: 4px;
-                                border-radius: 2px;
-                            }
-                        }
-
                         ul {
                             li {
                                 margin-bottom: 8px;
@@ -153,31 +102,7 @@
                             }
                         }
                     }
-
-                    // Open state (toggled by JS)
-                    &.is-open .card-content {
-                        .card-more {
-                            grid-template-rows: 1fr;
-
-                            .card-more-inner {
-                                visibility: visible;
-                            }
-                        }
-
-                        .read-more::after {
-                            transform: translateY(2px) rotate(-135deg);
-                        }
-                    }
                 }
-
-                @media (prefers-reduced-motion: reduce) {
-                    .card-more,
-                    .card-more-inner,
-                    .read-more::after {
-                        transition: none !important;
-                    }
-                }
-
                 #card-1-container {
                     @include helpers.md {
                         // grid-area: card-1;

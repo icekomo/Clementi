@@ -7,7 +7,7 @@
       "uuidString" : "D743EC21-E8A4-488F-A8C0-7D647989089C"
     }
   ],
-  "creatorBuild" : "36775",
+  "creatorBuild" : "36780",
   "files" : {
     "\/assets\/2026_04_20-Draft Text.zip" : {
       "cB" : 0,
@@ -204,7 +204,7 @@
     },
     "\/deploy\/favicon\/apple-touch-icon.png" : {
       "ft" : 32768,
-      "iS" : 8048,
+      "iS" : 2542,
       "oA" : 0,
       "oAP" : "\/deploy\/favicon\/apple-touch-icon.png",
       "oF" : 0,
@@ -217,7 +217,7 @@
     },
     "\/deploy\/favicon\/favicon-96x96.png" : {
       "ft" : 32768,
-      "iS" : 3888,
+      "iS" : 1164,
       "oA" : 0,
       "oAP" : "\/deploy\/favicon\/favicon-96x96.png",
       "oF" : 0,
@@ -269,7 +269,7 @@
     },
     "\/deploy\/favicon\/web-app-manifest-192x192.png" : {
       "ft" : 32768,
-      "iS" : 8610,
+      "iS" : 2676,
       "oA" : 0,
       "oAP" : "\/deploy\/favicon\/web-app-manifest-192x192.png",
       "oF" : 0,
@@ -282,7 +282,7 @@
     },
     "\/deploy\/favicon\/web-app-manifest-512x512.png" : {
       "ft" : 32768,
-      "iS" : 31754,
+      "iS" : 10162,
       "oA" : 0,
       "oAP" : "\/deploy\/favicon\/web-app-manifest-512x512.png",
       "oF" : 0,
@@ -295,7 +295,7 @@
     },
     "\/deploy\/img\/divide\/divide-1.jpg" : {
       "ft" : 16384,
-      "iS" : 567227,
+      "iS" : 506235,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/divide\/divide-1.jpg",
@@ -370,7 +370,7 @@
     },
     "\/deploy\/img\/home\/hero-2.jpg" : {
       "ft" : 16384,
-      "iS" : 242789,
+      "iS" : 84290,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/home\/hero-2.jpg",
@@ -422,7 +422,7 @@
     },
     "\/deploy\/img\/home\/hero.jpg" : {
       "ft" : 16384,
-      "iS" : 796456,
+      "iS" : 102896,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/home\/hero.jpg",
@@ -520,7 +520,7 @@
     },
     "\/deploy\/img\/phase-1\/background-DT.jpg" : {
       "ft" : 16384,
-      "iS" : 3103375,
+      "iS" : 1068107,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/phase-1\/background-DT.jpg",
@@ -533,7 +533,7 @@
     },
     "\/deploy\/img\/phase-1\/background-MB.jpg" : {
       "ft" : 16384,
-      "iS" : 61552,
+      "iS" : 57417,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/phase-1\/background-MB.jpg",
@@ -556,7 +556,7 @@
     },
     "\/deploy\/img\/service\/cmc.jpg" : {
       "ft" : 16384,
-      "iS" : 85208,
+      "iS" : 32630,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/service\/cmc.jpg",
@@ -579,7 +579,7 @@
     },
     "\/deploy\/img\/service\/doc.jpg" : {
       "ft" : 16384,
-      "iS" : 72193,
+      "iS" : 27647,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/service\/doc.jpg",
@@ -592,7 +592,7 @@
     },
     "\/deploy\/img\/service\/fda.jpg" : {
       "ft" : 16384,
-      "iS" : 131715,
+      "iS" : 19278,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/service\/fda.jpg",
@@ -638,7 +638,7 @@
     },
     "\/deploy\/img\/service\/therapy.jpg" : {
       "ft" : 16384,
-      "iS" : 63459,
+      "iS" : 25959,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/service\/therapy.jpg",
@@ -651,7 +651,7 @@
     },
     "\/deploy\/img\/slideshow\/slide-1.jpg" : {
       "ft" : 16384,
-      "iS" : 725717,
+      "iS" : 199499,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/slideshow\/slide-1.jpg",
@@ -664,7 +664,7 @@
     },
     "\/deploy\/img\/slideshow\/slide-2.jpg" : {
       "ft" : 16384,
-      "iS" : 271988,
+      "iS" : 102653,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/slideshow\/slide-2.jpg",
@@ -690,7 +690,7 @@
     },
     "\/deploy\/img\/what\/card-1.jpg" : {
       "ft" : 16384,
-      "iS" : 148150,
+      "iS" : 83720,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/what\/card-1.jpg",
@@ -703,7 +703,7 @@
     },
     "\/deploy\/img\/what\/card-2.jpg" : {
       "ft" : 16384,
-      "iS" : 164875,
+      "iS" : 37008,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/what\/card-2.jpg",
@@ -716,7 +716,7 @@
     },
     "\/deploy\/img\/what\/card-3.jpg" : {
       "ft" : 16384,
-      "iS" : 156669,
+      "iS" : 32470,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/what\/card-3.jpg",
@@ -895,7 +895,7 @@
     },
     "\/deploy\/img\/who\/william.jpg" : {
       "ft" : 16384,
-      "iS" : 118192,
+      "iS" : 89305,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/who\/william.jpg",
@@ -1003,6 +1003,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/ind-submission.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/old+\/what.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/old+\/what.html",
       "oF" : 0
     },
     "\/dev\/content\/overview.kit" : {
@@ -1278,6 +1286,17 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/dev\/js\/modules\/sub-modular-animation-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dev\/js\/modules\/what-read-more.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/modules\/what-read-more-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -1613,6 +1632,18 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_who.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0
+    },
+    "\/dev\/scss\/sections\/old+\/_what.scss" : {
+      "aP" : 0,
+      "co" : 0,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/old+\/_what.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0
@@ -2055,7 +2086,7 @@
       "NODE_ENV:::production"
     ],
     "esLintConfigFileHandlingType" : 0,
-    "esLintECMAVersion" : 7,
+    "esLintECMAVersion" : 12,
     "esLintEnvironmentsMask" : 1,
     "esLintRules" : {
       "accessor-pairs" : {

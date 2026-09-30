@@ -1663,6 +1663,65 @@ header #header-container #mainNav #nav-indicator {
   margin-bottom: 16px;
   line-height: 1.5rem;
 }
+#submission #sub-card .sub-more {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+#submission #sub-card .sub-more .sub-more-inner {
+  overflow: hidden;
+  min-height: 0;
+  visibility: hidden;
+  transition: visibility 0.35s;
+}
+#submission #sub-card .read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  background: none;
+  border: 0;
+  font: inherit;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+#submission #sub-card .read-more::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.35s ease;
+}
+#submission #sub-card .read-more:hover {
+  text-decoration-thickness: 2px;
+}
+#submission #sub-card .read-more:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+#submission #sub-card.is-open .sub-more {
+  grid-template-rows: 1fr;
+}
+#submission #sub-card.is-open .sub-more .sub-more-inner {
+  visibility: visible;
+}
+#submission #sub-card.is-open .read-more::after {
+  transform: translateY(2px) rotate(-135deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  #submission #sub-card .sub-more,
+  #submission #sub-card .sub-more-inner,
+  #submission #sub-card .read-more::after {
+    transition: none !important;
+  }
+}
 
 /* =============
     Contact
@@ -2077,9 +2136,6 @@ header #header-container #mainNav #nav-indicator {
 /* =============
     Get Started
 ============= */
-#started {
-  background-color: var(--white-smoke);
-}
 @media (min-width: 992px) {
   #started {
     display: grid;

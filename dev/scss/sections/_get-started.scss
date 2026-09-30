@@ -4,7 +4,7 @@
 @use "../helpers";
 
 #started {
-    background-color: var(--white-smoke);
+    // background-color: var(--white-smoke);
     @include helpers.lg {
         display: grid;
         grid-template-columns: auto 1200px auto;

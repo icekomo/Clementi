@@ -1005,6 +1005,14 @@
       "oAP" : "\/dev\/content\/ind-submission.html",
       "oF" : 0
     },
+    "\/dev\/content\/old+\/submission.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/old+\/submission.html",
+      "oF" : 0
+    },
     "\/dev\/content\/old+\/what.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -1286,6 +1294,17 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/dev\/js\/modules\/sub-modular-animation-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dev\/js\/modules\/sub-read-more.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/modules\/sub-read-more-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -1632,6 +1651,18 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_who.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0
+    },
+    "\/dev\/scss\/sections\/old+\/_submission.scss" : {
+      "aP" : 0,
+      "co" : 0,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/old+\/_submission.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0

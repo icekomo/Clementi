@@ -7,7 +7,8 @@ import { initGetStarted } from "./modules/get-started.js";
 import { initScrollTrigger } from "./modules/scrollTrigger.js";
 import { initHomeTitles } from "./modules/home-titles.js";
 import { initWhatReadMore } from "./modules/what-read-more.js";
-
+import { initSubReadMore } from "./modules/sub-read-more.js";
+ 
 document.addEventListener("DOMContentLoaded", () => {
     initCardflip();
     initContact();
@@ -18,4 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
     initScrollTrigger();
     initHomeTitles();
     initWhatReadMore();
+    initSubReadMore();
 });
+ 

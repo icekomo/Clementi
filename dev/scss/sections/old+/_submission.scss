@@ -1,0 +1,86 @@
+/* =============
+    Submission
+============= */
+@use "../helpers";
+
+#submission {
+     
+    // background-image: url("../img/who/submission.jpg");
+    // background-color: rgba(43,65,88,0.90);
+    background-blend-mode: multiply;
+   
+    // background-size: contain;
+    // background-position: center;
+    // background-repeat: no-repeat;
+
+    // display: flex;
+
+    display: grid;
+
+    @include helpers.md {
+        justify-content: flex-end;
+        height: auto;
+    }
+
+    @include helpers.lg {
+        justify-content: center;
+        height: auto;
+    }
+
+
+    @include helpers.xl {
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". sub .";
+    }
+
+    >div{
+        grid-area: sub;
+    }
+
+    #sub-top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #modular-container{
+            svg{
+                width: 100%;
+            }
+        }
+
+
+        // img{
+        //     @include helpers.lg {
+        //         width: 70%;
+        //         margin: 0 auto;
+        //     }
+        // }
+    }
+
+    #sub-card {
+        // background: var(--black);
+        // background-color: #bf5101;
+        padding: 16px;
+        // margin: auto 16px;
+        // color: var(--white);
+        border-radius: 12px;
+
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+
+        @include helpers.md {
+            width: 50vw;
+            padding: 24px;
+        }
+
+        @include helpers.xxl {
+            width: 30vw;
+            padding: 32px;
+            margin: 0 auto;
+        }
+
+        p {
+            margin-bottom: 16px;
+            line-height: helpers.rem-calc(24);
+        }
+    }
+}

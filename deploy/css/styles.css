@@ -1633,6 +1633,12 @@ header #header-container #mainNav #nav-indicator {
 #submission > div {
   grid-area: sub;
 }
+#submission #sub-title {
+  text-align: center;
+}
+#submission #sub-title h2 {
+  margin-bottom: 30px;
+}
 #submission #sub-top {
   display: flex;
   justify-content: center;
